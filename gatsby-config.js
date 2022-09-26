@@ -5,5 +5,14 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-sitemap`,
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `montserrat\:200,300,400,600,700,900`
+        ],
+        display: 'swap'
+      }
+    }
   ],
 }
