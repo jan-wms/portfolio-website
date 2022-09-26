@@ -1,19 +1,16 @@
 import * as React from "react"
+import Header from "../components/header/header"
 import "./global.css"
 
 
 const IndexPage = () => {
   return (
     <main>
-      <h1>
-        Congratulations
-        <br />
-        <span>— you just made a Gatsby site! 🎉🎉🎉</span>
-      </h1>
+      <Header/>
     </main>
   )
 }
 
 export default IndexPage
 
-export const Head = () => <title>Home Page</title>
+export const Head = () => <title>Jan Wermeckes | Portfolio</title>
