@@ -1,7 +1,9 @@
 module.exports = {
   siteMetadata: {
     title: `portfolio-website`,
-    siteUrl: `https://www.yourdomain.tld`,
+    siteUrl: `https://janw.netlify.app`,
   },
-  plugins: [],
+  plugins: [
+    `gatsby-plugin-sitemap`,
+  ],
 }
