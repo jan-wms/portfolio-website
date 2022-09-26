@@ -26,40 +26,38 @@ import { FaBook } from "@react-icons/all-files/fa/FaBook"
 import { FaPlane } from "@react-icons/all-files/fa/FaPlane"
 
 import { GiMountainClimbing } from 'react-icons/gi'
-import { IconContext } from "react-icons";
-
 
 const HeaderGraphic = () => {
   return (
     <div className={styles.headerGraphic}>
 
       <span className={styles.icons}>
-          <FaHeart />
-          <FaComments />
-          <FaGlobeAmericas />
-          <FaSquareRootAlt />
-          <IoMdPerson />
-          <RiSettings4Fill />
-          <FaRunning />
-          <FaFolder />
-          <IoIosSunny />
-          <FaMountain />
-          <GiMountainClimbing />
-          <IoIosMail />
-          <BsClock />
-          <AiOutlineWifi />
-          <IoMdMusicalNote />
-          <BsFillCameraVideoFill />
-          <MdThumbUp />
-          <AiOutlineZoomIn />
-          <FaPen />
-          <FaVolumeUp />
-          <FaArrowRight />
-          <HiOutlineCode />
-          <IoPhonePortraitOutline />
-          <FaBook />
-          <FaPlane />
-          </span>
+        <FaHeart />
+        <FaComments />
+        <FaGlobeAmericas />
+        <FaSquareRootAlt />
+        <IoMdPerson />
+        <RiSettings4Fill />
+        <FaRunning />
+        <FaFolder />
+        <IoIosSunny />
+        <FaMountain />
+        <GiMountainClimbing />
+        <IoIosMail />
+        <BsClock />
+        <AiOutlineWifi />
+        <IoMdMusicalNote />
+        <BsFillCameraVideoFill />
+        <MdThumbUp />
+        <AiOutlineZoomIn />
+        <FaPen />
+        <FaVolumeUp />
+        <FaArrowRight />
+        <HiOutlineCode />
+        <IoPhonePortraitOutline />
+        <FaBook />
+        <FaPlane />
+      </span>
     </div>
   )
 }
