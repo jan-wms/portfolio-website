@@ -8,7 +8,10 @@
 }
 
 .title {
-    width: 50vw;
+    width: 40vw;
+    height: 90vh;
+    padding: 5vh 5vw 5vh 5vw;
     display: flex;
     justify-content: center;
+    align-items: center;
 }

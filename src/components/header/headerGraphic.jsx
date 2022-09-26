@@ -2,10 +2,10 @@ import React from 'react'
 import * as styles from './headerGraphic.module.css'
 import { FaHeart } from "@react-icons/all-files/fa/FaHeart"
 import { FaComments } from "@react-icons/all-files/fa/FaComments"
-import { FaGlobeAmericas} from "@react-icons/all-files/fa/FaGlobeAmericas"
-import { FaSquareRootAlt} from "@react-icons/all-files/fa/FaSquareRootAlt"
-import { IoMdPerson} from "@react-icons/all-files/io/IoMdPerson"
-import { RiSettings4Fill} from "@react-icons/all-files/ri/RiSettings4Fill"
+import { FaGlobeAmericas } from "@react-icons/all-files/fa/FaGlobeAmericas"
+import { FaSquareRootAlt } from "@react-icons/all-files/fa/FaSquareRootAlt"
+import { IoMdPerson } from "@react-icons/all-files/io/IoMdPerson"
+import { RiSettings4Fill } from "@react-icons/all-files/ri/RiSettings4Fill"
 import { FaRunning } from "@react-icons/all-files/fa/FaRunning"
 import { FaFolder } from "@react-icons/all-files/fa/FaFolder"
 import { IoIosSunny } from "@react-icons/all-files/io/IoIosSunny"
@@ -26,35 +26,40 @@ import { FaBook } from "@react-icons/all-files/fa/FaBook"
 import { FaPlane } from "@react-icons/all-files/fa/FaPlane"
 
 import { GiMountainClimbing } from 'react-icons/gi'
+import { IconContext } from "react-icons";
+
 
 const HeaderGraphic = () => {
   return (
     <div className={styles.headerGraphic}>
-      <FaHeart />
-      <FaComments />
-      <FaGlobeAmericas />
-      <FaSquareRootAlt />
-      <IoMdPerson />
-      <RiSettings4Fill />
-      <FaRunning />
-      <FaFolder />
-      <IoIosSunny />
-      <FaMountain />
-      <GiMountainClimbing />
-      <IoIosMail />
-      <BsClock />
-      <AiOutlineWifi />
-      <IoMdMusicalNote />
-      <BsFillCameraVideoFill />
-      <MdThumbUp />
-      <AiOutlineZoomIn />
-      <FaPen />
-      <FaVolumeUp />
-      <FaArrowRight />
-      <HiOutlineCode />
-      <IoPhonePortraitOutline />
-      <FaBook />
-      <FaPlane />
+
+      <span className={styles.icons}>
+          <FaHeart />
+          <FaComments />
+          <FaGlobeAmericas />
+          <FaSquareRootAlt />
+          <IoMdPerson />
+          <RiSettings4Fill />
+          <FaRunning />
+          <FaFolder />
+          <IoIosSunny />
+          <FaMountain />
+          <GiMountainClimbing />
+          <IoIosMail />
+          <BsClock />
+          <AiOutlineWifi />
+          <IoMdMusicalNote />
+          <BsFillCameraVideoFill />
+          <MdThumbUp />
+          <AiOutlineZoomIn />
+          <FaPen />
+          <FaVolumeUp />
+          <FaArrowRight />
+          <HiOutlineCode />
+          <IoPhonePortraitOutline />
+          <FaBook />
+          <FaPlane />
+          </span>
     </div>
   )
 }
