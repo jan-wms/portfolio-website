@@ -1,12 +1,19 @@
 .headerGraphic {
     background-color: rgb(48, 59, 70);
     width: 100vw;
+    display: flex;
+    align-items: center;
 }
 
 .icons {
-    display: none;
+    background-color: green;
+    width: 500px;
+    height: 500px;
+    position: relative;
 }
 
-.icons * {
-    font-size: 3em;
+.icons > * {
+    font-size: 2em;
+    position: absolute;
+    width: fit-content;
 }

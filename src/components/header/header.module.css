@@ -13,7 +13,12 @@
 .title {
     width: 50vw;
     grid-area: title;
+    background-color: rgb(80, 93, 106);
     display: flex;
+    justify-content: center;
     align-items: center;
-    background-color: rgb(80, 93, 106)
+}
+
+.text {
+    width: fit-content;
 }

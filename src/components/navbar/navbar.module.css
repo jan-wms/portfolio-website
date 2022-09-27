@@ -10,4 +10,5 @@
 .icon {
     width: auto;
     font-size: 2.5em;
+    cursor: pointer;
 }

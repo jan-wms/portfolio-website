@@ -17,5 +17,11 @@ a {
 h1 {
     font-size: 3rem;
     font-weight: 600;
-    text-align: center;
+    margin: 0;
+}
+
+h2 {
+    margin: 0;
+    font-size: 2rem;
+    color: rgb(111, 222, 155);
 }

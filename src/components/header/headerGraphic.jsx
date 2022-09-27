@@ -30,7 +30,7 @@ import { GiMountainClimbing } from 'react-icons/gi'
 const HeaderGraphic = () => {
   return (
     <div className={styles.headerGraphic}>
-      <span className={styles.icons}>
+      <section className={styles.icons}>
         <FaHeart />
         <FaComments />
         <FaGlobeAmericas />
@@ -56,11 +56,13 @@ const HeaderGraphic = () => {
         <IoPhonePortraitOutline />
         <FaBook />
         <FaPlane />
+      </section>
+
+      <span style={{display: 'none'}}>
+        <h3>lol1</h3>
+        <h3>lol2</h3>
+        <h3>lol3</h3>
       </span>
-      
-      <h2>lol1</h2>
-      <h2>lol2</h2>
-      <h2>lol3</h2>
     </div>
   )
 }
