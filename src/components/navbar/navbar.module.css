@@ -1,0 +1,13 @@
+.navbar {
+    position: absolute;
+    z-index: 10;
+    width: calc(100% - 20px);
+    margin: 10px;
+    display: flex;
+    justify-content: end;
+}
+
+.icon {
+    width: auto;
+    font-size: 2.5em;
+}

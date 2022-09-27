@@ -1,17 +1,19 @@
 .header {
-    width: 100vw;
+    display: grid;
+    grid-template-areas: 'title graphic';
+    overflow-x: scroll;
+    overflow-y: hidden;
     height: 100vh;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+}
+
+.graphic {
+    grid-area: graphic;
 }
 
 .title {
-    width: 40vw;
-    height: 90vh;
-    padding: 5vh 5vw 5vh 5vw;
+    width: 50vw;
+    grid-area: title;
     display: flex;
-    justify-content: center;
     align-items: center;
+    background-color: rgb(80, 93, 106)
 }

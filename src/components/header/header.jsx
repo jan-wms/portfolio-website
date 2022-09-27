@@ -7,10 +7,12 @@ const Header = () => {
         <header className={styles.header}>
             <span className={styles.title}>
                 <h1>
-                    Jan Wermeckes
+                    Test
+                    {//Jan Wermeckes
+                    }
                 </h1>
             </span>
-            <HeaderGraphic />
+            <HeaderGraphic className={styles.graphic} />
         </header>
     )
 }

@@ -1,18 +1,12 @@
 .headerGraphic {
-    width: 40vw;
-    height: 90vh;
-    padding: 5vh 5vw 5vh 5vw;
     background-color: rgb(48, 59, 70);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 100vw;
 }
 
 .icons {
-    background-color: rgb(48, 59, 70);
+    display: none;
 }
 
 .icons * {
     font-size: 3em;
-    background-color: rgb(48, 59, 70);
 }

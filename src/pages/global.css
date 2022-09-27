@@ -1,11 +1,14 @@
 * {
-    background-color: rgb(80, 93, 106);
+    width: 100%;
+    position: relative;
     color: white;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 1.1rem;
     margin: 0;
 }
+
+
 
 a {
     text-decoration: none;
@@ -14,4 +17,5 @@ a {
 h1 {
     font-size: 3rem;
     font-weight: 600;
+    text-align: center;
 }
