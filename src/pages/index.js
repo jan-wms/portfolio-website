@@ -12,6 +12,7 @@ const IndexPage = () => {
       <Navbar />
       <Header />
       <Footer />
+      <Footer />
     </main>
   )
 }
