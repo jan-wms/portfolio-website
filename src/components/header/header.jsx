@@ -1,5 +1,4 @@
 import React from 'react'
-import { useState } from 'react'
 import HeaderGraphic from './headerGraphic'
 import * as styles from './header.module.css'
 import { TypeAnimation } from 'react-type-animation'
