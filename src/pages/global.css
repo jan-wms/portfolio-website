@@ -26,3 +26,12 @@ h2 {
     font-size: 2rem;
     color: rgb(111, 222, 155);
 }
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}

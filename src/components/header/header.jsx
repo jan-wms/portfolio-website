@@ -47,12 +47,12 @@ const Header = () => {
       </div>
 
       <div className={styles.rightSection} style={{ left: `${Math.min(Math.max(50 - (100 * scrollPosition) / windowWidth, 0), 50)}vw` }}>
-        <HeaderGraphic className={styles.graphic} />
-        <span style={{ display: 'none' }}>
+        <HeaderGraphic className={styles.graphic}/>
+        <section>
           <h3>lol1</h3>
           <h3>lol2</h3>
           <h3>lol3</h3>
-        </span>
+        </section>
       </div>
     </header>
   )

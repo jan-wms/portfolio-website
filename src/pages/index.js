@@ -3,7 +3,7 @@ import Header from "../components/header/header"
 import "./global.css"
 import Footer from "../components/footer/footer"
 import Navbar from "../components/navbar/navbar"
-import { useRef, useEffect, useState } from 'react'
+import Projects from "../components/projects/projects"
 
 
 const IndexPage = () => {
@@ -11,7 +11,7 @@ const IndexPage = () => {
     <main>
       <Navbar />
       <Header />
-      <Footer />
+      <Projects />
       <Footer />
     </main>
   )

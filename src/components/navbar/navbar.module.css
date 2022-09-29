@@ -1,14 +1,29 @@
 .navbar {
     position: fixed;
+    right: 0;
     z-index: 10;
-    width: calc(100% - 20px);
-    margin: 10px;
+    padding: 10px;    
     display: flex;
-    justify-content: end;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar-is-open {
+    height: 100vh;
+    background-color: black;
+    min-width: 33vw;
 }
 
 .icon {
-    width: auto;
     font-size: 2.5em;
     cursor: pointer;
+    align-self: flex-end;
+}
+
+.list {
+    width: fit-content;
+}
+
+.hide {
+    display: none;
 }
