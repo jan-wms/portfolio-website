@@ -1,6 +1,6 @@
 .icons {
-    width: min(40vw, 90vh);
-    height: min(40vw, 90vh);
+    width: 40vw;
+    height: 40vw;
     position: relative;
     border: 2px solid green;
 }

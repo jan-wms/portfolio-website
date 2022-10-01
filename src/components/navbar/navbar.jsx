@@ -13,11 +13,11 @@ const Navbar = () => {
       <FiMenu className={`${styles.icon} ${isOpen ? styles.hide : ''}`} onClick={() => {setIsOpen(true);}}/>
       <IoClose className={`${styles.icon} ${!isOpen ? styles.hide : ''}`} onClick={() => {setIsOpen(false);}}/>
       <ul className={`${styles.list} ${!isOpen ? styles.hide : ''}`}>
-        <a href='#'><li>Überblick</li></a>
-        <a href='#'><li>Projekte</li></a>
-        <a href='#'><li>Projekte</li></a>
-        <a href='#'><li>Projekte</li></a>
-        <a href='#'><li>Kontakt</li></a>
+        <a href='#' onClick={() => {setIsOpen(false);}}><li>Überblick</li></a>
+        <a href='#' onClick={() => {setIsOpen(false);}}><li>Projekte</li></a>
+        <a href='#' onClick={() => {setIsOpen(false);}}><li>Projekte</li></a>
+        <a href='#' onClick={() => {setIsOpen(false);}}><li>Projekte</li></a>
+        <a href='#' onClick={() => {setIsOpen(false);}}><li>Kontakt</li></a>
       </ul>
     </nav>
   )

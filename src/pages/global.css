@@ -1,5 +1,5 @@
 * {
-    color: white;
+    color:rgb(48, 59, 70);
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 1.1rem;
@@ -24,7 +24,6 @@ h1 {
 h2 {
     margin: 0;
     font-size: 2rem;
-    color: rgb(111, 222, 155);
 }
 
 ul {

@@ -2,18 +2,20 @@ import React from 'react'
 import HeaderGraphic from './headerGraphic'
 import * as styles from './header.module.css'
 import { TypeAnimation } from 'react-type-animation'
-import { useRef, useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 
 
 
 const Header = () => {
 
   const [windowWidth, detectWW] = useState(window.innerWidth);
+  const [windowHeight, detectWH] = useState(window.innerHeight);
   const [scrollPosition, setScrollPosition] = useState(0);
 
   useEffect(() => {
     const detectSize = () => {
       detectWW(window.innerWidth);
+      detectWH(window.innerHeight);
     }
 
     window.addEventListener('resize', detectSize)
@@ -38,7 +40,7 @@ const Header = () => {
   }, []);
 
   return (
-    <header className={styles.header} style={{marginBottom: `${windowWidth / 2}px`, position: 'sticky'}}>
+    <header className={styles.header} style={{position: scrollPosition > (windowWidth / 2) ? 'sticky' : 'sticky'}}>
       <div className={styles.title} style={{ left: `${Math.min(Math.max(-(100 * scrollPosition) / windowWidth, -50), 0 )}vw` }}>
         <span className={styles.text}>
           <h1>Jan Wermeckes</h1>
@@ -46,14 +48,15 @@ const Header = () => {
         </span>
       </div>
 
-      <div className={styles.rightSection} style={{ left: `${Math.min(Math.max(50 - (100 * scrollPosition) / windowWidth, 0), 50)}vw` }}>
-        <HeaderGraphic className={styles.graphic}/>
+      <div className={styles.rightSection} style={{ left: `${Math.min(Math.max(50 - (100 * scrollPosition) / windowWidth, 0), 50)}vw`}}>
+        <HeaderGraphic />
         <section>
           <h3>lol1</h3>
           <h3>lol2</h3>
           <h3>lol3</h3>
         </section>
       </div>
+      
     </header>
   )
 }

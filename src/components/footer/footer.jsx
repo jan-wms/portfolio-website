@@ -4,8 +4,15 @@ import * as styles from './footer.module.css'
 const Footer = () => {
   return (
     <footer className={styles.footer}>
-      <h2>Kontakt</h2>
-      <p>Kontaktformular</p>
+      <section>
+        <h2>Kontakt</h2>
+        <p>Kontaktformular</p>
+      </section>
+      <section>Social Media</section>
+      <section>
+        <h2>Impressum</h2>
+      </section>
+      <p>© 2022 Jan Wermeckes</p>
     </footer>
   )
 }

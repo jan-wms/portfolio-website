@@ -60,8 +60,6 @@ const HeaderGraphic = () => {
       <RiSettings4Fill style={{ left: '360', top: '220', color: '#de5b5b' }} />
       <IoMdMusicalNote style={{ left: '390', top: '250', color: '#de5b5b' }} />
       <FaPlane style={{ left: 'calc(50% - 2.5rem)', top: 'calc(50% - 2.5rem)', color: '#de5b5b', fontSize: '5rem' }} />
-
-
     </section>
   )
 }
