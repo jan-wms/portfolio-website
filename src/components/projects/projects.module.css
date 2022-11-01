@@ -10,6 +10,6 @@
 .projectCards {
     margin-top: 100px;
     display: grid;
-    gap: 30px;
+    gap: 50px;
     grid-template-columns: repeat(auto-fit, 1fr);
 }
