@@ -1,0 +1,9 @@
+.projectCard {
+    width: 500px;
+    height: 500px;
+    border-radius: 20px;
+    padding: 50px;
+
+    box-shadow: 4px 3px 8px 1px #969696;
+  	-webkit-box-shadow: 4px 3px 8px 1px #969696;
+}

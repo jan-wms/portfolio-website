@@ -8,10 +8,6 @@ const Footer = () => {
         <h2>Kontakt</h2>
         <p>Kontaktformular</p>
       </section>
-      <section>Social Media</section>
-      <section>
-        <h2>Impressum</h2>
-      </section>
       <p>© 2022 Jan Wermeckes</p>
     </footer>
   )

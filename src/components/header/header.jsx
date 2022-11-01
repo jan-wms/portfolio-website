@@ -44,16 +44,15 @@ const Header = () => {
       <div className={styles.title} style={{ left: `${Math.min(Math.max(-(100 * scrollPosition) / windowWidth, -50), 0 )}vw` }}>
         <span className={styles.text}>
           <h1>Jan Wermeckes</h1>
-          <H2Component />
         </span>
       </div>
 
       <div className={styles.rightSection} style={{ left: `${Math.min(Math.max(50 - (100 * scrollPosition) / windowWidth, 0), 50)}vw`}}>
         <HeaderGraphic />
         <section>
-          <h3>lol1</h3>
-          <h3>lol2</h3>
-          <h3>lol3</h3>
+          <h3>Software-Entwickler</h3>
+          <h3>Alpinist</h3>
+          <h3>Test</h3>
         </section>
       </div>
       
@@ -62,20 +61,3 @@ const Header = () => {
 }
 
 export default Header
-
-const H2Component = () => {
-  return (
-    <TypeAnimation
-      sequence={[
-        'Herzlich Willkommen!',
-        2000,
-        'Welcome!',
-        2000,
-      ]}
-      wrapper="h2"
-      //repeat={Infinity}
-      repeat={0}
-      style={{ fontSize: '2em' }}
-    />
-  );
-};
