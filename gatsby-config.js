@@ -5,6 +5,7 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-sitemap`,
+    `gatsby-plugin-netlify-cms`,
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
