@@ -2,16 +2,50 @@
     background-color: rgb(48, 59, 70);
     width: calc(100% - 10vw);
     padding: 100px 5vw 50px 5vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    display: grid;
+    grid-template-areas: 'contactSection divider linkSection''bottomSection bottomSection bottomSection';
 }
 
 .footer * {
     color: white;
 }
 
-.footer form * {
+.footer form {
+    margin: 50px 0 100px;
+}
+
+.footer input, textarea, button {
     color: rgb(48, 59, 70);
+}
+
+.footer label {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer > span {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    grid-area: bottomSection;
+}
+
+.footer > span p {
+    margin: 0 20px 0 20px;
+}
+
+.divider {
+    width: 2px;
+    background-color: white;
+    height: 300px;
+    grid-area: divider;
+}
+
+.contactSection {
+    grid-area: contactSection;
+}
+
+.linkSection {
+    grid-area: linkSection;
 }
