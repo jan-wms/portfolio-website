@@ -14,8 +14,8 @@ const Header = () => {
 
   useEffect(() => {
     const detectSize = () => {
-      detectWW(window.innerWidth);
-      detectWH(window.innerHeight);
+      detectWW(typeof window !== "undefined"? window.innerWidth : 500);
+      detectWH(typeof window !== "undefined"? window.innerHeight : 500);
     }
 
     window.addEventListener('resize', detectSize)
