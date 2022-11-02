@@ -8,8 +8,8 @@ import { useEffect, useState } from 'react'
 
 const Header = () => {
 
-  const [windowWidth, detectWW] = useState(window.innerWidth);
-  const [windowHeight, detectWH] = useState(window.innerHeight);
+  const [windowWidth, detectWW] = useState(typeof window !== "undefined"? window.innerWidth : 500);
+  const [windowHeight, detectWH] = useState(typeof window !== "undefined" ? window.innerHeight : 500);
   const [scrollPosition, setScrollPosition] = useState(0);
 
   useEffect(() => {
