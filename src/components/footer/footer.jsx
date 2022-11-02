@@ -1,12 +1,13 @@
+import { Link } from 'gatsby'
 import React from 'react'
 import * as styles from './footer.module.css'
 
 const Footer = () => {
   return (
     <footer className={styles.footer}>
-      <section>
+      <section className={styles.contactSection}>
         <h2>Kontakt</h2>
-        <form method="post" netlify-honeypot="bot-field" data-netlify="true" name="contact">
+        <form method="post" netlify-honeypot="bot-field" data-netlify="true" name="contact" action="/pages/success">
           <input type="hidden" name="bot-field" />
           <input type="hidden" name="form-name" value="contact" />
           <label>
@@ -18,17 +19,24 @@ const Footer = () => {
             <input type="email" name="email" id="email" />
           </label>
           <label>
-            Subject
+            Betreff
             <input type="text" name="subject" id="subject" />
           </label>
           <label>
-            Message
+            Nachricht
             <textarea name="message" id="message" rows="5" />
           </label>
           <button type="submit">Abschicken</button>
         </form>
       </section>
-      <p>© 2022 Jan Wermeckes</p>
+      <div className={styles.divider}/>
+      <section className={styles.linkSection}>
+      <h2>Links</h2>
+      <p>#test</p>
+      <p>#test</p>
+      <p>#test</p>
+      </section>
+      <span className={styles.bottomSection}><p>©2022 Jan Wermeckes</p><p style={{display: 'none'}}><Link to="/">Impressum</Link></p></span>
     </footer>
   )
 }
