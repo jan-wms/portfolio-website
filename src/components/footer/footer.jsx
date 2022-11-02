@@ -18,11 +18,11 @@ const Footer = () => {
             <input type="email" name="email" id="email" />
           </label>
           <label>
-            Subject
+            Betreff
             <input type="text" name="subject" id="subject" />
           </label>
           <label>
-            Message
+            Nachricht
             <textarea name="message" id="message" rows="5" />
           </label>
           <button type="submit">Abschicken</button>

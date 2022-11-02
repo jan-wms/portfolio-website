@@ -11,3 +11,7 @@
 .footer * {
     color: white;
 }
+
+.footer form * {
+    color: rgb(48, 59, 70);
+}
