@@ -1,18 +1,14 @@
-.headerGraphic {
-    width: 40vw;
-    height: 90vh;
-    padding: 5vh 5vw 5vh 5vw;
-    background-color: rgb(48, 59, 70);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .icons {
-    background-color: rgb(48, 59, 70);
+    width: 40vw;
+    height: 40vw;
+    position: relative;
+    border: 2px solid green;
 }
 
-.icons * {
-    font-size: 3em;
-    background-color: rgb(48, 59, 70);
+.icons>* {
+    font-size: 2em;
+    position: absolute;
+    width: auto;
+    top: 0;
+    right: 0;
 }

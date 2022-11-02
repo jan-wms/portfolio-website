@@ -1,0 +1,13 @@
+.footer {
+    background-color: rgb(48, 59, 70);
+    width: calc(100% - 10vw);
+    padding: 100px 5vw 50px 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer * {
+    color: white;
+}

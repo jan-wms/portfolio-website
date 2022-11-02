@@ -29,36 +29,38 @@ import { GiMountainClimbing } from 'react-icons/gi'
 
 const HeaderGraphic = () => {
   return (
-    <div className={styles.headerGraphic}>
+    <section className={styles.icons}>
+      {/*left*/}
+      <FaHeart style={{ left: '0', top: '250', color: '#de5b5b' }} />
+      <FaComments style={{ left: '30', top: '280', color: '#de5b5b' }} />
+      <FaGlobeAmericas style={{ left: '0', top: '250', color: '#de5b5b' }} />
+      <FaFolder style={{ left: '30', top: '220', color: '#de5b5b' }} />
+      <BsClock style={{ left: '60', top: '190', color: '#de5b5b' }} />
+      <AiOutlineWifi style={{ left: '0', top: '250', color: '#de5b5b' }} />
+      <BsFillCameraVideoFill style={{ left: '0', top: '250', color: '#de5b5b' }} />
+      <AiOutlineZoomIn style={{ left: '0', top: '250', color: '#de5b5b' }} />
+      <FaArrowRight style={{ left: '60', top: '310', color: '#de5b5b' }} />
 
-      <span className={styles.icons}>
-        <FaHeart />
-        <FaComments />
-        <FaGlobeAmericas />
-        <FaSquareRootAlt />
-        <IoMdPerson />
-        <RiSettings4Fill />
-        <FaRunning />
-        <FaFolder />
-        <IoIosSunny />
-        <FaMountain />
-        <GiMountainClimbing />
-        <IoIosMail />
-        <BsClock />
-        <AiOutlineWifi />
-        <IoMdMusicalNote />
-        <BsFillCameraVideoFill />
-        <MdThumbUp />
-        <AiOutlineZoomIn />
-        <FaPen />
-        <FaVolumeUp />
-        <FaArrowRight />
-        <HiOutlineCode />
-        <IoPhonePortraitOutline />
-        <FaBook />
-        <FaPlane />
-      </span>
-    </div>
+      {/*slash*/}
+      <IoPhonePortraitOutline style={{ left: '235', top: '160', color: '#de5b5b' }} />
+      <IoIosSunny style={{ left: '220', top: '190', color: '#d7de5b' }} />
+      <IoIosMail style={{ left: '205', top: '220', color: '#5fcde8' }} />
+      <FaSquareRootAlt style={{ left: '190', top: '250', color: '#ffff' }} />
+      <FaVolumeUp style={{ left: '175', top: '280', color: '#de5b5b' }} />
+      <HiOutlineCode style={{ left: '160', top: '310', color: '#ffff' }} />
+      <GiMountainClimbing style={{ left: '145', top: '340', color: '#70a36d' }} />
+      <IoMdPerson style={{ left: '130', top: '370', color: '#858585' }} />
+
+      {/*right*/}
+      <MdThumbUp style={{ left: '300', top: '340', color: '#de5b5b' }} />
+      <FaBook style={{ left: '300', top: '160', color: '#de5b5b' }} />
+      <FaMountain style={{ left: '330', top: '310', color: '#de5b5b' }} />
+      <FaRunning style={{ left: '330', top: '190', color: '#de5b5b' }} />
+      <FaPen style={{ left: '360', top: '280', color: '#de5b5b' }} />
+      <RiSettings4Fill style={{ left: '360', top: '220', color: '#de5b5b' }} />
+      <IoMdMusicalNote style={{ left: '390', top: '250', color: '#de5b5b' }} />
+      <FaPlane style={{ left: 'calc(50% - 2.5rem)', top: 'calc(50% - 2.5rem)', color: '#de5b5b', fontSize: '5rem' }} />
+    </section>
   )
 }
 
