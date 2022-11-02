@@ -36,7 +36,7 @@ const Footer = () => {
       <p>#test</p>
       <p>#test</p>
       </section>
-      <span className={styles.bottomSection}><p>©2022 Jan Wermeckes</p><p style={{display: 'none'}}><Link to="/">Impressum</Link></p></span>
+      <span><p>©2022 Jan Wermeckes</p><p style={{display: 'none'}}><Link to="/">Impressum</Link></p></span>
     </footer>
   )
 }
