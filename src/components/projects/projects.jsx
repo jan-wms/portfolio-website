@@ -5,13 +5,13 @@ import ProjectCard from './projectCard';
 
 const Projects = () => {
 
-  const [windowWidth, detectWW] = useState(window.innerWidth);
+  const [windowWidth, detectWW] = useState(typeof window !== "undefined"? window.innerWidth : 500);
   const [scrollPosition, setScrollPosition] = useState(0);
 
   useEffect(() => {
     const detectSize = () => {
-      detectWW(window.innerWidth);
-      detectWH(window.innerHeight);
+      detectWW(typeof window !== "undefined"? window.innerWidth : 500);
+      detectWH(typeof window !== "undefined"? window.innerHeight : 500);
     }
 
     window.addEventListener('resize', detectSize)
@@ -36,11 +36,11 @@ const Projects = () => {
   }, []);
 
 
-  const [windowHeight, detectWH] = useState(window.innerHeight);
+  const [windowHeight, detectWH] = useState(typeof window !== "undefined"? window.innerHeight : 500);
 
   useEffect(() => {
     const detectSize = () => {
-      detectWH(window.innerHeight);
+      detectWH(typeof window !== "undefined"? window.innerHeight : 500);
     }
 
     window.addEventListener('resize', detectSize)
