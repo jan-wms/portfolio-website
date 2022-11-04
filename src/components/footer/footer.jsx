@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className={styles.footer}>
       <section className={styles.contactSection}>
         <h2>Kontakt</h2>
-        <form method="post" netlify-honeypot="bot-field" data-netlify="true" name="contact" action="/pages/success">
+        <form method="post" netlify-honeypot="bot-field" data-netlify="true" name="contact" action="/success">
           <input type="hidden" name="bot-field" />
           <input type="hidden" name="form-name" value="contact" />
           <label>
