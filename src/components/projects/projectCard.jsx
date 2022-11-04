@@ -1,15 +1,36 @@
 import React from 'react'
 import * as styles from './projectCard.module.css'
+import { GatsbyImage } from "gatsby-plugin-image"
+import { useStaticQuery, graphql } from "gatsby"
 
-const ProjectCard = () => {
+
+const ProjectCard = ({ projectInformation }) => {
+  const imageData = useStaticQuery(graphql`
+  query {
+    file(
+      relativePath: {eq: "assets/dijkstra.png"}
+      sourceInstanceName: {eq: "static"}
+    ) {
+      childImageSharp {
+        gatsbyImageData(width: 1000, placeholder: BLURRED)
+      }
+    }
+  }
+`);
+
+  // ${projectInformation.image.substr(1)}
+
   return (
     <div className={styles.projectCard}>
-      <h4>
-        Hausaufgaben Organizer
-      </h4>
-      <p>
-        App zum Verwalten und einfachen Erstellen von Hausaufgaben.
-      </p>
+      <section className={styles.leftSection}>
+        <p>{projectInformation.date}</p>
+        <h4>{projectInformation.title}</h4>
+        <p>{projectInformation.description}</p>
+        <p>Github: {projectInformation.githubUrl}</p>
+      </section>
+      <section className={styles.imageSection}>
+        <GatsbyImage image={imageData.file.childImageSharp.gatsbyImageData} alt={projectInformation.title} />
+      </section>
     </div>
   )
 }
