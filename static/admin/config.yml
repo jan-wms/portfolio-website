@@ -14,9 +14,12 @@ collections:
     label_singular: Project
     description: This collection includes all projects shown in the project section.
     folder: projects
+    format: json
+    extension: json
     create: true
     fields:
       - { name: date, label: Date, widget: datetime }
-      - { name: imagePath, label: Image Path }
+      - { name: image, label: Image, widget: image, allow_multiple: false, default: "/uploads/chocolate-dogecoin.jpg", choose_url: false }
       - { name: title, label: Title }
+      - { name: githubUrl, label: GitHub Url }
       - { name: description, label: Description, widget: markdown }
