@@ -28,9 +28,9 @@ const ProjectCard = ({ projectInformation }) => {
         <p>{projectInformation.description}</p>
         <p>Github: {projectInformation.githubUrl}</p>
       </section>
-      <section className={styles.imageSection}>
+      <div className={styles.imageSection}>
         <GatsbyImage image={imageData.file.childImageSharp.gatsbyImageData} alt={projectInformation.title} />
-      </section>
+      </div>
     </div>
   )
 }
