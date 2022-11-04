@@ -1,0 +1,7 @@
+{
+  "image": "/uploads/chocolate-dogecoin.jpg",
+  "date": "2022-11-04T10:40:16.319Z",
+  "githubUrl": "https://github.com/jan2210/Dijkstra2",
+  "title": "Navigation App",
+  "description": "Navigationsapp mit SwiftUI auf Basis des Dijkstra-Algorhythmus."
+}
