@@ -1,0 +1,26 @@
+.githubRepoContainer {
+    border: 1px solid rgb(215, 222, 228);
+    padding: 10px;
+}
+
+.githubRepoContainer h5 {
+    color: rgb(0, 100, 213);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.githubRepoContainer h5:hover {
+    text-decoration: underline;
+}
+
+.githubRepoContainer p {
+    color: rgb(89, 99, 108);
+    font-size: 0.9rem;
+}
+
+.circle {
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    background-color: red;
+}
