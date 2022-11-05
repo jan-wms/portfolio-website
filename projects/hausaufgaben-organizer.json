@@ -2,6 +2,12 @@
   "image": "/assets/iphone5.png",
   "date": "2021-04-07T10:38:19.378Z",
   "title": "Hausaufgaben Organizer",
+  "downloadUrl": "",
+  "downloadUrlText": "",
+  "informationUrl": "",
+  "informationUrlText": "",
+  "appstoreUrl": "",
+  "playstoreUrl": "",
   "githubUrl": "https://github.com/jan2210/hausaufgaben_app_facharbeit",
   "description": "Eine App zum einfachen Erstellen und Verwalten von Hausaufgaben mit integrierter Stundenplanerkennung."
 }

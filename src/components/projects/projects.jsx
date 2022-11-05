@@ -27,6 +27,12 @@ const Projects = () => {
           date
           githubUrl
           description
+          downloadUrl
+          downloadUrlText
+          informationUrl
+          informationUrlText
+          appstoreUrl
+          playstoreUrl
           image
           title
         }

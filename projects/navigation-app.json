@@ -1,6 +1,12 @@
 {
   "image": "/assets/dijkstra.png",
   "date": "2022-03-31T10:40:16.319Z",
+  "downloadUrl": "",
+  "downloadUrlText": "",
+  "informationUrl": "",
+  "informationUrlText": "",
+  "appstoreUrl": "",
+  "playstoreUrl": "",
   "githubUrl": "https://github.com/jan2210/Dijkstra2",
   "title": "Navi App",
   "description": "Navigationsapp mit SwiftUI auf Basis des Dijkstra-Algorhythmus."
