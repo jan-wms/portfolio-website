@@ -5,7 +5,7 @@
 
 .githubRepoContainer h5 > a {
     color: rgb(0, 100, 213);
-    font-weight: 600;
+    font-weight: 670;
     text-decoration: none;
     width: fit-content;
 }
@@ -14,24 +14,69 @@
     text-decoration: underline;
 }
 
-.githubRepoContainer h5 {
-    margin-bottom: 20px;
+.githubRepoContainer p {
+    color: rgb(105, 117, 128);
+    font-size: 0.9rem;
 }
 
-.githubRepoContainer p {
-    color: rgb(89, 99, 108);
-    font-size: 0.9rem;
+.description {
+    margin: 30px 0 15px 0;
+}
+
+.topics {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 02px;
+    margin-bottom: 15px;
+}
+
+.topics p {
+    color: rgb(0, 100, 213);
+    font-weight: 600;
+    font-size: 0.7rem;
+    background-color: rgb(217, 244, 254);
+    padding: 5px 10px 5px 10px;
+    border-radius: 50px;
+}
+
+.topics p:hover {
+    color: white;
+    background-color: rgb(0, 100, 213);
 }
 
 .circle {
     border-radius: 50%;
-    height: 15px;
-    width: 15px;
+    height: 12px;
+    width: 12px;
+    margin-right: 5px;
+    transform: translateY(2px);
     background-color: red;
 }
 
-.icon {
+.repo-icon {
     font-size: 1.2rem;
     margin-right: 10px;
     transform: translateY(0.2rem);
 }
+
+.footer {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer p {
+    font-size: 0.75rem;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: row;
+    margin-right: 40px;
+}
+
+.star-icon {
+    font-size: 0.9rem;
+    margin-right: 3px;
+}
+

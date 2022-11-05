@@ -28,6 +28,7 @@
 
 .description {
     font-size: 1rem;
+    margin-bottom: 50px;
 }
 
 .date {
@@ -39,6 +40,5 @@
     flex-grow: 1;
     height: 100%;
     width: 300px;
-    background-color: red;
 }
 
