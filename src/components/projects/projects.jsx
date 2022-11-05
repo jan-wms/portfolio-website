@@ -42,7 +42,7 @@ const Projects = () => {
         {
           projectData.allProjectsJson.edges.map((item, index) => {
             return (
-              <ProjectCard projectInformation={item.node} />
+              <ProjectCard projectInformation={item.node} key={index} />
             )
           })
         }

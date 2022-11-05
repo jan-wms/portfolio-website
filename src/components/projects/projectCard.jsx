@@ -4,7 +4,7 @@ import { GatsbyImage } from "gatsby-plugin-image"
 import { useStaticQuery, graphql } from "gatsby"
 
 
-const ProjectCard = ({ projectInformation }) => {
+const ProjectCard = ({ projectInformation, image }) => {
   const imageData = useStaticQuery(graphql`
   query {
     file(
@@ -18,12 +18,18 @@ const ProjectCard = ({ projectInformation }) => {
   }
 `);
 
+
+  function getDate(p) {
+    const date = new Date(p);
+    const months = ["Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"];
+    return months[date.getMonth()] + " " + date.getFullYear().toString();
+  }
   // ${projectInformation.image.substr(1)}
 
   return (
     <div className={styles.projectCard}>
       <section className={styles.leftSection}>
-        <p>{projectInformation.date}</p>
+        <p>{getDate(projectInformation.date)}</p>
         <h4>{projectInformation.title}</h4>
         <p>{projectInformation.description}</p>
         <p>Github: {projectInformation.githubUrl}</p>
