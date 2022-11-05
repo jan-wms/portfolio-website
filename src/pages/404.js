@@ -10,7 +10,6 @@ const NotFoundPage = () => {
       <h2>Seite nicht gefunden</h2>
       
       <Link to="/">Zur Startseite</Link>
-      <Link to="/">Impressum</Link>
     </main>
   )
 }

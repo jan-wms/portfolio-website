@@ -20,13 +20,19 @@ const Projects = () => {
   }, [])
 
   const projectData = useStaticQuery(graphql`
-  query MyQuery {
+  query ProjectQuery {
     allProjectsJson {
       edges {
         node {
           date
           githubUrl
           description
+          downloadUrl
+          downloadUrlText
+          informationUrl
+          informationUrlText
+          appstoreUrl
+          playstoreUrl
           image
           title
         }

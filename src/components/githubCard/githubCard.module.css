@@ -1,20 +1,21 @@
-.githubRepoContainer {
+.github-card {
     border: 1px solid rgb(215, 222, 228);
     padding: 10px;
+    border-radius: 3px;
 }
 
-.githubRepoContainer h5 > a {
+.github-card h5 > a {
     color: rgb(0, 100, 213);
     font-weight: 670;
     text-decoration: none;
     width: fit-content;
 }
 
-.githubRepoContainer h5>a:hover {
+.github-card h5>a:hover {
     text-decoration: underline;
 }
 
-.githubRepoContainer p {
+.github-card p {
     color: rgb(105, 117, 128);
     font-size: 0.9rem;
 }

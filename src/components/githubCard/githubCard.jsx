@@ -6,7 +6,7 @@ import { AiOutlineStar } from "@react-icons/all-files/ai/AiOutlineStar"
 
 const GithubCard = ({ repoUrl }) => {
     return (
-        <div className={styles.githubRepoContainer}>
+        <div className={styles.githubCard}>
 
             <h5><GoRepo className={styles.repoIcon} /><a href={repoUrl} target="_blank">Dijkstra2</a></h5>
             <p className={styles.description}>Dijkstra App with Core Data</p>
