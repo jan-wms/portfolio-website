@@ -1,0 +1,33 @@
+import React from 'react'
+import * as styles from './githubCard.module.css'
+import { GoRepo } from "@react-icons/all-files/go/GoRepo"
+import { AiOutlineStar } from "@react-icons/all-files/ai/AiOutlineStar"
+
+
+const GithubCard = ({ repoUrl }) => {
+    return (
+        <div className={styles.githubRepoContainer}>
+
+            <h5><GoRepo className={styles.repoIcon} /><a href={repoUrl} target="_blank">Dijkstra2</a></h5>
+            <p className={styles.description}>Dijkstra App with Core Data</p>
+            <div className={styles.topics}>
+                <a href="https://github.com/topics/swift" target="_blank"><p>swift</p></a>
+                <a href="https://github.com/topics/dijkstra-algorithm" target="_blank"><p>dijkstra-algorithm</p></a>
+                <a href="https://github.com/topics/swiftui" target="_blank"><p>swiftui</p></a>
+            </div>
+            <div className={styles.footer}>
+                <span className={styles.footerItem}>
+                    <div className={styles.circle} />
+                    <p>Swift</p>
+                </span>
+                <span className={styles.footerItem}>
+                    <AiOutlineStar className={styles.starIcon} />
+                    <p>1</p>
+                </span>
+                <p>Updated on 31 Mar</p>
+            </div>
+        </div>
+    )
+}
+
+export default GithubCard

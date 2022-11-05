@@ -1,18 +1,44 @@
 .projectCard {
-    width: 50vw;
-    border-radius: 20px;
+    width: 1000px;
+    height: 500px;
 
     box-shadow: 3px 3px 8px 0px #c3c3c3;
     -webkit-box-shadow: 3px 3px 8px 0px #969696;
 
     display: flex;
+    flex-basis: 2 / 1;
     flex-direction: row;
+    justify-content: space-between;
+
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
 }
 
 .leftSection {
-    padding: 50px;
+    width: 400px;
+    padding: 20px 50px 50px 50px;
 }
 
-.imageSection img {
-    border-radius: 0 20px 20px 0;
+.leftSection h4 {
+    margin: 15px 0 20px 0;
+    font-weight: 700;
+    font-size: 1.4rem;
 }
+
+.description {
+    font-size: 1rem;
+    margin-bottom: 50px;
+}
+
+.date {
+    color: #c3c3c3;
+    font-size: 0.8rem;
+}
+
+.imageSection {
+    flex-grow: 1;
+    height: 100%;
+    width: 300px;
+}
+

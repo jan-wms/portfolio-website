@@ -2,9 +2,10 @@ import React from 'react'
 import * as styles from './projectCard.module.css'
 import { GatsbyImage } from "gatsby-plugin-image"
 import { useStaticQuery, graphql } from "gatsby"
+import GithubCard from '../githubCard/githubCard'
 
 
-const ProjectCard = ({ projectInformation }) => {
+const ProjectCard = ({ projectInformation, image }) => {
   const imageData = useStaticQuery(graphql`
   query {
     file(
@@ -18,15 +19,21 @@ const ProjectCard = ({ projectInformation }) => {
   }
 `);
 
+
+  function getDate(p) {
+    const date = new Date(p);
+    const months = ["Jan.", "Feb.", "März", "Apr.", "Mai", "Jun.", "Jul.", "Aug.", "Sept.", "Okt.", "Nov.", "Dez."];
+    return months[date.getMonth()] + " " + date.getFullYear().toString();
+  }
   // ${projectInformation.image.substr(1)}
 
   return (
     <div className={styles.projectCard}>
       <section className={styles.leftSection}>
-        <p>{projectInformation.date}</p>
+        <p className={styles.date}>{getDate(projectInformation.date)}</p>
         <h4>{projectInformation.title}</h4>
-        <p>{projectInformation.description}</p>
-        <p>Github: {projectInformation.githubUrl}</p>
+        <p className={styles.description}>{projectInformation.description}</p>
+        <GithubCard repoUrl={projectInformation.githubUrl} className={styles.githubCard} />
       </section>
       <div className={styles.imageSection}>
         <GatsbyImage image={imageData.file.childImageSharp.gatsbyImageData} alt={projectInformation.title} />
