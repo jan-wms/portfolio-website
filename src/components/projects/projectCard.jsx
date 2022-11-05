@@ -2,7 +2,7 @@ import React from 'react'
 import * as styles from './projectCard.module.css'
 import { GatsbyImage } from "gatsby-plugin-image"
 import { useStaticQuery, graphql } from "gatsby"
-import GithubRepoContainer from '../githubCard/githubCard'
+import GithubCard from '../githubCard/githubCard'
 
 
 const ProjectCard = ({ projectInformation, image }) => {
@@ -33,12 +33,10 @@ const ProjectCard = ({ projectInformation, image }) => {
         <p className={styles.date}>{getDate(projectInformation.date)}</p>
         <h4>{projectInformation.title}</h4>
         <p className={styles.description}>{projectInformation.description}</p>
-        <GithubRepoContainer repoUrl={projectInformation.githubUrl}/>
+        <GithubCard repoUrl={projectInformation.githubUrl} className={styles.githubCard} />
       </section>
       <div className={styles.imageSection}>
-       {/**
-        * <GatsbyImage image={imageData.file.childImageSharp.gatsbyImageData} alt={projectInformation.title} />
-        */} 
+        <GatsbyImage image={imageData.file.childImageSharp.gatsbyImageData} alt={projectInformation.title} />
       </div>
     </div>
   )

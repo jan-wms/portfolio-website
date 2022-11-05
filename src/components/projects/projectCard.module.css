@@ -1,5 +1,5 @@
 .projectCard {
-    width: 800px;
+    width: 1000px;
     height: 500px;
 
     box-shadow: 3px 3px 8px 0px #c3c3c3;
@@ -18,7 +18,6 @@
 .leftSection {
     width: 400px;
     padding: 20px 50px 50px 50px;
-    overflow: hidden;
 }
 
 .leftSection h4 {

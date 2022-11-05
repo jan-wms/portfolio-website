@@ -3,14 +3,19 @@
     padding: 10px;
 }
 
-.githubRepoContainer h5 {
+.githubRepoContainer h5 > a {
     color: rgb(0, 100, 213);
     font-weight: 600;
     text-decoration: none;
+    width: fit-content;
 }
 
-.githubRepoContainer h5:hover {
+.githubRepoContainer h5>a:hover {
     text-decoration: underline;
+}
+
+.githubRepoContainer h5 {
+    margin-bottom: 20px;
 }
 
 .githubRepoContainer p {
@@ -23,4 +28,10 @@
     height: 15px;
     width: 15px;
     background-color: red;
+}
+
+.icon {
+    font-size: 1.2rem;
+    margin-right: 10px;
+    transform: translateY(0.2rem);
 }
