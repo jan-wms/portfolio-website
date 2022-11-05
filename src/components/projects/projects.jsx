@@ -20,7 +20,7 @@ const Projects = () => {
   }, [])
 
   const projectData = useStaticQuery(graphql`
-  query MyQuery {
+  query ProjectQuery {
     allProjectsJson {
       edges {
         node {

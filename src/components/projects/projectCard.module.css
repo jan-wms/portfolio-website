@@ -1,5 +1,5 @@
 .projectCard {
-    width: 1000px;
+    width: 850px;
     height: 500px;
 
     box-shadow: 3px 3px 8px 0px #c3c3c3;
@@ -39,6 +39,7 @@
 .imageSection {
     flex-grow: 1;
     height: 100%;
-    width: 300px;
+    max-width: 400px;
+    background-color: red;
 }
 

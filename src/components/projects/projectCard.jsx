@@ -5,7 +5,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import GithubCard from '../githubCard/githubCard'
 
 
-const ProjectCard = ({ projectInformation, image }) => {
+const ProjectCard = ({ projectInformation, imageD }) => {
   const imageData = useStaticQuery(graphql`
   query {
     file(
@@ -13,7 +13,7 @@ const ProjectCard = ({ projectInformation, image }) => {
       sourceInstanceName: {eq: "static"}
     ) {
       childImageSharp {
-        gatsbyImageData(width: 1000, placeholder: BLURRED)
+        gatsbyImageData(height: 500, placeholder: BLURRED)
       }
     }
   }
@@ -33,10 +33,10 @@ const ProjectCard = ({ projectInformation, image }) => {
         <p className={styles.date}>{getDate(projectInformation.date)}</p>
         <h4>{projectInformation.title}</h4>
         <p className={styles.description}>{projectInformation.description}</p>
-        <GithubCard repoUrl={projectInformation.githubUrl} className={styles.githubCard} />
+        <GithubCard repoUrl={projectInformation.githubUrl} />
       </section>
       <div className={styles.imageSection}>
-        <GatsbyImage image={imageData.file.childImageSharp.gatsbyImageData} alt={projectInformation.title} />
+        <GatsbyImage image={imageData.file.childImageSharp.gatsbyImageData} alt={projectInformation.title} imgStyle={{height: '500px'}}/>
       </div>
     </div>
   )
