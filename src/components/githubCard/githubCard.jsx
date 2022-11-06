@@ -8,12 +8,12 @@ const GithubCard = ({ repoUrl }) => {
     return (
         <div className={styles.githubCard}>
 
-            <h5><GoRepo className={styles.repoIcon} /><a href={repoUrl} target="_blank">Dijkstra2</a></h5>
+            <h5><GoRepo className={styles.repoIcon} /><a href={repoUrl} target="_blank" rel="noreferrer">Dijkstra2</a></h5>
             <p className={styles.description}>Dijkstra App with Core Data</p>
             <div className={styles.topics}>
-                <a href="https://github.com/topics/swift" target="_blank"><p>swift</p></a>
-                <a href="https://github.com/topics/dijkstra-algorithm" target="_blank"><p>dijkstra-algorithm</p></a>
-                <a href="https://github.com/topics/swiftui" target="_blank"><p>swiftui</p></a>
+                <a href="https://github.com/topics/swift" target="_blank" rel="noreferrer"><p>swift</p></a>
+                <a href="https://github.com/topics/dijkstra-algorithm" target="_blank" rel="noreferrer"><p>dijkstra-algorithm</p></a>
+                <a href="https://github.com/topics/swiftui" target="_blank" rel="noreferrer"><p>swiftui</p></a>
             </div>
             <div className={styles.footer}>
                 <span className={styles.footerItem}>

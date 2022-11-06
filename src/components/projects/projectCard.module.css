@@ -1,11 +1,11 @@
 .projectCard {
     width: 850px;
+    height: 500px;
 
     box-shadow: 3px 3px 8px 0px #c3c3c3;
     -webkit-box-shadow: 3px 3px 8px 0px #969696;
 
     display: flex;
-    flex-basis: 2 / 1;
     flex-direction: row;
     justify-content: space-between;
 
@@ -15,6 +15,9 @@
 }
 
 .leftSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 400px;
     padding: 20px 50px 50px 50px;
 }
@@ -27,7 +30,6 @@
 
 .description {
     font-size: 1rem;
-    margin-bottom: 40px;
 }
 
 .date {
@@ -36,10 +38,8 @@
 }
 
 .image-section {
-    flex-grow: 1;
     height: 100%;
-    max-width: 400px;
-    background-color: red;
+    max-width: 350px;
 }
 
 .store-download {
@@ -47,14 +47,11 @@
     flex-direction: row;
     justify-content: center;
     gap: 20px;
-    margin-bottom: 40px;
 }
 
 .link-information, .link-download {
     display: flex;
-    justify-content: center;
     flex-direction: row;
-    margin-bottom: 40px;
 }
 
 .link-information p, .link-download p {

@@ -2,12 +2,12 @@
   "image": "/assets/portfolio-website.png",
   "date": "2022-11-04T10:43:13.250Z",
   "title": "Portfolio-Website",
-  "downloadUrl": "http://janw.bplaced.net/",
-  "downloadUrlText": "janw.bplaced.net",
-  "informationUrl": "http://janw.bplaced.net/",
-  "informationUrlText": "janw.bplaced.net",
-  "appstoreUrl": "http://janw.bplaced.net/",
-  "playstoreUrl": "http://janw.bplaced.net/",
+  "downloadUrl": "",
+  "downloadUrlText": "",
+  "informationUrl": "https://janw.netlify.app/",
+  "informationUrlText": "janw.netlify.app",
+  "appstoreUrl": "",
+  "playstoreUrl": "",
   "githubUrl": "https://github.com/jan2210/portfolio-website",
   "description": "Portfolio-Website erstellt mit Gatsby Js und Netlify CMS."
 }
