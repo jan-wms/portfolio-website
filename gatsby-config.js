@@ -11,6 +11,12 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-transformer-json`,
     {
+      resolve: `gatsby-source-github-api`,
+      options: {
+        token: `.env.${process.env.GITHUB_TOKEN}`,
+      }
+    },
+    {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
