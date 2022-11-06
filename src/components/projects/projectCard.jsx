@@ -22,7 +22,7 @@ const ProjectCard = ({ projectInformation }) => {
 
   function getDate(p) {
     const date = new Date(p);
-    const months = ["Jan.", "Feb.", "März", "Apr.", "Mai", "Jun.", "Jul.", "Aug.", "Sept.", "Okt.", "Nov.", "Dez."];
+    const months = ["Jan.", "Feb.", "März", "April", "Mai", "Juni", "Juli", "Aug.", "Sept.", "Okt.", "Nov.", "Dez."];
     return months[date.getMonth()] + " " + date.getFullYear().toString();
   }
   // ${projectInformation.image.substr(1)}

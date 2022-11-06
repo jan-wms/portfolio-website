@@ -39,20 +39,26 @@ const Projects = () => {
       }
     }
   }
+  
   `);
 
   return (
     <section className={styles.projectSection} style={{ marginTop: windowHeight }}>
       <h2>Projekte</h2>
-      <section className={styles.projectCards}>
-        {
-          projectData.allProjectsJson.edges.map((item, index) => {
-            return (
-              <ProjectCard projectInformation={item.node} key={index} />
-            )
-          })
-        }
-      </section>
+      <div>
+        <div className={styles.timeLine}>
+
+        </div>
+        <section className={styles.projectCards}>
+          {
+            projectData.allProjectsJson.edges.map((item, index) => {
+              return (
+                <ProjectCard projectInformation={item.node} key={index} />
+              )
+            })
+          }
+        </section>
+      </div>
     </section>
   )
 }
