@@ -7,25 +7,37 @@ import { IoMdDownload } from "@react-icons/all-files/io/IoMdDownload"
 import { BiLink } from "@react-icons/all-files/bi/BiLink"
 
 const ProjectCard = ({ projectInformation }) => {
-  const imageData = useStaticQuery(graphql`
-  query {
-    image: file(
-      relativePath: {eq: "assets/dijkstra.png"}
-      sourceInstanceName: {eq: "static"}
-    ) {
-      childImageSharp {
-        gatsbyImageData(height: 500, placeholder: BLURRED)
+
+  const allImageData = useStaticQuery(graphql`
+query ImageQuery {
+  allFile(filter: {sourceInstanceName: {eq: "static"}}) {
+    edges {
+      node {
+        relativePath
+        childImageSharp {
+          gatsbyImageData(height: 500, placeholder: BLURRED)
+        }
       }
     }
   }
+}
 `);
+
+  function getNodeIndex() {
+    var r = 0
+    allImageData.allFile.edges.map((item, index) => {
+      if (item.node.relativePath === projectInformation.image.substr(1)) {
+        r = index;
+      }
+    });
+    return r;
+  }
 
   function getDate(p) {
     const date = new Date(p);
     const months = ["Jan.", "Feb.", "März", "April", "Mai", "Juni", "Juli", "Aug.", "Sept.", "Okt.", "Nov.", "Dez."];
     return months[date.getMonth()] + " " + date.getFullYear().toString();
   }
-  // ${projectInformation.image.substr(1)}
 
   return (
     <div className={styles.projectCard}>
@@ -45,15 +57,15 @@ const ProjectCard = ({ projectInformation }) => {
           <a href={projectInformation.downloadUrl} target="_blank" rel="noreferrer"><p>{projectInformation.downloadUrlText}</p></a>
         </div> : null}
         {projectInformation.appstoreUrl !== "" || projectInformation.playstoreUrl !== "" ?
-        <div className={styles.storeDownload}>
-          {projectInformation.appstoreUrl !== "" ? <a href={projectInformation.appstoreUrl} target="_blank" rel="noreferrer"><StaticImage src='../../../static/assets/appstore.png' alt="Download on the App Store" height={40} /></a> : null}
-          {projectInformation.playstoreUrl !== "" ? <a href={projectInformation.playstoreUrl} target="_blank" rel="noreferrer"><StaticImage src='../../../static/assets/playstore.png' alt="Get it on Google Play" height={40} /></a> : null}
-        </div> : null}
+          <div className={styles.storeDownload}>
+            {projectInformation.appstoreUrl !== "" ? <a href={projectInformation.appstoreUrl} target="_blank" rel="noreferrer"><StaticImage src='../../../static/assets/appstore.png' alt="Download on the App Store" height={40} /></a> : null}
+            {projectInformation.playstoreUrl !== "" ? <a href={projectInformation.playstoreUrl} target="_blank" rel="noreferrer"><StaticImage src='../../../static/assets/playstore.png' alt="Get it on Google Play" height={40} /></a> : null}
+          </div> : null}
         <GithubCard repoUrl={projectInformation.githubUrl} />
       </section>
 
       <div className={styles.imageSection}>
-        <GatsbyImage image={imageData.image.childImageSharp.gatsbyImageData} alt={projectInformation.title} imgStyle={{ height: '500px', borderRadius: '0 20px 20px 0' }} style={{ height: '500px', maxWidth: '350px' }} />
+        <GatsbyImage image={allImageData.allFile.edges[getNodeIndex()].node.childImageSharp.gatsbyImageData} alt={projectInformation.title} imgStyle={{ height: '500px', borderRadius: '0 20px 20px 0' }} style={{ height: '500px', maxWidth: '350px' }} />
       </div>
     </div>
   )
