@@ -4,11 +4,11 @@ import { GoRepo } from "@react-icons/all-files/go/GoRepo"
 import { AiOutlineStar } from "@react-icons/all-files/ai/AiOutlineStar"
 
 
-const GithubCard = ({ repoUrl }) => {
+const GithubCard = ({ repoName }) => {
     return (
         <div className={styles.githubCard}>
 
-            <h5><GoRepo className={styles.repoIcon} /><a href={repoUrl} target="_blank" rel="noreferrer">Dijkstra2</a></h5>
+            <h5><GoRepo className={styles.repoIcon} /><a href={`https://www.github.com/jan2210/${repoName}`} target="_blank" rel="noreferrer">Dijkstra2</a></h5>
             <p className={styles.description}>Dijkstra App with Core Data</p>
             <div className={styles.topics}>
                 <a href="https://github.com/topics/swift" target="_blank" rel="noreferrer"><p>swift</p></a>

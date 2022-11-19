@@ -27,5 +27,5 @@ collections:
       - { name: informationUrlText, label: Information Url Text }
       - { name: appstoreUrl, label: App StoreUrl Url }
       - { name: playstoreUrl, label: Play StoreUrl Url }
-      - { name: githubUrl, label: GitHub Url }
+      - { name: repoName, label: GitHub Repository Name }
       - { name: description, label: Description, widget: markdown }

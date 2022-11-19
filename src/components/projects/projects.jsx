@@ -25,7 +25,7 @@ const Projects = () => {
       edges {
         node {
           date
-          githubUrl
+          repoName
           description
           downloadUrl
           downloadUrlText

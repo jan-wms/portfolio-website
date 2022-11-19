@@ -7,7 +7,7 @@
   "informationUrlText": "",
   "appstoreUrl": "",
   "playstoreUrl": "",
-  "githubUrl": "https://github.com/jan2210/Dijkstra2",
+  "repoName": "Dijkstra2",
   "title": "Navi App",
   "description": "Navigationsapp mit SwiftUI auf Basis des Dijkstra-Algorhythmus."
 }

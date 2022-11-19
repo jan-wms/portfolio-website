@@ -61,7 +61,7 @@ query ImageQuery {
             {projectInformation.appstoreUrl !== "" ? <a href={projectInformation.appstoreUrl} target="_blank" rel="noreferrer"><StaticImage src='../../../static/assets/appstore.png' alt="Download on the App Store" height={40} /></a> : null}
             {projectInformation.playstoreUrl !== "" ? <a href={projectInformation.playstoreUrl} target="_blank" rel="noreferrer"><StaticImage src='../../../static/assets/playstore.png' alt="Get it on Google Play" height={40} /></a> : null}
           </div> : null}
-        <GithubCard repoUrl={projectInformation.githubUrl} />
+        <GithubCard repoName={projectInformation.repoName} />
       </section>
 
       <div className={styles.imageSection}>

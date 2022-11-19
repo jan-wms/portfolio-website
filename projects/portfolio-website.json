@@ -8,6 +8,6 @@
   "informationUrlText": "janw.netlify.app",
   "appstoreUrl": "",
   "playstoreUrl": "",
-  "githubUrl": "https://github.com/jan2210/portfolio-website",
+  "repoName": "portfolio-website",
   "description": "Portfolio-Website erstellt mit Gatsby Js und Netlify CMS."
 }
