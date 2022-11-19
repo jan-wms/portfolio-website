@@ -9,6 +9,7 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-sitemap`,
+    `react-github-btn`,
     `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
@@ -40,6 +41,8 @@ module.exports = {
                       }
                     }
                   }
+                  stargazerCount
+                  updatedAt
                 }
               }
             }

@@ -4,6 +4,13 @@
     border-radius: 3px;
 }
 
+.top-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
 .github-card h5 > a {
     color: rgb(0, 100, 213);
     font-weight: 670;
@@ -52,7 +59,6 @@
     width: 12px;
     margin-right: 5px;
     transform: translateY(2px);
-    background-color: red;
 }
 
 .repo-icon {
