@@ -1,3 +1,7 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
   siteMetadata: {
     title: `portfolio-website`,
@@ -13,7 +17,35 @@ module.exports = {
     {
       resolve: `gatsby-source-github-api`,
       options: {
-        token: `.env.${process.env.GITHUB_TOKEN}`,
+        token: process.env.TOKEN,
+        variables: {},
+        graphQLQuery: `
+        query {
+          user(login: "jan2210") {
+            repositories(first: 100) {
+              edges {
+                node {
+                  description
+                  name
+                  primaryLanguage {
+                    color
+                    name
+                  }
+                  repositoryTopics(first: 10) {
+                    edges {
+                      node {
+                        topic {
+                          name
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        `,
       }
     },
     {

@@ -2,9 +2,14 @@ import React from 'react'
 import * as styles from './githubCard.module.css'
 import { GoRepo } from "@react-icons/all-files/go/GoRepo"
 import { AiOutlineStar } from "@react-icons/all-files/ai/AiOutlineStar"
+import { useStaticQuery, graphql } from "gatsby"
 
 
 const GithubCard = ({ repoName }) => {
+    /*const projectData = useStaticQuery(graphql`
+
+    `);
+*/
     return (
         <div className={styles.githubCard}>
 
