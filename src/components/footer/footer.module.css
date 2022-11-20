@@ -3,7 +3,8 @@
     width: calc(100% - 10vw);
     padding: 100px 5vw 50px 5vw;
     display: grid;
-    grid-template-areas: 'contactSection divider linkSection''bottomSection bottomSection bottomSection';
+    grid-template-areas: 'contactSection divider linkSection'
+                         'bottomSection bottomSection bottomSection';
 }
 
 .footer * {
@@ -12,15 +13,18 @@
 
 .footer form {
     margin: 50px 0 100px;
-}
-
-.footer input, textarea, button {
-    color: rgb(48, 59, 70);
-}
-
-.footer label {
     display: flex;
     flex-direction: column;
+}
+
+.footer button {
+    color: black;
+    width: min-content;
+}
+
+.footer input, textarea {
+    color: rgb(48, 59, 70);
+    width: 500px;
 }
 
 .footer > span {
@@ -37,15 +41,25 @@
 
 .divider {
     width: 2px;
+    margin: 0 5vw 0 5vw;
     background-color: white;
-    height: 300px;
+    height: auto;
     grid-area: divider;
 }
 
 .contactSection {
     grid-area: contactSection;
+    display: flex;
+    flex-direction: column;
+    width: calc(40vw - 2px);
 }
 
 .linkSection {
     grid-area: linkSection;
+    width: calc(40vw - 2px);
+}
+
+.icon {
+    margin-right: 5px;
+    transform: translateY(2px);
 }

@@ -49,7 +49,7 @@ const Header = () => {
 
       <div className={styles.rightSection} style={{ left: `${Math.min(Math.max(50 - (100 * scrollPosition) / windowWidth, 0), 50)}vw`}}>
         <HeaderGraphic />
-        <section>
+        <section className={styles.about}>
           <h3>Software-Entwickler</h3>
           <h3>Alpinist</h3>
           <h3>Test</h3>

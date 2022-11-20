@@ -16,6 +16,12 @@
     position: absolute;
 }
 
+.about {
+    width: 40vw;
+    height: 40vw;
+    border: 2px solid green;
+}
+
 .title {
     width: 50vw;
     height: 100vh;

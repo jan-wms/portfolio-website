@@ -1,4 +1,4 @@
-.projectCard {
+.project-card {
     width: 850px;
     height: 500px;
 
@@ -14,7 +14,7 @@
     position: relative;
 }
 
-.leftSection {
+.left-section {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -22,7 +22,7 @@
     padding: 20px 50px 50px 50px;
 }
 
-.leftSection h4 {
+.left-section h4 {
     margin: 15px 0 20px 0;
     font-weight: 700;
     font-size: 1.4rem;
@@ -40,6 +40,10 @@
 .image-section {
     height: 100%;
     max-width: 350px;
+}
+
+.image-section:hover {
+    cursor: pointer;
 }
 
 .store-download {
