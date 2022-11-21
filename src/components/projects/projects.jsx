@@ -27,10 +27,8 @@ const Projects = () => {
           date
           repoName
           description
-          downloadUrl
-          downloadUrlText
-          informationUrl
-          informationUrlText
+          url
+          urlText
           appstoreUrl
           playstoreUrl
           image

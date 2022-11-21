@@ -21,10 +21,8 @@ collections:
       - { name: date, label: Date, widget: datetime }
       - { name: image, label: Image, widget: image, allow_multiple: false, default: "/uploads/chocolate-dogecoin.jpg", choose_url: false }
       - { name: title, label: Title }
-      - { name: downloadUrl, label: Download Url }
-      - { name: downloadUrlText, label: Download Url Text }
-      - { name: informationUrl, label: Information Url }
-      - { name: informationUrlText, label: Information Url Text }
+      - { name: url, label: Url }
+      - { name: urlText, label: Url Text }
       - { name: appstoreUrl, label: App StoreUrl Url }
       - { name: playstoreUrl, label: Play StoreUrl Url }
       - { name: repoName, label: GitHub Repository Name }

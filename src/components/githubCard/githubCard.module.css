@@ -11,6 +11,12 @@
     flex-wrap: wrap;
 }
 
+.github-card h5 {
+    display: flex;
+    flex-direction: row;
+    transform: translateY(0.2rem);
+}
+
 .github-card h5 > a {
     color: rgb(0, 100, 213);
     font-weight: 670;
@@ -63,8 +69,8 @@
 
 .repo-icon {
     font-size: 1.2rem;
-    margin-right: 10px;
-    transform: translateY(0.2rem);
+    margin-right: 5px;
+    transform: translateY(0.1rem);
 }
 
 .footer {
@@ -85,5 +91,18 @@
 .star-icon {
     font-size: 0.9rem;
     margin-right: 3px;
+}
+
+.repo-visibility {
+    border: 1px solid rgb(209, 215, 221);
+    border-radius: 0.8rem;
+    width: min-content;
+    padding: 1px 5px 1px 5px;
+    color: rgb(105, 117, 128);
+    font-size: 0.7rem;
+    font-weight: 600;
+    margin-left: 5px;
+    height: fit-content;
+    transform: translateY(0.1rem);
 }
 

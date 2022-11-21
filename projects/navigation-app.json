@@ -1,10 +1,8 @@
 {
   "image": "/assets/dijkstra.png",
   "date": "2022-03-31T10:40:16.319Z",
-  "downloadUrl": "",
-  "downloadUrlText": "",
-  "informationUrl": "",
-  "informationUrlText": "",
+  "url": "",
+  "urlText  ": "",
   "appstoreUrl": "",
   "playstoreUrl": "",
   "repoName": "Dijkstra2",

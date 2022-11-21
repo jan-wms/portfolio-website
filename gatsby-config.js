@@ -27,6 +27,8 @@ module.exports = {
               edges {
                 node {
                   description
+                  forkCount
+                  isPrivate
                   name
                   primaryLanguage {
                     color
@@ -42,7 +44,6 @@ module.exports = {
                     }
                   }
                   stargazerCount
-                  updatedAt
                 }
               }
             }

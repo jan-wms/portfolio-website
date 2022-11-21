@@ -4,11 +4,75 @@
     padding: 100px 5vw 50px 5vw;
     display: grid;
     grid-template-areas: 'contactSection divider linkSection'
-                         'bottomSection bottomSection bottomSection';
+        'bottomSection bottomSection bottomSection';
 }
 
 .footer * {
     color: white;
+}
+
+.footer>span {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    grid-area: bottomSection;
+    margin-top: 50px;
+}
+
+.footer>span p {
+    margin: 0 20px 0 20px;
+}
+
+.divider {
+    width: 1px;
+    margin: 30px 5vw 30px 5vw;
+    background-color: rgb(172, 172, 172);
+    height: auto;
+    grid-area: divider;
+}
+
+.link-section {
+    grid-area: linkSection;
+    width: calc(40vw - 2px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+}
+
+.icon {
+    margin-right: 20px;
+    font-size: 2rem;
+    transform: translateY(2px);
+}
+
+.link {
+    margin: 20px 0 20px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: fit-content;
+}
+
+.link * {
+    color: rgb(172, 172, 172);
+}
+
+.link:hover * {
+    color: white;
+}
+
+.link p {
+    margin: 0;
+    transform: translateY(0.15rem);
+}
+
+.contactSection {
+    grid-area: contactSection;
+    display: flex;
+    flex-direction: column;
+    width: calc(40vw - 2px);
 }
 
 .footer form {
@@ -22,44 +86,13 @@
     width: min-content;
 }
 
-.footer input, textarea {
+.footer input,
+textarea {
     color: rgb(48, 59, 70);
-    width: 500px;
-}
-
-.footer > span {
-    display: flex;
     width: 100%;
-    flex-direction: row;
-    justify-content: center;
-    grid-area: bottomSection;
-}
-
-.footer > span p {
-    margin: 0 20px 0 20px;
-}
-
-.divider {
-    width: 2px;
-    margin: 0 5vw 0 5vw;
-    background-color: white;
-    height: auto;
-    grid-area: divider;
-}
-
-.contactSection {
-    grid-area: contactSection;
-    display: flex;
-    flex-direction: column;
-    width: calc(40vw - 2px);
-}
-
-.linkSection {
-    grid-area: linkSection;
-    width: calc(40vw - 2px);
-}
-
-.icon {
-    margin-right: 5px;
-    transform: translateY(2px);
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    font-size: 0.8rem;
 }

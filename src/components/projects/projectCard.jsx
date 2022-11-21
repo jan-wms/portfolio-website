@@ -3,7 +3,6 @@ import * as styles from './projectCard.module.css'
 import { GatsbyImage, StaticImage } from "gatsby-plugin-image"
 import { useStaticQuery, graphql } from "gatsby"
 import GithubCard from '../githubCard/githubCard'
-import { IoMdDownload } from "@react-icons/all-files/io/IoMdDownload"
 import { BiLink } from "@react-icons/all-files/bi/BiLink"
 
 const ProjectCard = ({ projectInformation }) => {
@@ -48,13 +47,9 @@ query ImageQuery {
           <p className={styles.description}>{projectInformation.description}</p>
         </section>
 
-        {projectInformation.informationUrl !== "" && projectInformation.informationUrlText !== "" ? <div className={styles.linkInformation}>
+        {projectInformation.url !== "" && projectInformation.urlText !== "" ? <div className={styles.linkInformation}>
           <BiLink className={styles.icon} />
-          <a href={projectInformation.informationUrl} target="_blank" rel="noreferrer"><p>{projectInformation.informationUrlText}</p></a>
-        </div> : null}
-        {projectInformation.downloadUrl !== "" && projectInformation.downloadUrlText !== "" ? <div className={styles.linkDownload}>
-          <IoMdDownload className={styles.icon} />
-          <a href={projectInformation.downloadUrl} target="_blank" rel="noreferrer"><p>{projectInformation.downloadUrlText}</p></a>
+          <a href={projectInformation.url} target="_blank" rel="noreferrer"><p>{projectInformation.urlText}</p></a>
         </div> : null}
         {projectInformation.appstoreUrl !== "" || projectInformation.playstoreUrl !== "" ?
           <div className={styles.storeDownload}>

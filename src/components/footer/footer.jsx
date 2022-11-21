@@ -2,6 +2,9 @@ import { Link } from 'gatsby'
 import React from 'react'
 import * as styles from './footer.module.css'
 import { VscGithub } from "@react-icons/all-files/vsc/VscGithub"
+import { BiLink } from "@react-icons/all-files/bi/BiLink"
+import { FaGooglePlay } from "@react-icons/all-files/fa/FaGooglePlay"
+
 
 
 const Footer = () => {
@@ -21,12 +24,11 @@ const Footer = () => {
       </section>
       <div className={styles.divider} />
       <section className={styles.linkSection}>
-        <h2>Links</h2>
-        <a href='https://www.github.com/jan2210/' target="_blank" rel="noreferrer"><p><VscGithub className={styles.icon}/>jan2210</p></a>
-        <p>#test</p>
-        <p>#test</p>
+        <a className={styles.link} href='https://www.github.com/jan2210/' target="_blank" rel="noreferrer"><VscGithub className={styles.icon}/><p>Github</p></a>
+        <a className={styles.link} href='http://janw.bplaced.net/' target="_blank" rel="noreferrer"><BiLink className={styles.icon}/><p>janw.bplaced.net</p></a>
+        <a className={styles.link} href='https://play.google.com/store/apps/developer?id=Jan+W.' target="_blank" rel="noreferrer"><FaGooglePlay className={styles.icon}/><p>Google Play</p></a>
       </section>
-      <span><p>©2022 Jan Wermeckes</p><p style={{ display: 'none' }}><Link to="/">Impressum</Link></p></span>
+      <span><p>©2022 Jan Wermeckes</p></span>
     </footer>
   )
 }
