@@ -1,10 +1,12 @@
 .footer {
     background-color: rgb(48, 59, 70);
-    width: calc(100% - 10vw);
-    padding: 100px 5vw 50px 5vw;
+    width: 100%;
+    padding: 100px 0 0 0;
     display: grid;
-    grid-template-areas: 'contactSection divider linkSection'
-        'bottomSection bottomSection bottomSection';
+    grid-template-areas:
+        'linkSection'
+        'contactSection'
+        'bottomSection';
 }
 
 .footer * {
@@ -21,24 +23,25 @@
 }
 
 .footer>span p {
+    color: rgb(227, 227, 227);
     margin: 0 20px 0 20px;
 }
 
 .divider {
     width: 1px;
-    margin: 30px 5vw 30px 5vw;
     background-color: rgb(172, 172, 172);
     height: auto;
     grid-area: divider;
+    margin: 50px 0 50px 0;
 }
 
 .link-section {
     grid-area: linkSection;
-    width: calc(40vw - 2px);
+    width: 70vw;
+    margin: 0 15vw 100px 15vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: auto;
 }
 
 .icon {
@@ -68,31 +71,57 @@
     transform: translateY(0.15rem);
 }
 
-.contactSection {
+.contact-section {
     grid-area: contactSection;
     display: flex;
     flex-direction: column;
-    width: calc(40vw - 2px);
+    width: 70vw;
+    margin: 0 15vw 50px 15vw;
 }
 
 .footer form {
-    margin: 50px 0 100px;
+    margin-top: 30px;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .footer button {
-    color: black;
-    width: min-content;
+    color: white;
+    border: none;
+    background-color: rgb(75, 130, 115);
+    padding: 12px 40px 12px 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
 }
 
 .footer input,
 textarea {
-    color: rgb(48, 59, 70);
-    width: 100%;
+    color: rgb(48, 59, 70) !important;
+    width: calc(100% - 16px);
     margin-bottom: 10px;
-    padding: 5px;
+    padding: 8px;
     border-radius: 5px;
     border: none;
-    font-size: 0.8rem;
+    resize: none;
+}
+
+@media screen and (min-width: 1000px) {
+    .footer {
+        grid-template-areas: 'contactSection divider linkSection'
+            'bottomSection bottomSection bottomSection';
+        padding: 100px 0 50px 0;
+    }
+
+    .contact-section {
+        width: calc(30vw - 2px);
+        margin: 50px 10vw 50px 10vw;
+    }
+
+    .link-section {
+        width: calc(30vw - 2px);
+        margin: 0 10vw 0 10vw;
+        height: auto;
+    }
 }
