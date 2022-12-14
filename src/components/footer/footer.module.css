@@ -1,47 +1,21 @@
 .footer {
     background-color: rgb(48, 59, 70);
     width: 100%;
-    padding: 100px 0 0 0;
-    display: grid;
-    grid-template-areas:
-        'linkSection'
-        'contactSection'
-        'bottomSection';
+    padding: 100px 0 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .footer * {
     color: white;
 }
 
-.footer>span {
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    justify-content: center;
-    grid-area: bottomSection;
-    margin-top: 50px;
-}
-
-.footer>span p {
-    color: rgb(227, 227, 227);
-    margin: 0 20px 0 20px;
-}
-
-.divider {
-    width: 1px;
-    background-color: rgb(172, 172, 172);
-    height: auto;
-    grid-area: divider;
-    margin: 50px 0 50px 0;
-}
-
 .link-section {
-    grid-area: linkSection;
-    width: 70vw;
-    margin: 0 15vw 100px 15vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-top: 80px;
 }
 
 .icon {
@@ -72,11 +46,12 @@
 }
 
 .contact-section {
-    grid-area: contactSection;
     display: flex;
     flex-direction: column;
-    width: 70vw;
-    margin: 0 15vw 50px 15vw;
+    width: min(400px, calc(90vw - 80px));
+    background-color: rgb(75, 130, 115);
+    padding: 40px;
+    border-radius: 10px;
 }
 
 .footer form {
@@ -89,7 +64,7 @@
 .footer button {
     color: white;
     border: none;
-    background-color: rgb(75, 130, 115);
+    background-color: rgb(49, 71, 69);
     padding: 12px 40px 12px 40px;
     border-radius: 5px;
     cursor: pointer;
@@ -107,21 +82,24 @@ textarea {
     resize: none;
 }
 
-@media screen and (min-width: 1000px) {
-    .footer {
-        grid-template-areas: 'contactSection divider linkSection'
-            'bottomSection bottomSection bottomSection';
-        padding: 100px 0 50px 0;
-    }
+.footer input[name="subject"] {
+    margin-top: 20px;
+}
 
-    .contact-section {
-        width: calc(30vw - 2px);
-        margin: 50px 10vw 50px 10vw;
+@media screen and (min-width: 1024px) {
+    .footer {
+        flex-direction: row;
+        justify-content: center;
     }
 
     .link-section {
-        width: calc(30vw - 2px);
-        margin: 0 10vw 0 10vw;
-        height: auto;
+        width: 480px;
+        margin-left: min(calc((100% - 960px) / 6), 100px);
+        margin-top: 0;
     }
+    
+    .contact-section {
+        width: 400px;
+        margin-right: min(calc((100% - 960px) / 6), 100px);
+    }   
 }

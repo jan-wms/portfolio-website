@@ -20,14 +20,12 @@ const Footer = () => {
           <button type="submit">Abschicken</button>
         </form>
       </section>
-      <div className={styles.divider} />
       <section className={styles.linkSection}>
         <a className={styles.link} href='https://www.github.com/jan2210/' target="_blank" rel="noreferrer"><VscGithub className={styles.icon}/><p>Github</p></a>
         <a className={styles.link} href='http://janw.bplaced.net/' target="_blank" rel="noreferrer"><BiLink className={styles.icon}/><p>janw.bplaced.net</p></a>
         <a className={styles.link} href='https://play.google.com/store/apps/developer?id=Jan+W.' target="_blank" rel="noreferrer"><FaGooglePlay className={styles.icon}/><p>Google Play</p></a>
         <a className={styles.link} href='https://janw.netlify.app' target="_blank" rel="noreferrer"><SiAppstore className={styles.icon}/><p>App Store</p></a>
       </section>
-      <span><p>©2022 Jan Wermeckes</p></span>
     </footer>
   )
 }
