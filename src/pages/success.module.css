@@ -9,7 +9,7 @@
 
 .successInformation {
     background-color: white;
-    max-width: 450px;
+    max-width: min(450px, calc(90vw - 60px));
     border-radius: 20px;
     padding: 30px;
     display: grid;
