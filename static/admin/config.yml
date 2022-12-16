@@ -20,10 +20,11 @@ collections:
     fields:
       - { name: date, label: Date, widget: datetime }
       - { name: image, label: Image, widget: image, allow_multiple: false, default: "/uploads/chocolate-dogecoin.jpg", choose_url: false }
+      - { name: 'color', label: 'Color',  widget: 'color' }
       - { name: title, label: Title }
-      - { name: url, label: Url }
-      - { name: urlText, label: Url Text }
-      - { name: appstoreUrl, label: App StoreUrl Url }
-      - { name: playstoreUrl, label: Play StoreUrl Url }
+      - { name: url, label: Url, required: false }
+      - { name: urlText, label: Url Text, required: false }
+      - { name: appstoreUrl, label: App StoreUrl Url, required: false }
+      - { name: playstoreUrl, label: Play StoreUrl Url, required: false }
       - { name: repoName, label: GitHub Repository Name }
       - { name: description, label: Description, widget: markdown }
