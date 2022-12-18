@@ -48,8 +48,8 @@ const HeaderGraphic = () => {
       <IoIosMail />
       <IoMdMusicalNote />
       <BsClock/>
+      <FaPen/>
 
-      {/*<FaPen style={{ left: '6%', top: '59%', height: '4%'}} color='#cfc695'/>*/}
       <FaSquareRootAlt style={{ left: '5.5%', top: '58%', height: '6%'}} color='#92bff9'/>
       <FaVolumeUp style={{ left: '2.8%', top: '56%', height: '5%'}} color='#b49bc9'/>
       <FaMountain style={{ left: '1%', top: '49%', height: '8%'}} color='#bfbfbf'/>
@@ -64,32 +64,31 @@ const HeaderGraphic = () => {
        * Slash
        */}
       <FaGlobeAmericas />
-      <FaFolder />
-      <AiOutlineWifi />
-      <HiOutlineCode />
       <GiMountainClimbing />
-      <FaRunning />
       <BsFillCameraVideoFill />
       <AiOutlineZoomIn />
       <IoPhonePortraitOutline />
-      <IoIosSunny />
-      <IoIosMail />
       <IoMdMusicalNote />
-      <BsClock/>
 
-      <FaPen style={{ left: '50%', top: '59%', height: '4%'}} color='#cfc695'/>
-      <FaSquareRootAlt style={{ left: '50%', top: '58%', height: '6%'}} color='#92bff9'/>
       <FaVolumeUp style={{ left: '50%', top: '56%', height: '5%'}} color='#b49bc9'/>
       <FaMountain style={{ left: '50%', top: '49%', height: '8%'}} color='#bfbfbf'/>
       <MdThumbUp style={{ left: '50%', top: '44%', height: '6%'}} color='#cc8bdd'/>
       <FaArrowRight style={{ left: '50%', top: '38%', height: '6%'}} color='#5b7f5a'/>
       <RiSettings4Fill style={{ left: '50%', top: '48%', height: '8%'}} color='#2aadbf'/>
-      <FaPlane style={{ left: '50%', top: '45%', height: '6%'}} color='#ba970b' />
-      <IoMdPerson style={{ left: '50%', top: '37.5%', height: '8%'}} color='#505ceb'/>
+      <FaPlane style={{ left: '50%', top: '30%', height: '6%'}} color='#ba970b' />
 
-
+      <BsClock style={{ left: '58%', top: '30.6%', height: '5%'}} color='#ba970b'/>
+      <FaFolder style={{ left: '63.5%', top: '29.6%', height: '7%'}} color='#69b3ef'/>
+      <IoMdPerson style={{ left: '59.5%', top: '24.5%', height: '6.5%'}} color='#e07272'/>
+      <FaPen style={{ left: '68.3%', top: '25%', height: '5%'}} color='#6e8e65'/>
+      <AiOutlineWifi style={{ left: '64%', top: '23%', height: '7%'}} color='#75afa6'/>
+      <FaSquareRootAlt style={{ left: '62%', top: '20%', height: '5%'}} color='#9e791c'/>
+      <IoIosMail style={{ left: '67%', top: '17.5%', height: '8%'}} color='#bc8db3'/>
+      <HiOutlineCode style={{ left: '62.5%', top: '13.5%', height: '7.5%'}} color='#bfc9c9'/>
+      <IoIosSunny style={{ left: '69%', top: '12.5%', height: '7%'}} color='#e0d738'/>
+      <FaRunning style={{ left: '64.5%', top: '8.5%', height: '6%'}} color='#6e8e65'/>
       <FaBook style={{ left: '70%', top: '7%', height: '6%'}} color='#2aadbf'/>
-      <FaComments style={{ left: '35%', top: '85%', height: '8%'}} color='#a3b3c1'/>
+      <FaComments style={{ left: '41%', top: '85%', height: '6%'}} color='#a3b3c1'/>
 
       {/**
        * Right arrow
