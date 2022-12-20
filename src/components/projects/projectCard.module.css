@@ -38,7 +38,11 @@
 
 .image-section {
     height: 300px;
-    overflow: hidden;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .store-download {

@@ -14,7 +14,11 @@ query ImageQuery {
       node {
         relativePath
         childImageSharp {
-          gatsbyImageData(height: 500, placeholder: BLURRED)
+          gatsbyImageData(placeholder: BLURRED)
+          original {
+            height
+            width
+          }
         }
       }
     }
@@ -59,8 +63,8 @@ query ImageQuery {
         <GithubCard repoName={projectInformation.repoName}/>
       </section>
 
-      <div className={styles.imageSection}>
-        <GatsbyImage image={allImageData.allFile.edges[getNodeIndex()].node.childImageSharp.gatsbyImageData} alt={projectInformation.title} imgStyle={{ height: '500px', borderRadius: '0 20px 20px 0' }} style={{ height: '500px', maxWidth: '350px' }} />
+      <div className={styles.imageSection} style={{backgroundColor: projectInformation.color}}>
+        <GatsbyImage image={allImageData.allFile.edges[getNodeIndex()].node.childImageSharp.gatsbyImageData} alt={projectInformation.title} style={{maxHeight: '300px', aspectRatio: `${allImageData.allFile.edges[getNodeIndex()].node.childImageSharp.original.width}/${allImageData.allFile.edges[getNodeIndex()].node.childImageSharp.original.height}`}} />
       </div>
     </div>
   )

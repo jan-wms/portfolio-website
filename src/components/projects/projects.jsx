@@ -25,6 +25,7 @@ const Projects = () => {
       edges {
         node {
           date
+          color
           repoName
           description
           url
