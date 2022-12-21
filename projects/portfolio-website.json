@@ -4,7 +4,7 @@
   "description": "Portfolio-Website erstellt mit Gatsby Js und Netlify CMS.",
   "imageSection": {
     "image": "/assets/portfolio-website.png",
-    "color": "#01d9f5",
+    "color": "#000000",
     "isFullscreen": false
   },
   "linkSection": {
