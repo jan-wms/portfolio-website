@@ -1,12 +1,13 @@
 {
-  "image": "/assets/dijkstra.png",
-  "color": "#6ac4a2",
-  "date": "2022-03-31T10:40:16.319Z",
-  "url": "",
-  "urlText  ": "",
-  "appstoreUrl": "",
-  "playstoreUrl": "",
-  "repoName": "Dijkstra2",
+  "date": "2022-03-31T13:20:38.507Z",
   "title": "Navi App",
-  "description": "Navigationsapp mit SwiftUI auf Basis des Dijkstra-Algorhythmus."
+  "description": "Navigationsapp mit SwiftUI auf Basis des Dijkstra-Algorhythmus.",
+  "imageSection": {
+    "image": "/assets/dijkstra.png",
+    "color": "#6ac4a2",
+    "isFullscreen": false
+  },
+  "linkSection": {
+    "repoName": "Dijkstra2"
+  }
 }

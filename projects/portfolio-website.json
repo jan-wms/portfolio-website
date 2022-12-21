@@ -1,12 +1,15 @@
 {
-  "image": "/assets/portfolio-website.png",
-  "color": "#01d9f5",
   "date": "2022-11-04T10:43:13.250Z",
   "title": "Portfolio-Website",
-  "url": "https://janw.netlify.app/",
-  "urlText": "janw.netlify.app",
-  "appstoreUrl": "",
-  "playstoreUrl": "",
-  "repoName": "portfolio-website",
-  "description": "Portfolio-Website erstellt mit Gatsby Js und Netlify CMS."
+  "description": "Portfolio-Website erstellt mit Gatsby Js und Netlify CMS.",
+  "imageSection": {
+    "image": "/assets/portfolio-website.png",
+    "color": "#01d9f5",
+    "isFullscreen": false
+  },
+  "linkSection": {
+    "repoName": "portfolio-website",
+    "url": "https://janw.netlify.app/",
+    "urlText": "janw.netlify.app"
+  }
 }

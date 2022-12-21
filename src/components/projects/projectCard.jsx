@@ -1,4 +1,5 @@
 import React from 'react'
+import { useEffect, useState } from 'react'
 import * as styles from './projectCard.module.css'
 import { GatsbyImage, StaticImage } from "gatsby-plugin-image"
 import { useStaticQuery, graphql } from "gatsby"
@@ -26,10 +27,24 @@ query ImageQuery {
 }
 `);
 
+const [windowWidth, detectWW] = useState(typeof window !== "undefined"? window.innerWidth : 500);
+
+  useEffect(() => {
+    const detectSize = () => {
+      detectWW(typeof window !== "undefined"? window.innerWidth : 500);
+    }
+
+    window.addEventListener('resize', detectSize)
+
+    return () => {
+      window.removeEventListener('resize', detectSize)
+    }
+  }, []);
+
   function getNodeIndex() {
     var r = 0
     allImageData.allFile.edges.map((item, index) => {
-      if (item.node.relativePath === projectInformation.image.substr(1)) {
+      if (item.node.relativePath === projectInformation.imageSection.image.substr(1)) {
         r = index;
       }
     });
@@ -50,21 +65,20 @@ query ImageQuery {
           <h4>{projectInformation.title}</h4>
           <p className={styles.description}>{projectInformation.description}</p>
         </section>
-
-        {projectInformation.url !== "" && projectInformation.urlText !== "" ? <div className={styles.linkInformation}>
+        {projectInformation.linkSection.url !== null && projectInformation.linkSection.urlText !== null ? <div className={styles.linkInformation}>
           <BiLink className={styles.icon} />
-          <a href={projectInformation.url} target="_blank" rel="noreferrer"><p>{projectInformation.urlText}</p></a>
+          <a href={projectInformation.linkSection.url} target="_blank" rel="noreferrer"><p>{projectInformation.linkSection.urlText}</p></a>
         </div> : null}
-        {projectInformation.appstoreUrl !== "" || projectInformation.playstoreUrl !== "" ?
+        {projectInformation.linkSection.appstoreUrl !== null || projectInformation.linkSection.playstoreUrl !== null ?
           <div className={styles.storeDownload}>
-            {projectInformation.appstoreUrl !== "" ? <a href={projectInformation.appstoreUrl} target="_blank" rel="noreferrer"><StaticImage src='../../../static/assets/appstore.png' alt="Download on the App Store" height={40} /></a> : null}
-            {projectInformation.playstoreUrl !== "" ? <a href={projectInformation.playstoreUrl} target="_blank" rel="noreferrer"><StaticImage src='../../../static/assets/playstore.png' alt="Get it on Google Play" height={40} /></a> : null}
+            {projectInformation.linkSection.appstoreUrl !== null ? <a href={projectInformation.linkSection.appstoreUrl} target="_blank" rel="noreferrer"><StaticImage src='../../../static/assets/appstore.png' alt="Download on the App Store" height={40} /></a> : null}
+            {projectInformation.linkSection.playstoreUrl !== null ? <a href={projectInformation.linkSection.playstoreUrl} target="_blank" rel="noreferrer"><StaticImage src='../../../static/assets/playstore.png' alt="Get it on Google Play" height={40} /></a> : null}
           </div> : null}
-        <GithubCard repoName={projectInformation.repoName}/>
+        <GithubCard repoName={projectInformation.linkSection.repoName}/>
       </section>
 
-      <div className={styles.imageSection} style={{backgroundColor: projectInformation.color}}>
-        <GatsbyImage image={allImageData.allFile.edges[getNodeIndex()].node.childImageSharp.gatsbyImageData} alt={projectInformation.title} style={{maxHeight: '300px', aspectRatio: `${allImageData.allFile.edges[getNodeIndex()].node.childImageSharp.original.width}/${allImageData.allFile.edges[getNodeIndex()].node.childImageSharp.original.height}`}} />
+      <div className={styles.imageSection} style={{backgroundColor: projectInformation.imageSection.color}}>
+        <GatsbyImage image={allImageData.allFile.edges[getNodeIndex()].node.childImageSharp.gatsbyImageData} alt={projectInformation.title} class={styles.imageClass} style={{maxHeight: windowWidth < 900 ? '300px' : '450px', maxWidth: '350px', aspectRatio: `${allImageData.allFile.edges[getNodeIndex()].node.childImageSharp.original.width}/${allImageData.allFile.edges[getNodeIndex()].node.childImageSharp.original.height}`}} />
       </div>
     </div>
   )

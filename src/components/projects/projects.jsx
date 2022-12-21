@@ -25,15 +25,20 @@ const Projects = () => {
       edges {
         node {
           date
-          color
-          repoName
-          description
-          url
-          urlText
-          appstoreUrl
-          playstoreUrl
-          image
           title
+          description
+          imageSection {
+            image
+            color
+            isFullscreen
+          }
+          linkSection {
+            repoName
+            url
+            urlText
+            appstoreUrl
+            playstoreUrl
+          }
         }
       }
     }

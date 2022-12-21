@@ -92,7 +92,8 @@
    
     .image-section {
         height: 100%;
-        max-width: 350px;
+        width: 350px;
+        padding: 0;
     }
 
     .store-download, .link-information {
