@@ -78,7 +78,7 @@ const [windowWidth, detectWW] = useState(typeof window !== "undefined"? window.i
       </section>
 
       <div className={styles.imageSection} style={{backgroundColor: projectInformation.imageSection.color}}>
-        <GatsbyImage image={allImageData.allFile.edges[getNodeIndex()].node.childImageSharp.gatsbyImageData} alt={projectInformation.title} class={styles.imageClass} style={{maxHeight: windowWidth < 900 ? '300px' : '450px', maxWidth: '350px', aspectRatio: `${allImageData.allFile.edges[getNodeIndex()].node.childImageSharp.original.width}/${allImageData.allFile.edges[getNodeIndex()].node.childImageSharp.original.height}`}} />
+        <GatsbyImage image={allImageData.allFile.edges[getNodeIndex()].node.childImageSharp.gatsbyImageData} alt={projectInformation.title} class={styles.imageClass} style={{maxHeight: windowWidth < 900 ? '300px' : '450px', maxWidth: '300px', aspectRatio: `${allImageData.allFile.edges[getNodeIndex()].node.childImageSharp.original.width}/${allImageData.allFile.edges[getNodeIndex()].node.childImageSharp.original.height}`}} />
       </div>
     </div>
   )
