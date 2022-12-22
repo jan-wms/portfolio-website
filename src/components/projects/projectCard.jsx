@@ -5,6 +5,8 @@ import { GatsbyImage, StaticImage } from "gatsby-plugin-image"
 import { useStaticQuery, graphql } from "gatsby"
 import GithubCard from '../githubCard/githubCard'
 import { BiLink } from "@react-icons/all-files/bi/BiLink"
+import { motion } from "framer-motion";
+
 
 const ProjectCard = ({ projectInformation }) => {
 
@@ -58,7 +60,16 @@ const [windowWidth, detectWW] = useState(typeof window !== "undefined"? window.i
   }
 
   return (
-    <div className={styles.projectCard}>
+    <motion.div className={styles.projectCard}
+    
+    initial={{ transform: 'translateY(100px)', opacity: 0.8, scale: 0.8 }}
+    whileInView={{ transform: 'translateY(0px)', opacity: 1, scale: 1  }}
+    viewport={{ once: false, margin: "300px 0px 0px 0px" }}
+    transition={{
+      type: "spring",
+      duration: 0.8,
+      bounce: 0.1,
+    }}>
       <section className={styles.leftSection}>
         <section>
           <p className={styles.date}>{getDate(projectInformation.date)}</p>
@@ -80,7 +91,7 @@ const [windowWidth, detectWW] = useState(typeof window !== "undefined"? window.i
       <div className={styles.imageSection} style={{backgroundColor: projectInformation.imageSection.color}}>
         <GatsbyImage image={allImageData.allFile.edges[getNodeIndex()].node.childImageSharp.gatsbyImageData} alt={projectInformation.title} style={{height: projectInformation.imageSection.isFullscreen ? '100%' : 'auto', maxHeight: projectInformation.imageSection.isFullscreen ? '100%' : (windowWidth < 900 ? '300px' : '450px'), maxWidth: projectInformation.imageSection.isFullscreen ? '100%' : (windowWidth < 900 ? '90%' : '300px'), aspectRatio: `${allImageData.allFile.edges[getNodeIndex()].node.childImageSharp.original.width}/${allImageData.allFile.edges[getNodeIndex()].node.childImageSharp.original.height}`}} />
       </div>
-    </div>
+    </motion.div>
   )
 }
 

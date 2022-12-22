@@ -5,14 +5,13 @@
 }
 
 .title {
-    margin-left: 5%;
+    text-align: center;
 }
 
 .projectCards {
     margin-top: 100px;
-    margin-right: 5%;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
     gap: 50px;
 }
