@@ -61,10 +61,10 @@ const [windowWidth, detectWW] = useState(typeof window !== "undefined"? window.i
 
   return (
     <motion.div className={styles.projectCard}
-    
-    initial={{ transform: 'translateY(100px)', opacity: 0.8, scale: 0.8 }}
-    whileInView={{ transform: 'translateY(0px)', opacity: 1, scale: 1  }}
-    viewport={{ once: false, margin: "300px 0px 0px 0px" }}
+
+    initial={{ scale: 0.5}}
+    whileInView={{ scale: 1  }}
+    viewport={{ once: false, margin: "3000px 0px 0px 0px" }}
     transition={{
       type: "spring",
       duration: 0.8,

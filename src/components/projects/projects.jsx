@@ -48,7 +48,19 @@ const Projects = () => {
   return (
     <section className={styles.projectSection} style={{ marginTop: windowHeight }}>
       <h2 className={styles.title}>Projekte</h2>
-      <div>
+      <div className={styles.content}>
+        <div className={styles.timeline}>
+          {
+            projectData.allProjectsJson.edges.map((item, index) => {
+              return (
+                <>
+                  <div className={styles.line} />
+                  <div className={styles.circle} />
+                </>
+              )
+            })
+          }
+        </div>
         <section className={styles.projectCards}>
           {
             projectData.allProjectsJson.edges.map((item, index) => {

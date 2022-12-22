@@ -8,6 +8,33 @@
     text-align: center;
 }
 
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.timeline {
+    margin: -500px 50px 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle {
+    height: 50px;
+    width: 50px;
+    background-color: rgb(48, 59, 70);
+    border-radius: 50%;
+}
+
+.line {
+    width: 2px;
+    height: 500px;
+    background-color: rgb(48, 59, 70);
+}
+
 .projectCards {
     margin-top: 100px;
     display: flex;
