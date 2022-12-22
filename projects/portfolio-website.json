@@ -5,7 +5,7 @@
   "imageSection": {
     "image": "/assets/portfolio-website.png",
     "color": "#000000",
-    "isFullscreen": false
+    "isFullscreen": true
   },
   "linkSection": {
     "repoName": "portfolio-website",

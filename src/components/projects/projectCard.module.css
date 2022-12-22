@@ -37,9 +37,9 @@
 }
 
 .image-section {
-    height: 300px;
-    padding: 10px;
+    height: 320px;
     display: flex;
+    width: 100%;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -80,6 +80,7 @@
         width: 850px;
         height: 500px;
     
+        
         flex-direction: row;
         justify-content: space-between;
     }
@@ -93,7 +94,6 @@
     .image-section {
         height: 100%;
         width: 350px;
-        padding: 0;
     }
 
     .store-download, .link-information {

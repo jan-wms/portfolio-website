@@ -2,14 +2,17 @@
     width: 100%;
     background-color: white;
     padding: 100px 0 100px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+}
+
+.title {
+    margin-left: 5%;
 }
 
 .projectCards {
     margin-top: 100px;
-    display: grid;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
     gap: 50px;
-    grid-template-columns: repeat(auto-fit, 1fr);
 }
