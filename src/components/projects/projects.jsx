@@ -55,7 +55,9 @@ const Projects = () => {
               return (
                 <>
                   <div className={styles.line} />
-                  <div className={styles.circle} />
+                  <div className={styles.circle}>
+                    <div/>
+                  </div>
                 </>
               )
             })
