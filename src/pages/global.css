@@ -1,5 +1,4 @@
 * {
-    color:rgb(48, 59, 70);
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 1.1rem;
@@ -12,6 +11,10 @@ html {
 
 a {
     text-decoration: none;
+}
+
+h1, h2, h4, h5, h6, p {
+    color:rgb(48, 59, 70);
 }
 
 h1 {
@@ -30,13 +33,4 @@ h3 {
     color: white;
     font-size: 2.8rem;
     margin: 1.5rem;
-}
-
-ul {
-    margin: 0;
-    padding: 0;
-}
-
-li {
-    list-style: none;
 }

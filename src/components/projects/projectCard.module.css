@@ -1,3 +1,10 @@
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 75px;
+}
+
 .project-card {
     box-shadow: 3px 3px 8px 0px #c3c3c3;
     -webkit-box-shadow: 3px 3px 8px 0px #969696;
@@ -7,8 +14,8 @@
     justify-content: space-between;
 
     border-radius: 20px;
-    overflow: hidden;
     position: relative;
+    overflow: hidden;
 
     width: min(90vw, 500px);
 }
@@ -73,6 +80,23 @@
 .icon {
     font-size: 1.4rem;
     margin-right: 10px;
+}
+
+.circle {
+    height: 40px;
+    width: 40px;
+    background-color: rgb(48, 59, 70);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle > div {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    border: 1.3px solid white;
 }
 
 @media screen and (min-width: 900px) {
