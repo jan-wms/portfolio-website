@@ -83,44 +83,51 @@
 }
 
 .circle {
-    height: 40px;
-    width: 40px;
-    background-color: rgb(48, 59, 70);
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.circle > div {
-    height: 25px;
-    width: 25px;
-    border-radius: 50%;
-    border: 1.3px solid white;
+    display: none;
 }
 
 @media screen and (min-width: 900px) {
     .project-card {
         width: 850px;
         height: 500px;
-    
-        
+
+
         flex-direction: row;
         justify-content: space-between;
     }
-    
+
     .left-section {
         justify-content: space-between;
         width: 400px;
         padding: 20px 50px 50px 50px;
     }
-   
+
     .image-section {
         height: 100%;
         width: 350px;
     }
 
-    .store-download, .link-information {
+    .store-download,
+    .link-information {
         margin-top: 0;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .circle {
+        display: flex;
+        height: 40px;
+        width: 40px;
+        background-color: rgb(48, 59, 70);
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .circle>div {
+        height: 25px;
+        width: 25px;
+        border-radius: 50%;
+        border: 1.3px solid white;
     }
 }
