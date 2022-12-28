@@ -90,10 +90,10 @@ query ImageQuery {
               {projectInformation.linkSection.appstoreUrl !== null ? <a href={projectInformation.linkSection.appstoreUrl} target="_blank" rel="noreferrer"><StaticImage src='../../../static/assets/appstore.png' alt="Download on the App Store" height={40} /></a> : null}
               {projectInformation.linkSection.playstoreUrl !== null ? <a href={projectInformation.linkSection.playstoreUrl} target="_blank" rel="noreferrer"><StaticImage src='../../../static/assets/playstore.png' alt="Get it on Google Play" height={40} /></a> : null}
             </div> : null}
-          <GithubCard repoName={projectInformation.linkSection.repoName} />
+          <GithubCard repoName={projectInformation.linkSection.repoName}/>
         </section>
 
-        <div className={styles.imageSection} style={{ backgroundColor: projectInformation.imageSection.color }}>
+        <div className={styles.imageSection} style={{ backgroundColor: projectInformation.imageSection.color, padding: projectInformation.imageSection.isFullscreen ? '0' : '10px 0px 10px 0px' }}>
           <GatsbyImage image={allImageData.allFile.edges[getNodeIndex()].node.childImageSharp.gatsbyImageData} alt={projectInformation.title} style={{ height: projectInformation.imageSection.isFullscreen ? '100%' : 'auto', maxHeight: projectInformation.imageSection.isFullscreen ? '100%' : (windowWidth < 900 ? '300px' : '450px'), maxWidth: projectInformation.imageSection.isFullscreen ? '100%' : (windowWidth < 900 ? '90%' : '300px'), aspectRatio: `${allImageData.allFile.edges[getNodeIndex()].node.childImageSharp.original.width}/${allImageData.allFile.edges[getNodeIndex()].node.childImageSharp.original.height}` }} />
         </div>
       </motion.div>

@@ -11,10 +11,12 @@
 .timeline {
     position: absolute;
     width: 3px;
-    height: 50%;
+    height: 500px;
     background-color: rgb(48, 59, 70);
-    left: calc(50% - 465px);
+    left: calc(50% - 464px);
+    top: 0;
     z-index: 1;
+    position: fixed;
 }
 
 .projectCards {

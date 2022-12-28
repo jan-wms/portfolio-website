@@ -8,7 +8,7 @@ import Projects from "../components/projects/projects"
 const IndexPage = () => {
   return (
     <main>
-      <Header />
+      {/*<Header />*/}
       <Projects />
       <Footer />
     </main>
