@@ -5,7 +5,6 @@ import { TypeAnimation } from 'react-type-animation'
 import { useEffect, useState } from 'react'
 
 
-
 const Header = () => {
 
   const [windowWidth, detectWW] = useState(typeof window !== "undefined"? window.innerWidth : 500);
