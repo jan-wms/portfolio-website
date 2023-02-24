@@ -1,12 +1,8 @@
 * {
-    font-family: 'Nunito', 'Montserrat', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-weight: 400;
     font-size: 1.1rem;
     margin: 0;
-}
-
-html {
-    overflow-x: hidden;
 }
 
 a {
@@ -15,13 +11,6 @@ a {
 
 h1, h2, h4, h5, h6, p {
     color:rgb(48, 59, 70);
-}
-
-h1 {
-    font-size: 3rem;
-    font-weight: 600;
-    margin: 0;
-    padding: 0;
 }
 
 h2 {
