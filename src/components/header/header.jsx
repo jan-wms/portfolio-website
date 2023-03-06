@@ -6,7 +6,7 @@ const Header = () => {
     <header className={styles.header}>
       <div className={styles.title}>
           <h1>Jan Wermeckes</h1>
-          <h2>software developer</h2>
+          <h2>Software-Entwickler</h2>
       </div>
     </header>
   )
