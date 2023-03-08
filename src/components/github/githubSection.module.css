@@ -1,3 +1,17 @@
+.githubSection {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.title {
+    width: 50%;
+}
+
 .title h2 {
     font-size: 15rem;
+}
+
+.cards {
+    width: 50%;
 }

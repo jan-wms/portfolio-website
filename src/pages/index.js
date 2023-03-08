@@ -5,11 +5,13 @@ import Footer from "../components/footer/footer"
 import Projects from "../components/projects/projects"
 import About from "../components/about/about"
 import GithubSection from "../components/github/githubSection"
+import NavBar from "../components/navBar/navBar"
 
 
 const IndexPage = () => {
   return (
     <main>
+      <NavBar />
       <Header />
       <About />
       <Projects />

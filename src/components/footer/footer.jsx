@@ -9,7 +9,7 @@ import { motion } from "framer-motion";
 
 const Footer = () => {
   return (
-    <footer className={styles.footer}>
+    <footer className={styles.footer} id='footer'>
       <section className={styles.content}>
         <section className={styles.contactSection}>
           <h2>Kontakt</h2>

@@ -60,12 +60,7 @@ query ImageQuery {
   }
 
   return (
-    <div className={styles.wrapper}
 
-      >
-      <div className={styles.circle}>
-        <div />
-      </div>
       <motion.div className={styles.projectCard}
       initial={{ scale: 0.5 }}
       whileInView={{ scale: 1 }}
@@ -97,7 +92,6 @@ query ImageQuery {
           <GatsbyImage image={allImageData.allFile.edges[getNodeIndex()].node.childImageSharp.gatsbyImageData} alt={projectInformation.title} style={{ height: projectInformation.imageSection.isFullscreen ? '100%' : 'auto', maxHeight: projectInformation.imageSection.isFullscreen ? '100%' : (windowWidth < 900 ? '300px' : '450px'), maxWidth: projectInformation.imageSection.isFullscreen ? '100%' : (windowWidth < 900 ? '90%' : '300px'), aspectRatio: `${allImageData.allFile.edges[getNodeIndex()].node.childImageSharp.original.width}/${allImageData.allFile.edges[getNodeIndex()].node.childImageSharp.original.height}` }} />
         </div>
       </motion.div>
-    </div>
   )
 }
 
