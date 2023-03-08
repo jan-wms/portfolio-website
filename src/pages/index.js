@@ -4,6 +4,7 @@ import "./global.css"
 import Footer from "../components/footer/footer"
 import Projects from "../components/projects/projects"
 import About from "../components/about/about"
+import GithubSection from "../components/github/githubSection"
 
 
 const IndexPage = () => {
@@ -12,6 +13,7 @@ const IndexPage = () => {
       <Header />
       <About />
       <Projects />
+      <GithubSection />
       <Footer />
     </main>
   )

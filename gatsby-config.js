@@ -5,7 +5,7 @@ require("dotenv").config({
 module.exports = {
   siteMetadata: {
     title: `portfolio-website`,
-    siteUrl: `https://janw.netlify.app`,
+    siteUrl: `https://wermeckes.com`,
   },
   plugins: [
     `gatsby-plugin-sitemap`,
@@ -64,7 +64,14 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `projects`,
-        path: `${__dirname}/projects/`,
+        path: `${__dirname}/static/projects/`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `githubRepos`,
+        path: `${__dirname}/static/githubRepos/`,
       },
     },
     {

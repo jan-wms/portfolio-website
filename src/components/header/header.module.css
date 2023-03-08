@@ -23,6 +23,11 @@
     line-height: 1.1;
 }
 
+.title h2 {
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+
 .title h1, .title h2 {
     color: rgb(51, 51, 51);
 }

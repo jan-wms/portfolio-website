@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react'
 import * as styles from './projectCard.module.css'
 import { GatsbyImage, StaticImage } from "gatsby-plugin-image"
 import { useStaticQuery, graphql } from "gatsby"
-import GithubCard from '../githubCard/githubCard'
+import GithubCard from '../github/githubCard/githubCard'
 import { BiLink } from "@react-icons/all-files/bi/BiLink"
 import { motion } from "framer-motion";
 
