@@ -13,7 +13,7 @@ collections:
     label: Projects
     label_singular: Project
     description: This collection includes all projects shown in the project section.
-    folder: projects
+    folder: static/projects
     format: json
     extension: json
     create: true
@@ -43,5 +43,14 @@ collections:
           - { name: appstoreUrl, label: App StoreUrl Url, required: false }
           - { name: playstoreUrl, label: Play StoreUrl Url, required: false }
 
-
-     
+  - name: github
+    label: Github repositories
+    label_singular: Github repository
+    description: This collection includes all github links shown in the github section.
+    folder: static/github
+    format: json
+    extension: json
+    create: true
+    fields:
+      - { name: title, label: Title (internal) }
+      - { name: repoName, label: GitHub Repository Name }
