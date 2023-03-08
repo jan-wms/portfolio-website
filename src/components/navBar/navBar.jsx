@@ -4,7 +4,10 @@ import { AnchorLink } from "gatsby-plugin-anchor-links";
 import { HiMenu } from "@react-icons/all-files/hi/HiMenu"
 import { HiX } from "@react-icons/all-files/hi/HiX"
 
+
+
 const NavBar = () => {
+    
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const openMenu = () => {
         setIsMenuOpen(true);
