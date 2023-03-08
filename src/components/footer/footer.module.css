@@ -7,6 +7,10 @@
     color: white;
 }
 
+.footer h2 {
+    font-size: 2rem;
+}
+
 .content {
     width: 100%;
     padding: 100px 0 100px 0;
