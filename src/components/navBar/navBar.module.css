@@ -39,7 +39,7 @@ a {
     width: fit-content;
 }
 
-.normal-li >::after {
+.normal-li>::after {
     content: "";
     position: absolute;
     width: 100%;
@@ -63,7 +63,6 @@ a {
     padding: 5px 15px;
     transform: scale(1);
     transition: transform 0.4s;
-
 }
 
 .button-li:hover {
@@ -84,70 +83,25 @@ a {
     margin: 25px;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 8000px) {
     .wrapper {
         align-items: end;
-        justify-content: end;
     }
-    
+
     .nav-bar-list {
+        width: fit-content;
         margin-top: 15px;
         margin-right: 10px;
         display: inline;
         height: min-content;
     }
-    
-    a {
-        color: inherit;
-    }
-    
-    .nav-bar-list ul {
-        list-style: none;
-    }
-    
+
     .nav-bar-list li {
-        cursor: pointer;
         margin-right: 20px;
+        margin-bottom: 0;
         display: inline-block;
-        position: relative;
-        color: rgb(51, 51, 51);
     }
-    
-    .normal-li >::after {
-        content: "";
-        position: absolute;
-        width: 100%;
-        transform: scaleX(0);
-        height: 2px;
-        bottom: 0;
-        left: 0;
-        background-color: rgba(0, 0, 0, 0.8);
-        transform-origin: bottom right;
-        transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
-    }
-    
-    .normal-li :hover::after {
-        transform: scaleX(1);
-        transform-origin: bottom left;
-    }
-    
-    .button-li {
-        border: 2px solid rgb(51, 51, 51);
-        border-radius: 10px;
-        padding: 5px 15px;
-        transform: scale(1);
-        transition: transform 0.4s;
-    
-    }
-    
-    .button-li:hover {
-        background-color: rgb(51, 51, 51);
-        color: white;
-        position: relative;
-        transform: scale(1.05);
-        transition: transform 0.4s;
-    }
-    
+
     .icon {
         display: none;
     }
