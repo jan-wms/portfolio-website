@@ -58,6 +58,7 @@ module.exports = {
       options: {
         fonts: [
           `nunito\:200,300,400,600,700,900`,
+          `fredoka one\:400`,
         ],
       }
     },
