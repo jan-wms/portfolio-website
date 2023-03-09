@@ -7,31 +7,6 @@
     padding-top: calc(10vw + 50px);
 }
 
-
-.about:before,
-.about:after {
-    width: 12vw;
-    height: 8vw;
-    content: "";
-    display: block;
-    position: absolute;
-
-    -webkit-clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
-    clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
-}
-
-.about:before {
-    top: 0px;
-    left: 10vw;
-    background-color: white;
-}
-
-.about::after {
-    bottom: -8vw;
-    right: 10vw;
-    background-color: rgb(84, 158, 138);
-}
-
 .content {
     display: flex;
     flex-direction: row;
