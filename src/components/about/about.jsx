@@ -10,8 +10,9 @@ import {
 const About = () => {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({ target: ref, offset: ['0 1', '1 0'] });
-  const x = useTransform(scrollYProgress, [0, 1], [-300, -1000]);
-  const o = useTransform(scrollYProgress, [0, 1], [1, 0]);
+  const x = useTransform(scrollYProgress, [0, 1], [-300, -1200]);
+  const o1 = useTransform(scrollYProgress, [0, 0.33, 0.45,0.55, 0.66, 1], [0, 0, 1, 1,0, 0]);
+  const o2 = useTransform(scrollYProgress, [0, 0.33, 0.45,0.55, 0.66, 1], [0, 0, 0.3,0.3, 0, 0]);
 
   return (
     <section className={styles.about} id='about' ref={ref}>
@@ -19,9 +20,11 @@ const About = () => {
         <StaticImage src='../../../static/assets/mountain.jpeg' alt='Mountain' title='Mountain' class={styles.image} />
         <div className={styles.content}>
           <StaticImage src='../../../static/assets/mountain.jpeg' alt='Mountain' title='Mountain' class={styles.image} />
-          <h2>Ich bin Jan, 19 Jahre alt, und begeisterter Programmierer und Bergsteiger.</h2>
+          <motion.div className={styles.blurred} style={{ opacity: o2 }} />
+          <motion.h2 style={{ opacity: o1 }}>Ich bin Jan, 19 Jahre alt.<br />
+            Begeisterter Programmierer und Bergsteiger aus Deutschland.</motion.h2>
         </div>
-        <StaticImage src='../../../static/assets/mountain.jpeg' alt='Mountain' title='Mountain' class={styles.image} />
+        <StaticImage src='../../../static/assets/watzmann-hochkalter.jpeg' alt='Mountain' title='Mountain' class={styles.image} />
       </motion.div>
     </section>
   )
