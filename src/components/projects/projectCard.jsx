@@ -62,15 +62,15 @@ query ImageQuery {
   return (
 
     <a href={projectInformation.linkSection.url} target="_blank" rel="noreferrer">
-    <motion.div className={styles.projectCard}
-      initial={{ scale: 0.5 }}
-      whileInView={{ scale: 1 }}
-      viewport={{ once: false, margin: "3000px 0px 0px 0px" }}
-      transition={{
-        type: "spring",
-        duration: 0.8,
-        bounce: 0.1,
-      }}>
+      <motion.div className={styles.projectCard}
+        initial={{ scale: 0.5 }}
+        whileInView={{ scale: 1 }}
+        viewport={{ once: false, margin: "3000px 0px 0px 0px" }}
+        transition={{
+          type: "spring",
+          duration: 0.8,
+          bounce: 0.1,
+        }}>
         <section className={styles.leftSection}>
           <section>
             <p className={styles.date}>{getDate(projectInformation.date)}</p>

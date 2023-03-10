@@ -3,6 +3,8 @@ import { graphql } from 'gatsby'
 import GithubCard from './githubCard/githubCard';
 import * as styles from './githubSection.module.css'
 import React, { useState, useEffect, useRef } from 'react'
+import { StickyContainer, Sticky } from 'react-sticky';
+
 import {
     motion,
     useScroll,
@@ -61,8 +63,8 @@ const GithubSection = () => {
     return (
         <section className={styles.githubSection} id='github'>
             <motion.div ref={titleRef} style={{ translateY: yOffset }} className={styles.title}>
-                <a href='https://www.github.com/jan2210/' target="_blank" rel="noreferrer"></a>
-                <h2>Git<br />Hub</h2>
+                <a href='https://www.github.com/jan2210/' target="_blank" rel="noreferrer">
+                <h2>Git<br />Hub</h2></a>
             </motion.div>
 
             <div className={styles.cards} ref={cardRef}>

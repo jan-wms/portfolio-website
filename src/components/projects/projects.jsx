@@ -34,7 +34,6 @@ const Projects = () => {
           }
           linkSection {
             url
-            urlText
             appstoreUrl
             playstoreUrl
           }

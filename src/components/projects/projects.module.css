@@ -2,21 +2,13 @@
     width: 100%;
     background-color: white;
     padding: 100px 0 100px 0;
+    color: rgb(51, 51, 51);
 }
 
 .title {
     text-align: center;
-}
-
-.timeline {
-    position: absolute;
-    width: 3px;
-    height: 500px;
-    background-color: rgb(48, 59, 70);
-    left: calc(50% - 464px);
-    top: 0;
-    z-index: 1;
-    position: fixed;
+    font-size: 2.5rem;
+    font-weight: 600;
 }
 
 .projectCards {
