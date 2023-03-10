@@ -37,7 +37,6 @@ collections:
         widget: "object"
         collapsed: true
         fields: 
-          - { name: repoName, label: GitHub Repository Name }
           - { name: url, label: Url, required: false }
           - { name: urlText, label: Url Text, required: false }
           - { name: appstoreUrl, label: App StoreUrl Url, required: false }

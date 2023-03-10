@@ -6,8 +6,5 @@
     "image": "/assets/dijkstra.png",
     "color": "#6ac4a2",
     "isFullscreen": false
-  },
-  "linkSection": {
-    "repoName": "Dijkstra2"
   }
 }

@@ -27,14 +27,14 @@ const GithubSection = () => {
     const [titleHeight, setTitleHeight] = useState(0)
     const titleRef = useRef(null)
     useEffect(() => {
-        setTitleHeight(titleRef.current.clientHeight)
+        setTitleHeight(titleRef.current.clientHeight);
     })
 
     //window height
-    const [windowHeight, detectWH] = useState(typeof window !== "undefined" ? window.innerHeight : 100);
+    const [windowHeight, detectWH] = useState(typeof window !== "undefined" ? window.innerHeight : 1000);
     useEffect(() => {
         const detectSize = () => {
-            detectWH(typeof window !== "undefined" ? window.innerHeight : 500);
+            detectWH(typeof window !== "undefined" ? window.innerHeight : 0);
         }
         window.addEventListener('resize', detectSize)
         return () => {
@@ -45,15 +45,15 @@ const GithubSection = () => {
     const cardRef = useRef(null);
     const [cardHeight, setCardHeight] = useState(0)
     useEffect(() => {
-        setCardHeight(cardRef.current.clientHeight)
+        setCardHeight(cardRef.current.clientHeight);
     })
     const { scrollYProgress } = useScroll({
         target: cardRef,
         //offset: [`0 0`, `1 1`]
-        offset: [`0 ${(windowHeight - titleHeight) / (2 * windowHeight)}`, `1 ${1-((windowHeight - titleHeight) / (2 * windowHeight))}`]
+        //offset: [`-${(windowHeight - titleHeight) / 2 }px`, `1 ${1-((windowHeight - titleHeight) / (2 * windowHeight))}`]
         //offset: [`0 ${(windowHeight - titleHeight) / (2 * windowHeight)}`, `1 ${1 - ((windowHeight - titleHeight) / (2 * windowHeight))}`]
     });
-    const yOffset = useTransform(scrollYProgress, [0, 1], [0, (cardHeight - titleHeight)]);
+    const yOffset = 0;//useTransform(scrollYProgress, [0, 1], [0, (cardHeight - titleHeight)]);
 
 
 
