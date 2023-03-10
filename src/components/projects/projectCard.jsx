@@ -61,7 +61,8 @@ query ImageQuery {
 
   return (
 
-      <motion.div className={styles.projectCard}
+    <a href={projectInformation.linkSection.url} target="_blank" rel="noreferrer">
+    <motion.div className={styles.projectCard}
       initial={{ scale: 0.5 }}
       whileInView={{ scale: 1 }}
       viewport={{ once: false, margin: "3000px 0px 0px 0px" }}
@@ -76,11 +77,7 @@ query ImageQuery {
             <h4>{projectInformation.title}</h4>
             <p className={styles.description}>{projectInformation.description}</p>
           </section>
-          {projectInformation.linkSection.url !== null && projectInformation.linkSection.urlText !== null ? <div className={styles.linkInformation}>
-            <BiLink className={styles.icon} />
-            <a href={projectInformation.linkSection.url} target="_blank" rel="noreferrer"><p>{projectInformation.linkSection.urlText}</p></a>
-          </div> : null}
-          {projectInformation.linkSection.appstoreUrl !== null || projectInformation.linkSection.playstoreUrl !== null ?
+          {projectInformation.linkSection !== null && (projectInformation.linkSection.appstoreUrl !== null || projectInformation.linkSection.playstoreUrl !== null) ?
             <div className={styles.storeDownload}>
               {projectInformation.linkSection.appstoreUrl !== null ? <a href={projectInformation.linkSection.appstoreUrl} target="_blank" rel="noreferrer"><StaticImage src='../../../static/assets/appstore.png' alt="Download on the App Store" height={40} /></a> : null}
               {projectInformation.linkSection.playstoreUrl !== null ? <a href={projectInformation.linkSection.playstoreUrl} target="_blank" rel="noreferrer"><StaticImage src='../../../static/assets/playstore.png' alt="Get it on Google Play" height={40} /></a> : null}
@@ -88,9 +85,9 @@ query ImageQuery {
         </section>
 
         <div className={styles.imageSection} style={{ backgroundColor: projectInformation.imageSection.color, padding: projectInformation.imageSection.isFullscreen ? '0' : '10px 0px 10px 0px' }}>
-          <GatsbyImage image={allImageData.allFile.edges[getNodeIndex()].node.childImageSharp.gatsbyImageData} alt={projectInformation.title} style={{ height: projectInformation.imageSection.isFullscreen ? '100%' : 'auto', maxHeight: projectInformation.imageSection.isFullscreen ? '100%' : (windowWidth < 900 ? '300px' : '450px'), maxWidth: projectInformation.imageSection.isFullscreen ? '100%' : (windowWidth < 900 ? '90%' : '300px'), aspectRatio: `${allImageData.allFile.edges[getNodeIndex()].node.childImageSharp.original.width}/${allImageData.allFile.edges[getNodeIndex()].node.childImageSharp.original.height}` }} />
+          <GatsbyImage image={allImageData.allFile.edges[getNodeIndex()].node.childImageSharp.gatsbyImageData} alt={projectInformation.title} style={{ height: projectInformation.imageSection.isFullscreen ? '100%' : 'auto', maxHeight: projectInformation.imageSection.isFullscreen ? '100%' : '300px', maxWidth: projectInformation.imageSection.isFullscreen ? '100%' : '90%', aspectRatio: `${allImageData.allFile.edges[getNodeIndex()].node.childImageSharp.original.width}/${allImageData.allFile.edges[getNodeIndex()].node.childImageSharp.original.height}` }} />
         </div>
-      </motion.div>
+      </motion.div></a>
   )
 }
 

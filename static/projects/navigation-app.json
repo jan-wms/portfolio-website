@@ -6,5 +6,8 @@
     "image": "/assets/dijkstra.png",
     "color": "#6fc7a6",
     "isFullscreen": false
+  },
+  "linkSection": {
+    "url": "https://github.com/jan2210/Dijkstra2/"
   }
 }

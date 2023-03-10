@@ -37,8 +37,7 @@ collections:
         widget: "object"
         collapsed: true
         fields: 
-          - { name: url, label: Url, required: false }
-          - { name: urlText, label: Url Text, required: false }
+          - { name: url, label: Url }
           - { name: appstoreUrl, label: App StoreUrl Url, required: false }
           - { name: playstoreUrl, label: Play StoreUrl Url, required: false }
 

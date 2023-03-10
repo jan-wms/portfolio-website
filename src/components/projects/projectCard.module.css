@@ -58,6 +58,7 @@
     display: flex;
     flex-direction: row;
     margin-top: 30px;
+    justify-content: center;
 }
 
 .link-information p {
@@ -72,32 +73,5 @@
 
 .icon {
     font-size: 1.4rem;
-    margin-right: 10px;
-}
-
-@media screen and (min-width: 900px) {
-    .project-card {
-        width: 850px;
-        height: 500px;
-
-
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .left-section {
-        justify-content: space-between;
-        width: 400px;
-        padding: 20px 50px 50px 50px;
-    }
-
-    .image-section {
-        height: 100%;
-        width: 350px;
-    }
-
-    .store-download,
-    .link-information {
-        margin-top: 0;
-    }
+    margin-right: 5px;
 }

@@ -33,7 +33,6 @@ const Projects = () => {
             isFullscreen
           }
           linkSection {
-            repoName
             url
             urlText
             appstoreUrl
