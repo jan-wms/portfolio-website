@@ -4,7 +4,7 @@
   "description": "Navigationsapp mit SwiftUI auf Basis des Dijkstra-Algorhythmus.",
   "imageSection": {
     "image": "/assets/dijkstra.png",
-    "color": "#6ac4a2",
+    "color": "#6fc7a6",
     "isFullscreen": false
   }
 }
