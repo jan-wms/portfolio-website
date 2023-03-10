@@ -3,8 +3,6 @@ import { useEffect, useState } from 'react'
 import * as styles from './projectCard.module.css'
 import { GatsbyImage, StaticImage } from "gatsby-plugin-image"
 import { useStaticQuery, graphql } from "gatsby"
-import GithubCard from '../github/githubCard/githubCard'
-import { BiLink } from "@react-icons/all-files/bi/BiLink"
 import { motion } from "framer-motion";
 
 
@@ -85,7 +83,7 @@ query ImageQuery {
         </section>
 
         <div className={styles.imageSection} style={{ backgroundColor: projectInformation.imageSection.color, padding: projectInformation.imageSection.isFullscreen ? '0' : '10px 0px 10px 0px' }}>
-          <GatsbyImage image={allImageData.allFile.edges[getNodeIndex()].node.childImageSharp.gatsbyImageData} alt={projectInformation.title} style={{ height: projectInformation.imageSection.isFullscreen ? '100%' : 'auto', maxHeight: projectInformation.imageSection.isFullscreen ? '100%' : '300px', maxWidth: projectInformation.imageSection.isFullscreen ? '100%' : '90%', aspectRatio: `${allImageData.allFile.edges[getNodeIndex()].node.childImageSharp.original.width}/${allImageData.allFile.edges[getNodeIndex()].node.childImageSharp.original.height}` }} />
+          <GatsbyImage image={allImageData.allFile.edges[getNodeIndex()].node.childImageSharp.gatsbyImageData} alt={projectInformation.title} style={{ height: projectInformation.imageSection.isFullscreen ? '100%' : 'auto', maxHeight: projectInformation.imageSection.isFullscreen ? '100%' : '300px', maxWidth: projectInformation.imageSection.isFullscreen ? '100%' : '90%', aspectRatio: `${allImageData.allFile.edges[getNodeIndex()].node.childImageSharp.original.width}/${allImageData.allFile.edges[getNodeIndex()].node.childImageSharp.original.height}` }} imgStyle={{borderRadius: `${projectInformation.imageSection.isFullscreen ? '20px 20px 0 0' : ''}`,}}/>
         </div>
       </motion.div></a>
   )
