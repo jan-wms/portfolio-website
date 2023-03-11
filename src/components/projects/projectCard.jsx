@@ -43,10 +43,7 @@ query ImageQuery {
     const months = ["Jan.", "Feb.", "März", "April", "Mai", "Juni", "Juli", "Aug.", "Sept.", "Okt.", "Nov.", "Dez."];
     return months[date.getMonth()] + " " + date.getFullYear().toString();
   }
-  {/**
-      <a href={projectInformation.linkSection.url} target="_blank" rel="noreferrer" className={styles.wrapper}>
 
-*/}
   return (
     <motion.div className={styles.projectCard}
       initial={{ scale: 0.5 }}
