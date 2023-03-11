@@ -21,8 +21,8 @@ const About = () => {
         <div className={styles.content}>
           <StaticImage src='../../../static/assets/mountain.jpeg' alt='Mountain' title='Mountain' class={styles.image} />
           <motion.div className={styles.blurred} style={{ opacity: o2 }} />
-          <motion.h2 style={{ opacity: o1 }}>Ich bin Jan, 19 Jahre alt.<br />
-            Begeisterter Programmierer und Bergsteiger aus Deutschland.</motion.h2>
+          <motion.h3 style={{ opacity: o1 }}>Ich bin Jan, 19 Jahre alt.<br />
+            Begeisterter Programmierer und Bergsteiger aus Deutschland.</motion.h3>
         </div>
         <StaticImage src='../../../static/assets/watzmann-hochkalter.jpeg' alt='Mountain' title='Mountain' class={styles.image} />
       </motion.div>

@@ -15,7 +15,9 @@
 .projectCards {
     margin-top: 100px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     gap: 50px;
+    justify-content: center;
 }
