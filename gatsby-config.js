@@ -6,6 +6,7 @@ module.exports = {
   siteMetadata: {
     title: `portfolio-website`,
     siteUrl: `https://wermeckes.com`,
+    description: `Ich bin Jan, 19 Jahre alt. Begeisterter Programmierer und Bergsteiger aus Deutschland.`,
   },
   plugins: [
     `gatsby-plugin-sitemap`,

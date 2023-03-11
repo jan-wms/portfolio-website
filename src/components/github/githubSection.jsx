@@ -51,23 +51,23 @@ const GithubSection = () => {
     })
     const { scrollYProgress } = useScroll({
         target: cardRef,
-        //offset: [`0 0`, `1 1`]
+        offset: [`0 0`, `1 1`]
         //offset: [`-${(windowHeight - titleHeight) / 2 }px`, `1 ${1-((windowHeight - titleHeight) / (2 * windowHeight))}`]
         //offset: [`0 ${(windowHeight - titleHeight) / (2 * windowHeight)}`, `1 ${1 - ((windowHeight - titleHeight) / (2 * windowHeight))}`]
     });
-    const yOffset = 0;//useTransform(scrollYProgress, [0, 1], [0, (cardHeight - titleHeight)]);
+    const yOffset = useTransform(scrollYProgress, [0, 1], [0, (cardHeight - windowHeight)]);
 
 
 
 
     return (
         <section className={styles.githubSection} id='github'>
-            <motion.div ref={titleRef} style={{ translateY: yOffset }} className={styles.title}>
+            <motion.div  style={{ translateY: yOffset }} className={styles.title}>
                 <a href='https://www.github.com/jan2210/' target="_blank" rel="noreferrer">
-                <h2>Git<br />Hub</h2></a>
+                <h2 ref={titleRef}>Git<br />Hub</h2></a>
             </motion.div>
 
-            <div className={styles.cards} ref={cardRef}>
+            <motion.div className={styles.cards} ref={cardRef} style={{paddingTop: ((windowHeight- titleHeight) / 2), paddingBottom: ((windowHeight- titleHeight) / 2)}}>
                 {
                     githubReposData.allGithubReposJson.edges.map((item, index) => {
                         return (
@@ -75,7 +75,7 @@ const GithubSection = () => {
                         )
                     })
                 }
-            </div>
+            </motion.div>
         </section>
     )
 }
