@@ -18,10 +18,11 @@
     padding: 20px 30px 40px 30px;
 }
 
-.content h4 {
+.content h3 {
     margin: 15px 0 10px 0;
     font-weight: 700;
     font-size: 1.4rem;
+    color: inherit;
 }
 
 .store-download {

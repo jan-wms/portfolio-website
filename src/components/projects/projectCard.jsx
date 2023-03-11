@@ -62,7 +62,7 @@ query ImageQuery {
       <section className={styles.content}>
         <section>
           <p className={styles.date}>{getDate(projectInformation.date)}</p>
-          <h4>{projectInformation.title}</h4>
+          <h3>{projectInformation.title}</h3>
           <p className={styles.description}>{projectInformation.description}</p>
         </section>
         {projectInformation.linkSection !== null && (projectInformation.linkSection.appstoreUrl !== null || projectInformation.linkSection.playstoreUrl !== null) ?

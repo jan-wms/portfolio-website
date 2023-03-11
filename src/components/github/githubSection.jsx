@@ -53,7 +53,7 @@ const GithubSection = () => {
         offset: [`0 0`, `1 1`]
     });
     const yOffset = useTransform(scrollYProgress, [0, 1], [0, (cardHeight - windowHeight)]);
-    const c = useTransform(scrollYProgress, [0,0.15,0.85, 1], ["#e9eef1", "#7695ab", "#7695ab", "#e9eef1"])
+    const c = useTransform(scrollYProgress, [0,0.15,0.85, 1], ["#bacfdb", "#7695ab", "#7695ab", "#bacfdb"])
     const m = windowHeight-titleHeight <= 0 ? (50 + (titleHeight - windowHeight) / 2) : 0;
 
     return (
