@@ -49,17 +49,17 @@
     .githubSection {
         flex-direction: row;
         align-items: flex-start;
+        gap: 50px;
     }
     
     .title {
-        width: calc(50% - 15px);
+        width: fit-content;
     }
     
     .title h2 {
         font-size: 15rem;
         line-height: 12rem;
         font-family: 'Fredoka One', 'Nunito', sans-serif;
-        color: rgb(233, 238, 241);
         width: min-content;
         height: min-content;
         transition: color 0.2s;
@@ -68,8 +68,6 @@
     }
     
     .title h2:hover {
-        color: rgb(190, 196, 200);
-        transition: color 0.2s;
         cursor: pointer;
     }
     
@@ -79,5 +77,6 @@
         flex-direction: column;
         gap: 50px;
         max-width: 400px;
+        min-height: 100vh;
     }
 }
