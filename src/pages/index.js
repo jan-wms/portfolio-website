@@ -11,12 +11,12 @@ import NavBar from "../components/navBar/navBar"
 const IndexPage = () => {
   return (
     <main>
-      <NavBar />
+      {/**<NavBar />
       <Header />
-      <About />
+  <About />*/}
       <Projects />
-      <GithubSection />
-      <Footer />
+      {/**<GithubSection />
+      <Footer />*/}
     </main>
   )
 }

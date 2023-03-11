@@ -3,7 +3,6 @@ import { graphql } from 'gatsby'
 import GithubCard from './githubCard/githubCard';
 import * as styles from './githubSection.module.css'
 import React, { useState, useEffect, useRef } from 'react'
-import { StickyContainer, Sticky } from 'react-sticky';
 
 import {
     motion,

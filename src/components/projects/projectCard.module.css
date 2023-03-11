@@ -3,17 +3,17 @@
     -webkit-box-shadow: 3px 3px 8px 0px #969696;
 
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     justify-content: space-between;
 
     border-radius: 20px;
     position: relative;
     overflow: hidden;
 
-    width: min(90vw, 500px);
+    width: 100%;
 }
 
-.left-section {
+.content {
     width: calc(100% - 60px);
     display: flex;
     flex-direction: column;
@@ -21,23 +21,15 @@
     padding: 20px 30px 40px 30px;
 }
 
-.left-section h4 {
+.content h4 {
     margin: 15px 0 20px 0;
     font-weight: 700;
     font-size: 1.4rem;
 }
 
-.description {
-    font-size: 1rem;
-}
-
-.date {
-    color: #c3c3c3;
-    font-size: 0.8rem;
-}
-
 .image-section {
-    height: 320px;
+    height: auto;
+    aspect-ratio: 25/17;
     display: flex;
     width: 100%;
     flex-direction: row;
@@ -52,4 +44,13 @@
     align-items: center;
     gap: 20px;
     margin-top: 30px;
+}
+
+.description {
+    font-size: 1rem;
+}
+
+.date {
+    color: #c3c3c3;
+    font-size: 0.8rem;
 }
