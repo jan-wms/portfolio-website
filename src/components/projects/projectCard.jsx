@@ -31,7 +31,7 @@ query ImageQuery {
   function getNodeIndex() {
     var r = 0
     allImageData.allFile.edges.map((item, index) => {
-      if (item.node.relativePath === projectInformation.imageSection.image.substr(1)) {
+      if (item.node.relativePath === projectInformation.image.substr(1)) {
         r = index;
       }
     });
@@ -56,8 +56,8 @@ query ImageQuery {
         duration: 0.8,
         bounce: 0.1,
       }}>
-      <div className={styles.imageSection} style={{ backgroundColor: projectInformation.imageSection.color, padding: projectInformation.imageSection.isFullscreen ? '0' : '10px 0px 10px 0px' }}>
-        <GatsbyImage image={allImageData.allFile.edges[getNodeIndex()].node.childImageSharp.gatsbyImageData} alt={projectInformation.title} style={{ height: projectInformation.imageSection.isFullscreen ? '100%' : 'auto', maxHeight: projectInformation.imageSection.isFullscreen ? '100%' : '300px', maxWidth: projectInformation.imageSection.isFullscreen ? '100%' : '90%', aspectRatio: `${allImageData.allFile.edges[getNodeIndex()].node.childImageSharp.original.width}/${allImageData.allFile.edges[getNodeIndex()].node.childImageSharp.original.height}` }} imgStyle={{ borderRadius: `${projectInformation.imageSection.isFullscreen ? '20px 20px 0 0' : ''}`, }} />
+      <div className={styles.imageSection}>
+        <GatsbyImage image={allImageData.allFile.edges[getNodeIndex()].node.childImageSharp.gatsbyImageData} alt={projectInformation.title} style={{ height: '100%', maxHeight: '100%', maxWidth: '100%', aspectRatio: `${allImageData.allFile.edges[getNodeIndex()].node.childImageSharp.original.width}/${allImageData.allFile.edges[getNodeIndex()].node.childImageSharp.original.height}` }} imgStyle={{ borderRadius: '20px 20px 0 0' }} />
       </div>
       <section className={styles.content}>
         <section>

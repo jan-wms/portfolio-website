@@ -2,11 +2,7 @@
   "date": "2021-04-07T10:38:19.378Z",
   "title": "Hausaufgaben Organizer",
   "description": "Eine App zum einfachen Erstellen und Verwalten von Hausaufgaben mit integrierter Stundenplanerkennung.",
-  "imageSection": {
-    "image": "/assets/hausaufgabenOrganizer.png",
-    "color": "#bbe4ff",
-    "isFullscreen": false
-  },
+  "image": "/assets/hausaufgabenOrganizer.png",
   "linkSection": {
     "url": "http://janw.bplaced.net/",
     "appstoreUrl": "https://apps.apple.com/de/app/hausaufgaben-organizer/id1559564513",

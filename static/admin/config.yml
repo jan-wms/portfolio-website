@@ -21,16 +21,8 @@ collections:
       - { name: date, label: Date, widget: datetime }
       - { name: title, label: Title }
       - { name: description, label: Description, widget: markdown }
-
-
-      - label: "Image"
-        name: "imageSection"
-        widget: "object"
-        collapsed: true
-        fields: 
-          - { name: image, label: Image, widget: image, allow_multiple: false, choose_url: false }
-          - { name: 'color', label: 'Color',  widget: 'color' }
-          - { name: 'isFullscreen', label: 'Is Fullscreen Image', widget: 'boolean'} 
+      
+      - { name: image, label: Image, widget: image, hint: 1000/640, allow_multiple: false, choose_url: false }
 
       - label: "Links"
         name: "linkSection"

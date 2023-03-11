@@ -27,11 +27,7 @@ const Projects = () => {
           date
           title
           description
-          imageSection {
-            image
-            color
-            isFullscreen
-          }
+          image
           linkSection {
             url
             appstoreUrl
