@@ -44,7 +44,8 @@ query ImageQuery {
     return months[date.getMonth()] + " " + date.getFullYear().toString();
   }
   {/**
-    <a href={projectInformation.linkSection.url} target="_blank" rel="noreferrer">
+      <a href={projectInformation.linkSection.url} target="_blank" rel="noreferrer" className={styles.wrapper}>
+
 */}
   return (
     <motion.div className={styles.projectCard}
@@ -55,7 +56,9 @@ query ImageQuery {
         type: "spring",
         duration: 0.8,
         bounce: 0.1,
-      }}>
+      }}
+      onClick={() => {window.open(projectInformation.linkSection.url,'_blank');}}
+      >
       <div className={styles.imageSection}>
         <GatsbyImage image={allImageData.allFile.edges[getNodeIndex()].node.childImageSharp.gatsbyImageData} alt={projectInformation.title} style={{ height: '100%', maxHeight: '100%', maxWidth: '100%', aspectRatio: `${allImageData.allFile.edges[getNodeIndex()].node.childImageSharp.original.width}/${allImageData.allFile.edges[getNodeIndex()].node.childImageSharp.original.height}` }} imgStyle={{ borderRadius: '20px 20px 0 0' }} />
       </div>

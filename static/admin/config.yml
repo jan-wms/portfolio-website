@@ -22,7 +22,7 @@ collections:
       - { name: title, label: Title }
       - { name: description, label: Description, widget: markdown }
       
-      - { name: image, label: Image, widget: image, hint: 1000/640, allow_multiple: false, choose_url: false }
+      - { name: image, label: Image, widget: image, hint: Aspect ratio 1000/640, allow_multiple: false, choose_url: false }
 
       - label: "Links"
         name: "linkSection"

@@ -1,5 +1,6 @@
 .project-section {
-    width: calc(100% - clamp(30px, 10vw, 100px));
+    width: calc(100vw - clamp(30px, 10vw, 100px));
+    min-width: 270px;
     background-color: white;
     padding: 100px clamp(15px, 5vw, 50px);
     padding-bottom: 0;
@@ -23,6 +24,5 @@
     width: fit-content;
     display: grid;
     gap: 50px;
-    grid-template-columns: repeat(auto-fill, 500px);
-   /* grid-template-columns: repeat(auto-fill, min(100% - 30px, 500px));*/
+    grid-template-columns: repeat(auto-fill, clamp(270px, calc(100vw - clamp(30px, 10vw, 100px)), 500px));
 }
