@@ -60,14 +60,14 @@ const GithubCard = ({ repoName }) => {
   return (
     <div className={styles.githubCard}>
       <div className={styles.topSection}>
-        <h3><GoRepo className={styles.repoIcon} /><a href={`https://www.github.com/jan2210/${repoName}`} title='' target="_blank" rel="noreferrer">{repoName.length > 20 ? repoName.substr(0,15) +'...' : repoName}</a><div className={styles.repoVisibility}>{projectGithubData.isPrivate ? 'Private' : 'Public'}</div></h3>
-        <GitHubButton href={`https://www.github.com/jan2210/${repoName}`} data-icon="octicon-star" data-size='large' aria-label="Star jan2210/Dijkstra2 on GitHub">Star</GitHubButton>
+        <h3><GoRepo className={styles.repoIcon} /><a href={`https://www.github.com/jan2210/${repoName}`} title={repoName} target="_blank" rel="noreferrer">{repoName.length > 20 ? repoName.substr(0,15) +'...' : repoName}</a><div className={styles.repoVisibility}>{projectGithubData.isPrivate ? 'Private' : 'Public'}</div></h3>
+        <GitHubButton href={`https://www.github.com/jan2210/${repoName}`} title={repoName} data-icon="octicon-star" data-size='large' aria-label="Star jan2210/Dijkstra2 on GitHub">Star</GitHubButton>
       </div>
       <p className={styles.description}>{projectGithubData.description}</p>
       <div className={styles.topics}>
         {
           projectGithubData.repositoryTopics.edges.map((item, index) => {
-            return (<a key={index} href={`https://github.com/topics/${item.node.topic.name}`} target="_blank" rel="noreferrer" title=''><p>{item.node.topic.name}</p></a>);
+            return (<a key={index} href={`https://github.com/topics/${item.node.topic.name}`} target="_blank" rel="noreferrer" title={item.node.topic.name}><p>{item.node.topic.name}</p></a>);
           })
         }
       </div>
