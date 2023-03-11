@@ -52,16 +52,13 @@ const GithubSection = () => {
     const { scrollYProgress } = useScroll({
         target: cardRef,
         offset: [`0 0`, `1 1`]
-        //offset: [`-${(windowHeight - titleHeight) / 2 }px`, `1 ${1-((windowHeight - titleHeight) / (2 * windowHeight))}`]
-        //offset: [`0 ${(windowHeight - titleHeight) / (2 * windowHeight)}`, `1 ${1 - ((windowHeight - titleHeight) / (2 * windowHeight))}`]
     });
     const yOffset = useTransform(scrollYProgress, [0, 1], [0, (cardHeight - windowHeight)]);
     const c = useTransform(scrollYProgress, [0,0.15,0.85, 1], ["#e9eef1", "#7695ab", "#7695ab", "#e9eef1"])
-
-
+    const m = windowHeight-titleHeight <= 0 ? (50 + (titleHeight - windowHeight) / 2) : 0;
 
     return (
-        <section className={styles.githubSection} id='github'>
+        <motion.section className={styles.githubSection} id='github' style={{marginTop: m, marginBottom: m}}>
             <motion.div style={{ translateY: yOffset }} className={styles.title}>
                 <a href='https://www.github.com/jan2210/' target="_blank" rel="noreferrer">
                     <motion.h2 ref={titleRef} style={{ color: c }}>Git<br />Hub</motion.h2></a>
@@ -76,7 +73,7 @@ const GithubSection = () => {
                     })
                 }
             </motion.div>
-        </section>
+        </motion.section>
     )
 }
 

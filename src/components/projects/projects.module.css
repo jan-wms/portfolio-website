@@ -1,7 +1,8 @@
 .project-section {
-    width: 100%;
+    width: calc(100% - clamp(15px, 5vw, 50px));
     background-color: white;
-    padding: 100px 0 0px 0;
+    padding: 100px clamp(15px, 5vw, 50px);
+    padding-bottom: 0;
     color: rgb(51, 51, 51);
     position: relative;
     display: flex;
