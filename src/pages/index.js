@@ -15,7 +15,7 @@ const IndexPage = () => {
       <Header />
       <About />
       <Projects />
-      {/**<GithubSection /> */}
+      <GithubSection />
       <Footer />
     </main>
   )
