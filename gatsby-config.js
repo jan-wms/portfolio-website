@@ -12,6 +12,7 @@ module.exports = {
   plugins: [
     `react-github-btn`,
     `gatsby-plugin-sitemap`,
+    'gatsby-plugin-robots-txt',
     `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
