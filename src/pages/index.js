@@ -1,12 +1,12 @@
 import * as React from "react"
 import "./global.css"
-import NavBar from '../components/navBar/NavBar.jsx'
-import Header from '../components/header/Header.jsx'
-import About from '../components/about/About.jsx'
-import Projects from '../components/projects/Projects.jsx'
-import GithubSection from '../components/github/GithubSection.jsx'
-import Footer from '../components/footer/Footer.jsx'
-import Seo from '../components/seo/Seo.jsx'
+import NavBar from '../components/navBar/navBar'
+import Header from '../components/header/header'
+import About from '../components/about/about'
+import Projects from '../components/projects/projects'
+import GithubSection from '../components/github/githubSection'
+import Footer from '../components/footer/footer'
+import Seo from '../components/seo/seo'
 
 const navBarLinks = [
   { url: "/#about", title: "Über mich", isButtonStyle: false },

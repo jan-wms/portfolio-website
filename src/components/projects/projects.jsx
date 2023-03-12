@@ -1,6 +1,6 @@
 import React from 'react'
 import * as styles from './projects.module.css'
-import ProjectCard from './ProjectCard';
+import ProjectCard from './projectCard';
 import { useStaticQuery, graphql } from "gatsby"
 
 const Projects = () => {
