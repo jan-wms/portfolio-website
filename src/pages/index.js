@@ -6,6 +6,7 @@ import Projects from "../components/projects/projects"
 import About from "../components/about/about"
 import GithubSection from "../components/github/githubSection"
 import NavBar from "../components/navBar/navBar"
+import Seo from "../components/seo/seo"
 
 
 const IndexPage = () => {
@@ -23,4 +24,6 @@ const IndexPage = () => {
 
 export default IndexPage
 
-export const Head = () => <title>Jan Wermeckes • Software-Entwickler</title>
+export const Head = () => (
+  <Seo />
+)

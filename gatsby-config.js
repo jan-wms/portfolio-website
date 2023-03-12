@@ -7,6 +7,7 @@ module.exports = {
     title: `Jan Wermeckes • Software-Entwickler`,
     siteUrl: `https://wermeckes.com`,
     description: `Ich bin Jan, 19 Jahre alt. Begeisterter Programmierer und Bergsteiger aus Deutschland.`,
+    image: `/assets/favicon.png`,
   },
   plugins: [
     `react-github-btn`,
