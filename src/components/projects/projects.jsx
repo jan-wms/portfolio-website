@@ -1,24 +1,9 @@
 import React from 'react'
 import * as styles from './projects.module.css'
-import { useState, useEffect } from 'react'
 import ProjectCard from './ProjectCard';
 import { useStaticQuery, graphql } from "gatsby"
 
 const Projects = () => {
-  const [windowHeight, detectWH] = useState(typeof window !== "undefined" ? window.innerHeight : 500);
-
-  useEffect(() => {
-    const detectSize = () => {
-      detectWH(typeof window !== "undefined" ? window.innerHeight : 500);
-    }
-
-    window.addEventListener('resize', detectSize)
-
-    return () => {
-      window.removeEventListener('resize', detectSize)
-    }
-  }, [])
-
   const projectData = useStaticQuery(graphql`
   query ProjectQuery {
     allProjectsJson {

@@ -6,8 +6,7 @@ import { HiX } from "@react-icons/all-files/hi/HiX"
 
 
 
-const NavBar = () => {
-    
+const NavBar = ({ navBarLinks }) => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const openMenu = () => {
         setIsMenuOpen(true);
@@ -25,12 +24,12 @@ const NavBar = () => {
             }
 
             <ul className={`${styles.navBarList} ${isMenuOpen ? styles.navBarListActive : ''}`}>
-                <li className={styles.normalLi} onClick={closeMenu}><AnchorLink to="#about" title="Über mich"><span>Über mich</span></AnchorLink></li>
-                <li className={styles.normalLi} onClick={closeMenu}><AnchorLink to="#projects" title="Projekte"><span>Projekte</span></AnchorLink></li>
-                <li className={styles.normalLi} onClick={closeMenu}><AnchorLink to="#github" title="Github"><span>Github</span></AnchorLink></li>
-                <li className={styles.buttonLi} onClick={closeMenu}><AnchorLink to="#footer" title="Kontakt"><span>Kontakt</span></AnchorLink></li>
+            {navBarLinks.map((item) => {
+                    return (
+                        <li key={item.title} className={item.isButtonStyle ? styles.buttonLi : styles.normalLi} onClick={closeMenu} onKeyDown={closeMenu}><AnchorLink to={item.url} title={item.title}><span>{item.title}</span></AnchorLink></li>
+                    );
+                })}
             </ul>
-
         </nav>
     )
 }

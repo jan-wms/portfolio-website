@@ -1,18 +1,24 @@
 import * as React from "react"
-import Header from "../components/header/Header"
 import "./global.css"
-import Footer from "../components/footer/Footer"
-import Projects from "../components/projects/Projects"
-import About from "../components/about/About"
-import GithubSection from "../components/github/GithubSection"
-import NavBar from "../components/navBar/NavBar"
-import Seo from "../components/seo/Seo"
+import NavBar from '../components/navBar/NavBar'
+import Header from '../components/header/Header'
+import About from '../components/about/About'
+import Projects from '../components/projects/Projects'
+import GithubSection from '../components/github/GithubSection'
+import Footer from '../components/footer/Footer'
+import Seo from '../components/seo/Seo'
 
+const navBarLinks = [
+  { url: "/#about", title: "Über mich", isButtonStyle: false },
+  { url: "/#projects", title: "Projekte", isButtonStyle: false },
+  { url: "/#github", title: "Github", isButtonStyle: false },
+  { url: "/#footer", title: "Kontakt", isButtonStyle: true },
+];
 
 const IndexPage = () => {
   return (
     <main>
-      <NavBar />
+      <NavBar navBarLinks={navBarLinks} />
       <Header />
       <About />
       <Projects />
