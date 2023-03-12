@@ -59,7 +59,7 @@ const GithubSection = () => {
     return (
         <motion.section className={styles.githubSection} id='github' style={{marginTop: m, marginBottom: m}}>
             <motion.div style={{ translateY: yOffset }} className={styles.title}>
-                <a href='https://www.github.com/jan2210/' target="_blank" rel="noreferrer" title='Github'>
+                <a href='https://www.github.com/jan2210/' target="_blank" rel="noreferrer nofollow" title='Github'>
                     <motion.h2 ref={titleRef} style={{ color: c }}>Git<br />Hub</motion.h2></a>
             </motion.div>
 
