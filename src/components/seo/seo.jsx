@@ -15,7 +15,6 @@ const Seo = ({ title, description, pathname, children }) => {
             <html lang="de" />
             <meta name="description" content={seo.description} />
             <meta name="image" content={seo.image} />
-            <meta name="robots" content="index, follow" />
             <link rel="canonical" href={siteUrl} />
             <meta name="language" content="German" />
             <meta name="keywords" content="jan, Wermeckes, software, developer, portfolio, projects, GitHub" />
