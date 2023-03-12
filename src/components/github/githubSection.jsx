@@ -1,6 +1,6 @@
 import { useStaticQuery } from 'gatsby';
 import { graphql } from 'gatsby'
-import GithubCard from './githubCard/githubCard';
+import GithubCard from './githubCard/GithubCard';
 import * as styles from './githubSection.module.css'
 import React, { useState, useEffect, useRef } from 'react'
 

@@ -1,12 +1,12 @@
 import * as React from "react"
-import Header from "../components/header/header"
+import Header from "../components/header/Header"
 import "./global.css"
-import Footer from "../components/footer/footer"
-import Projects from "../components/projects/projects"
-import About from "../components/about/about"
-import GithubSection from "../components/github/githubSection"
-import NavBar from "../components/navBar/navBar"
-import Seo from "../components/seo/seo"
+import Footer from "../components/footer/Footer"
+import Projects from "../components/projects/Projects"
+import About from "../components/about/About"
+import GithubSection from "../components/github/GithubSection"
+import NavBar from "../components/navBar/NavBar"
+import Seo from "../components/seo/Seo"
 
 
 const IndexPage = () => {

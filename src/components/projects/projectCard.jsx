@@ -57,7 +57,7 @@ query ImageQuery {
       onClick={() => {window.open(projectInformation.linkSection.url,'_blank');}}
       >
       <div className={styles.imageSection}>
-        <GatsbyImage image={allImageData.allFile.edges[getNodeIndex()].node.childImageSharp.gatsbyImageData} alt={projectInformation.title} style={{ height: '100%', maxHeight: '100%', maxWidth: '100%', aspectRatio: `${allImageData.allFile.edges[getNodeIndex()].node.childImageSharp.original.width}/${allImageData.allFile.edges[getNodeIndex()].node.childImageSharp.original.height}` }} imgStyle={{ borderRadius: '20px 20px 0 0' }} />
+        <GatsbyImage image={allImageData.allFile.edges[getNodeIndex()].node.childImageSharp.gatsbyImageData} alt={projectInformation.title} title={projectInformation.title} style={{ height: '100%', maxHeight: '100%', maxWidth: '100%', aspectRatio: `${allImageData.allFile.edges[getNodeIndex()].node.childImageSharp.original.width}/${allImageData.allFile.edges[getNodeIndex()].node.childImageSharp.original.height}` }} imgStyle={{ borderRadius: '20px 20px 0 0' }} />
       </div>
       <section className={styles.content}>
         <section>
@@ -67,8 +67,8 @@ query ImageQuery {
         </section>
         {projectInformation.linkSection !== null && (projectInformation.linkSection.appstoreUrl !== null || projectInformation.linkSection.playstoreUrl !== null) ?
           <div className={styles.storeDownload}>
-            {projectInformation.linkSection.appstoreUrl !== null ? <a href={projectInformation.linkSection.appstoreUrl} target="_blank" rel="noreferrer" title='App Store'><StaticImage src='../../../static/assets/appstore.png' alt="Download on the App Store" height={40} /></a> : null}
-            {projectInformation.linkSection.playstoreUrl !== null ? <a href={projectInformation.linkSection.playstoreUrl} target="_blank" rel="noreferrer" title='Play Store'><StaticImage src='../../../static/assets/playstore.png' alt="Get it on Google Play" height={40} /></a> : null}
+            {projectInformation.linkSection.appstoreUrl !== null ? <a href={projectInformation.linkSection.appstoreUrl} target="_blank" rel="noreferrer" title='App Store'><StaticImage src='../../../static/assets/appstore.png' title='Download on the App Store' alt="Download on the App Store" height={40} /></a> : null}
+            {projectInformation.linkSection.playstoreUrl !== null ? <a href={projectInformation.linkSection.playstoreUrl} target="_blank" rel="noreferrer" title='Play Store'><StaticImage src='../../../static/assets/playstore.png' title='Get it on Google Play' alt="Get it on Google Play" height={40} /></a> : null}
           </div> : null}
       </section>
     </motion.div>

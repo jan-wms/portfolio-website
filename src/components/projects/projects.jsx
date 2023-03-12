@@ -1,7 +1,7 @@
 import React from 'react'
 import * as styles from './projects.module.css'
 import { useState, useEffect } from 'react'
-import ProjectCard from './projectCard';
+import ProjectCard from './ProjectCard';
 import { useStaticQuery, graphql } from "gatsby"
 
 const Projects = () => {
