@@ -11,7 +11,14 @@ module.exports = {
   },
   plugins: [
     `react-github-btn`,
-    `gatsby-plugin-sitemap`,
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        excludes: [
+          '/success'
+        ]
+      }
+    },
     'gatsby-plugin-robots-txt',
     `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-image`,
