@@ -6,6 +6,7 @@
     align-items: center;
     justify-content: center;
     min-width: 270px;
+    overflow: hidden;
 }
 
 .title {
@@ -18,12 +19,10 @@
 }
 
 .title h2 {
-    font-size: 15rem;
-    line-height: 12rem;
+    font-size: 9rem;
+    line-height: 7.5rem;
     font-family: 'Fredoka One', 'Nunito', sans-serif;
-    color: rgb(233, 238, 241);
     height: min-content;
-    transition: color 0.2s;
     padding: 0;
     margin: 0;
     overflow: hidden;
@@ -31,8 +30,6 @@
 }
 
 .title h2:hover {
-    color: rgb(190, 196, 200);
-    transition: color 0.2s;
     cursor: pointer;
 }
 
@@ -44,6 +41,18 @@
     max-width: 400px;
     z-index: 2;
 }
+
+@media screen and (min-width: 420px) {
+    .title h2 {
+        font-size: 12rem;
+        line-height: 9.5rem;
+    }}
+
+@media screen and (min-width: 500px) {
+    .title h2 {
+        font-size: 15rem;
+        line-height: 12rem;
+    }}
 
 @media screen and (min-width: 1000px) {
     .githubSection {
@@ -59,24 +68,12 @@
     .title h2 {
         font-size: 15rem;
         line-height: 12rem;
-        font-family: 'Fredoka One', 'Nunito', sans-serif;
         width: min-content;
-        height: min-content;
-        transition: color 0.2s;
-        padding: 0;
-        margin: 0;
-    }
-    
-    .title h2:hover {
-        cursor: pointer;
     }
     
     .cards {
         width: calc(50% - 15px);
-        display: flex;
-        flex-direction: column;
         gap: 50px;
-        max-width: 400px;
         min-height: 100vh;
     }
 }

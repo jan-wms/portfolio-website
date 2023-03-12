@@ -33,15 +33,19 @@ const GithubSection = () => {
 
     //window height
     const [windowHeight, detectWH] = useState(typeof window !== "undefined" ? window.innerHeight : 1000);
+    const [windowWidth, detectWW] = useState(typeof window !== "undefined" ? window.innerWidth : 1000);
     useEffect(() => {
         const detectSize = () => {
             detectWH(typeof window !== "undefined" ? window.innerHeight : 0);
+            detectWW(typeof window !== "undefined" ? window.innerWidth : 0);
         }
         window.addEventListener('resize', detectSize)
         return () => {
             window.removeEventListener('resize', detectSize)
         }
     }, [])
+
+    
 
     const cardRef = useRef(null);
     const [cardHeight, setCardHeight] = useState(0)
@@ -50,7 +54,7 @@ const GithubSection = () => {
     })
     const { scrollYProgress } = useScroll({
         target: cardRef,
-        offset: [`0 0`, `1 1`]
+        offset: [`0 ${windowWidth > 1000 ? 0 : 1}`, `1 1`]
     });
     const yOffset = useTransform(scrollYProgress, [0, 1], [0, (cardHeight - windowHeight)]);
     const c = useTransform(scrollYProgress, [0,0.15,0.85, 1], ["#bacfdb", "#7695ab", "#7695ab", "#bacfdb"])
@@ -63,7 +67,7 @@ const GithubSection = () => {
                     <motion.h2 ref={titleRef} style={{ color: c }}>Git<br />Hub</motion.h2></a>
             </motion.div>
 
-            <motion.div className={styles.cards} ref={cardRef} style={{ paddingTop: ((windowHeight - titleHeight) / 2), paddingBottom: ((windowHeight - titleHeight) / 2) }}>
+            <motion.div className={styles.cards} ref={cardRef} style={{ paddingTop: windowWidth > 1000 ? ((windowHeight - titleHeight) / 2) : 0, paddingBottom: windowWidth > 1000 ? ((windowHeight - titleHeight) / 2) : 0}}>
                 {
                     githubReposData.allGithubReposJson.edges.map((item, index) => {
                         return (

@@ -25,6 +25,7 @@ const Seo = ({ title, description, pathname, children }) => {
             <meta name="twitter:image" content="https://wermeckes.com/assets/favicon.png" />
             
             <meta property="og:title" content={seo.title} />
+            <meta name="twitter:site" content="@"/>
             <meta property="og:site_name" content={seo.title} />
             <meta property="og:url" content={seo.url} />
             <meta property="og:description" content={seo.description} />
