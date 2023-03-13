@@ -26,7 +26,7 @@ const NavBar = ({ navBarLinks }) => {
             <ul className={`${styles.navBarList} ${isMenuOpen ? styles.navBarListActive : ''}`}>
             {navBarLinks.map((item) => {
                     return (
-                        <li key={item.title} className={item.isButtonStyle ? styles.buttonLi : styles.normalLi} onClick={closeMenu} onKeyDown={closeMenu}><AnchorLink to={item.url} title={item.title}><span>{item.title}</span></AnchorLink></li>
+                        <li key={item.title} className={item.isButtonStyle ? styles.buttonLi : styles.normalLi}><AnchorLink onAnchorLinkClick={closeMenu} to={item.url} title={item.title}><span>{item.title}</span></AnchorLink></li>
                     );
                 })}
             </ul>
