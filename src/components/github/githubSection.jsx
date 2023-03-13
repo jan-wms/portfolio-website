@@ -54,16 +54,15 @@ const GithubSection = () => {
     })
     const { scrollYProgress } = useScroll({
         target: cardRef,
-        offset: [`0 ${windowWidth < 1000 ? '1' : '0'}`, `${windowWidth < 1000 ? '0 0' : '1 1'}`]
+        offset: [`0 0`, `1 1`]
     });
     const yOffset = useTransform(scrollYProgress, [0, 1], [0, (cardHeight - windowHeight)]);
-    const yOffsetSmallScreen = useTransform(scrollYProgress, [0, 1], [0, (windowHeight)]);
-    const color = useTransform(scrollYProgress, [0,0.15, 0.75, 1], ["#bacfdb", "#7695ab", "#7695ab", windowWidth < 1000 ? "#fff" : "#87a9c1"])
-    const margin = windowWidth < 1000 ? 100 : windowHeight-titleHeight <= 0 ? (50 + (titleHeight - windowHeight) / 2) : 0;
+    const color = useTransform(scrollYProgress, [0,0.15], [windowWidth < 1000 ? "#7695ab" : "#bacfdb", "#7695ab", ])
+    const margin = windowWidth < 1000 ? 150 : windowHeight-titleHeight <= 0 ? (50 + (titleHeight - windowHeight) / 2) : 0;
 
     return (
-        <motion.section className={styles.githubSection} id='github' style={{marginTop: windowWidth < 1000 ? 0 : margin, marginBottom: margin}}>
-            <motion.div style={{ translateY: windowWidth < 1000 ? yOffsetSmallScreen : yOffset }} className={styles.title}>
+        <motion.section className={styles.githubSection} id='github' style={{marginTop: margin, marginBottom: margin}}>
+            <motion.div style={{ translateY: windowWidth < 1000 ? 0 : yOffset }} className={styles.title}>
                 <a href='https://www.github.com/jan2210/' target="_blank" rel="noreferrer nofollow" title='Github'>
                     <motion.h2 ref={titleRef} style={{ color: color }}>Git<br />Hub</motion.h2></a>
             </motion.div>
