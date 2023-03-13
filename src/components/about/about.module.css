@@ -1,6 +1,7 @@
 .about {
     width: max(300px, 100%);
     background-color: rgb(84, 158, 138);
+    background-color: #495e6c;
     color: white;
     padding: 100px 0; 
     position: relative;

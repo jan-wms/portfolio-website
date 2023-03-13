@@ -33,6 +33,7 @@ query ImageQuery {
       if (item.node.relativePath === projectInformation.image.substr(1)) {
         r = index;
       }
+      return;
     });
     return r;
   }
