@@ -49,8 +49,8 @@ const GithubCard = ({ repoName }) => {
     githubData.githubData.data.user.repositories.edges.map((item) => {
       if (item.node.name === repoName) {
         r = item.node;
-        return;
       }
+      return null;
     })
     return r;
   }
