@@ -1,19 +1,31 @@
 .about {
-    width: max(300px, 100%);
+    width: max(270px, calc(100% - 30px));
     background-color: #495e6c;
     color: white;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 30px;
-    padding: 50px 0;
+    padding: 0 15px;
 }
 
-
+.content {
+    position: relative;
+    height: 100px;
+    width: 100px;
+}
 
 .about h3 {
     z-index: 10;
     font-size: 2.5rem;
     padding: 30px;
+}
+
+@media screen and (min-width: 1000px) {
+    .about {
+        flex-direction: row;
+        padding: 50px 0;
+        width: 100%;
+    }
 }
 
 /*
