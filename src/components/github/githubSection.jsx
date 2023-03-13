@@ -24,7 +24,7 @@ const GithubSection = () => {
       }
   `);
 
-    //title heigth
+    //title height
     const [titleHeight, setTitleHeight] = useState(0)
     const titleRef = useRef(null)
     useEffect(() => {
@@ -58,7 +58,7 @@ const GithubSection = () => {
     });
     const yOffset = useTransform(scrollYProgress, [0, 1], [0, (cardHeight - windowHeight)]);
     const color = useTransform(scrollYProgress, [0,0.15], [windowWidth < 1000 ? "#7695ab" : "#bacfdb", "#7695ab", ])
-    const margin = windowWidth < 1000 ? 150 : windowHeight-titleHeight <= 0 ? (50 + (titleHeight - windowHeight) / 2) : 0;
+    const margin = windowWidth < 1000 ? 150 : Math.max((150 - (windowHeight - titleHeight) / 2), 0);
 
     return (
         <motion.section className={styles.githubSection} id='github' style={{marginTop: margin, marginBottom: margin}}>
