@@ -1,20 +1,18 @@
 import * as React from "react"
 import { Link } from "gatsby"
 import * as styles from './success.module.css'
-import { ImArrowLeft2 } from "@react-icons/all-files/im/ImArrowLeft2"
-
 
 
 const SuccessPage = () => {
     return (
         <main>
-            <div className={styles.successBackground}>
-            <section className={styles.successInformation}>
-                <h1>Danke</h1>
-                <p>Deine Nachricht wurde erfolgreich übermittelt. Du erhältst schnellstmöglich eine Antwort!</p>
+            <div className={styles.wrapper}>
+                <section className={styles.content}>
+                    <h1>Danke</h1>
+                    <h2>Deine Nachricht wurde erfolgreich übermittelt.</h2>
 
-                <span><Link to="/" className={styles.link}><ImArrowLeft2 className={styles.icon}/>Zurück zur Startseite</Link></span>
-            </section>
+                    <Link to="/" className={styles.link}>Zur Startseite</Link>
+                </section>
             </div>
         </main>
     )
@@ -22,4 +20,4 @@ const SuccessPage = () => {
 
 export default SuccessPage
 
-export const Head = () => <title>Nachricht erfolgreich gesendet | Jan Wermeckes</title>
+export const Head = () => <title>Nachricht erfolgreich übermittelt. | Jan Wermeckes</title>

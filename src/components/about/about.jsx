@@ -30,7 +30,7 @@ const About = () => {
 
   return (
     <section className={styles.about} id='about' ref={ref}>
-      <StaticImage src='../../../static/assets/mountain.jpeg' alt='Mountain' title='Mountain' class={styles.image} />
+      <StaticImage style={{clipPath: 'polygon(50% 0, 100% 0, 100% 100%, 50% 100%)', width: '100px !important'}} src='../../../static/assets/mountain.jpeg' alt='Mountain' title='Mountain' class={styles.image} />
       <div className={styles.content}>
         <StaticImage src='../../../static/assets/mountain.jpeg' alt='Mountain' title='Mountain' class={styles.image} />
         <motion.h3 style={{ opacity: opacityH3 }}>Ich bin Jan, 19 Jahre alt.<br />
