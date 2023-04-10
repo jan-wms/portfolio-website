@@ -45,6 +45,7 @@ query ImageQuery {
   }
 
   return (
+    <a href={projectInformation.linkSection.url} target="_blank" rel="noreferrer nofollow" title={projectInformation.title}>
     <motion.div className={styles.projectCard}
       initial={{ scale: 0.5 }}
       whileInView={{ scale: 1 }}
@@ -53,9 +54,7 @@ query ImageQuery {
         type: "spring",
         duration: 0.8,
         bounce: 0.1,
-      }}
-      onClick={() => {window.open(projectInformation.linkSection.url,'_blank');}}
-      >
+      }}>
       <div className={styles.imageSection}>
         <GatsbyImage image={allImageData.allFile.edges[getNodeIndex()].node.childImageSharp.gatsbyImageData} alt={projectInformation.title} title={projectInformation.title} style={{ height: '100%', maxHeight: '100%', maxWidth: '100%', aspectRatio: `${allImageData.allFile.edges[getNodeIndex()].node.childImageSharp.original.width}/${allImageData.allFile.edges[getNodeIndex()].node.childImageSharp.original.height}` }} imgStyle={{ borderRadius: '20px 20px 0 0' }} />
       </div>
@@ -71,7 +70,7 @@ query ImageQuery {
             {projectInformation.linkSection.playstoreUrl !== null ? <a href={projectInformation.linkSection.playstoreUrl} target="_blank" rel="noreferrer nofollow" title='Play Store'><StaticImage src='../../../static/assets/playstore.png' title='Get it on Google Play' alt="Get it on Google Play" height={40} /></a> : null}
           </div> : null}
       </section>
-    </motion.div>
+    </motion.div></a>
   )
 }
 
