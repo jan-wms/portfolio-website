@@ -25,19 +25,57 @@ const About = () => {
 
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({ target: ref, offset: ['0 1', '1 0'] });
-  const opacityH3 = useTransform(scrollYProgress, [0, 0.33, 0.45, 0.55, 0.66, 1], [0, 0, 1, 1, 0, 0]);
-  const opacityBlurred = useTransform(scrollYProgress, [0, 0.33, 0.45, 0.55, 0.66, 1], [0, 0, 0.3, 0.3, 0, 0]);
+  const opacityH3 = useTransform(scrollYProgress, [0, 0.2, 0.3, 0.7, 0.8, 1], [0, 0, 1, 1, 0, 0]);
+
+  const style = {
+    width: '100%',
+    height: '100%',
+    position: 'absolute'
+  };
 
   return (
     <section className={styles.about} id='about' ref={ref}>
-      <StaticImage style={{clipPath: 'polygon(50% 0, 100% 0, 100% 100%, 50% 100%)', width: '100px !important'}} src='../../../static/assets/mountain.jpeg' alt='Mountain' title='Mountain' class={styles.image} />
-      <div className={styles.content}>
-        <StaticImage src='../../../static/assets/mountain.jpeg' alt='Mountain' title='Mountain' class={styles.image} />
-        <motion.h3 style={{ opacity: opacityH3 }}>Ich bin Jan, 19 Jahre alt.<br />
-          Begeisterter Programmierer und Bergsteiger.</motion.h3>
-        <motion.div className={styles.blurred} style={{ opacity: opacityBlurred }} />
+      <div className={styles.before}>
+        <StaticImage
+          src='../../../static/assets/mountain.jpeg' alt='Mountain' title='Mountain'
+          style={style}
+          objectPosition={'0% 100%'}
+        />
       </div>
-      <StaticImage src='../../../static/assets/mountain.jpeg' alt='Mountain' title='Mountain' class={styles.image} />
+      <div className={styles.content}>
+        <StaticImage
+          src='../../../static/assets/mountain.jpeg' alt='Mountain' title='Mountain'
+          style={style}
+        />
+        <div className={styles.titleWrapper}>
+          <motion.h3 style={{ opacity: opacityH3 }}>Ich bin Jan, 19 Jahre alt.<br />
+            Begeisterter Programmierer und Bergsteiger.</motion.h3>
+        </div>
+      </div>
+      <div className={styles.after}>
+        <StaticImage
+          src='../../../static/assets/mountain.jpeg' alt='Mountain' title='Mountain'
+          style={style}
+          objectPosition={'100% 50%'}
+        />
+      </div>
+      {/*<StaticImage
+        src='../../../static/assets/mountain.jpeg' alt='Mountain' title='Mountain'
+        style={{
+          transform: 'scaleX(-1)',
+        }}
+        width={200}
+        height={100}
+        objectFit='contain'
+      />*/}
+      {/*
+     
+     <div className={styles.content}>
+        <StaticImage src='../../../static/assets/mountain.jpeg' alt='Mountain' title='Mountain' class={styles.image} />
+        
+      </div>
+    
+  */}
     </section>
   )
 }

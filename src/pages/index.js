@@ -20,9 +20,9 @@ const IndexPage = () => {
     <main>
       <NavBar navBarLinks={navBarLinks} />
       <Header />
-     {/* <About />*/}
+      <About />
       <Projects />
-  <GithubSection />
+      <GithubSection />
       <Footer />
     </main>
   )
