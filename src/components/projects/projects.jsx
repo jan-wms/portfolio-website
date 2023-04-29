@@ -6,7 +6,7 @@ import { useStaticQuery, graphql } from "gatsby"
 const Projects = () => {
   const projectData = useStaticQuery(graphql`
   query ProjectQuery {
-    allProjectsJson {
+    allProjectsJson(sort: {date: DESC}) {
       edges {
         node {
           date
@@ -21,7 +21,7 @@ const Projects = () => {
         }
       }
     }
-    }
+  }
   `);
 
   return (
