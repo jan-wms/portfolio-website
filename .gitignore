@@ -3,3 +3,5 @@ node_modules/
 public
 .env
 .env.*
+static/.DS_Store
+.DS_Store
