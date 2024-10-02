@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: jan2210/portfolio-website
+  repo: jan-wms/portfolio-website
   branch: master
 
 media_folder: static/assets

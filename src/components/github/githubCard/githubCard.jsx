@@ -60,8 +60,8 @@ const GithubCard = ({ repoName }) => {
   return (
     <div className={styles.githubCard}>
       <div className={styles.topSection}>
-        <h3><GoRepo className={styles.repoIcon} /><a href={`https://www.github.com/jan2210/${repoName}`} title={repoName} target="_blank" rel="noreferrer nofollow">{repoName.length > 20 ? repoName.substr(0,15) +'...' : repoName}</a><div className={styles.repoVisibility}>{projectGithubData.isPrivate ? 'Private' : 'Public'}</div></h3>
-        <GitHubButton href={`https://www.github.com/jan2210/${repoName}`} title={repoName} data-icon="octicon-star" data-size='large' aria-label="Star jan2210/Dijkstra2 on GitHub">Star</GitHubButton>
+        <h3><GoRepo className={styles.repoIcon} /><a href={`https://www.github.com/jan-wms/${repoName}`} title={repoName} target="_blank" rel="noreferrer nofollow">{repoName.length > 20 ? repoName.substr(0,15) +'...' : repoName}</a><div className={styles.repoVisibility}>{projectGithubData.isPrivate ? 'Private' : 'Public'}</div></h3>
+        <GitHubButton href={`https://www.github.com/jan-wms/${repoName}`} title={repoName} data-icon="octicon-star" data-size='large' aria-label="Star jan-wms/Dijkstra2 on GitHub">Star</GitHubButton>
       </div>
       <p className={styles.description}>{projectGithubData.description}</p>
       <div className={styles.topics}>

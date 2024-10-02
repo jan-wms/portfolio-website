@@ -47,7 +47,7 @@ module.exports = {
         variables: {},
         graphQLQuery: `
         query {
-          user(login: "jan2210") {
+          user(login: "jan-wms") {
             repositories(first: 100) {
               edges {
                 node {
