@@ -3,7 +3,5 @@
   "title": "Portfolio-Website",
   "description": "Portfolio-Website erstellt mit Gatsby Js und Netlify CMS.",
   "image": "/assets/portfolio-website.png",
-  "linkSection": {
-    "url": "https://wermeckes.com/"
-  }
+  "url": "https://wermeckes.com/"
 }

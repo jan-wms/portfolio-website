@@ -3,7 +3,5 @@
   "description": "Eine Website zum Abfragen verschiedener Automodelle aus einer MySQL Datenbank. Projekt aus dem Informatikunterricht.",
   "title": "Jans Website",
   "image": "/assets/auto-website.png",
-  "linkSection": {
-    "url": "http://janw.bplaced.net/autos/"
-  }
+  "url": "http://janw.bplaced.net/autos/"
 }

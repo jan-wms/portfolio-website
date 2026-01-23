@@ -3,7 +3,5 @@
   "title": "Navi App",
   "description": "Navigationsapp mit SwiftUI auf Basis des Dijkstra-Algorhythmus.",
   "image": "/assets/dijkstra.png",
-  "linkSection": {
-    "url": "https://github.com/jan-wms/Dijkstra2/"
-  }
+  "url": "https://github.com/jan-wms/Dijkstra2/"
 }
