@@ -1,6 +1,6 @@
 import React from 'react'
 import * as styles from './projectCard.module.css'
-import { GatsbyImage, StaticImage } from "gatsby-plugin-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 import { useStaticQuery, graphql } from "gatsby"
 import { motion } from "framer-motion";
 
@@ -45,8 +45,12 @@ query ImageQuery {
   }
 
   return (
-    <a href={projectInformation.url} target="_blank" rel="noreferrer nofollow" title={projectInformation.title}>
-    <motion.div className={styles.projectCard}
+    <motion.a
+      className={styles.projectCard}
+      href={projectInformation.url}
+      target="_blank"
+      rel="noreferrer nofollow"
+      title={projectInformation.title}
       initial={{ scale: 0.5 }}
       whileInView={{ scale: 1 }}
       viewport={{ once: false, margin: "3000px 0px 0px 0px" }}
@@ -65,7 +69,7 @@ query ImageQuery {
           <p className={styles.description}>{projectInformation.description}</p>
         </section>
       </section>
-    </motion.div></a>
+    </motion.a>
   )
 }
 

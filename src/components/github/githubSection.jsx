@@ -26,7 +26,7 @@ const GithubSection = () => {
     const titleRef = useRef(null)
     useEffect(() => {
         setTitleHeight(titleRef.current.clientHeight);
-    })
+    }, [])
 
     //window height
     const [windowHeight, detectWH] = useState(typeof window !== "undefined" ? window.innerHeight : 1000);
@@ -48,7 +48,7 @@ const GithubSection = () => {
     const [cardHeight, setCardHeight] = useState(0)
     useEffect(() => {
         setCardHeight(cardRef.current.clientHeight);
-    })
+    }, [])
     const { scrollYProgress } = useScroll({
         target: cardRef,
         offset: [`0 0`, `1 1`]

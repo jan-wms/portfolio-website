@@ -2,8 +2,8 @@ import React from 'react'
 import * as styles from './footer.module.css'
 import { VscGithub } from "@react-icons/all-files/vsc/VscGithub"
 import { BiLink } from "@react-icons/all-files/bi/BiLink"
-import { FaGooglePlay } from "@react-icons/all-files/fa/FaGooglePlay"
-import { SiAppstore } from "@react-icons/all-files/si/SiAppstore"
+//import { FaGooglePlay } from "@react-icons/all-files/fa/FaGooglePlay"
+//import { SiAppstore } from "@react-icons/all-files/si/SiAppstore"
 import { motion } from "framer-motion";
 
 
