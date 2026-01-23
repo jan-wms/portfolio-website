@@ -1,2 +1,2 @@
-## Portfolio website with an overview of various projects.
+## Portfolio website
 Developed with Gatsby JS.
