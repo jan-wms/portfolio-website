@@ -58,7 +58,7 @@ const About = () => {
         <div className={styles.left} />
         <div className={styles.right} />
       </div>
-      <motion.h3 style={{ opacity: opacityH3 }}>Ich bin Jan, 20 Jahre alt.<br />
+      <motion.h3 style={{ opacity: opacityH3 }}>Ich bin Jan, 22 Jahre alt.<br />
         Begeisterter Programmierer und Bergsteiger.</motion.h3>
     </section>
   )
