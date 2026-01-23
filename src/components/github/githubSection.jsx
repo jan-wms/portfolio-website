@@ -26,7 +26,7 @@ const GithubSection = () => {
     const titleRef = useRef(null)
     useEffect(() => {
         setTitleHeight(titleRef.current.clientHeight);
-    }, [])
+    })
 
     //window height
     const [windowHeight, detectWH] = useState(typeof window !== "undefined" ? window.innerHeight : 1000);
@@ -40,7 +40,7 @@ const GithubSection = () => {
         return () => {
             window.removeEventListener('resize', detectSize)
         }
-    }, [])
+    })
 
 
 
