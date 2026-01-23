@@ -20,7 +20,6 @@ module.exports = {
       }
     },
     'gatsby-plugin-robots-txt',
-    `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
