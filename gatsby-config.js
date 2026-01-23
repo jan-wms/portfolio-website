@@ -6,7 +6,7 @@ module.exports = {
   siteMetadata: {
     title: `Jan Wermeckes • Software-Entwickler`,
     siteUrl: `https://wermeckes.com`,
-    description: `Ich bin Jan, 22 Jahre alt. Begeisterter Programmierer und Bergsteiger aus Deutschland. | Portfolio-Website Jan Wermeckes`,
+    description: `Ich bin Jan, begeisterter Programmierer und Bergsteiger aus Deutschland. | Portfolio-Website Jan Wermeckes`,
     image: `/assets/favicon.png`,
   },
   plugins: [
@@ -29,7 +29,7 @@ module.exports = {
       options: {
         name: `Jan Wermeckes • Software-Entwickler`,
         short_name: `Jan Wermeckes`,
-        description: `Ich bin Jan, 22 Jahre alt. Begeisterter Programmierer und Bergsteiger aus Deutschland. | Portfolio-Website Jan Wermeckes`,
+        description: `Ich bin Jan, begeisterter Programmierer und Bergsteiger aus Deutschland. | Portfolio-Website Jan Wermeckes`,
         lang: `de`,
         start_url: `/`,
         background_color: `#ffffff`,
