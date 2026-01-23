@@ -23,7 +23,6 @@ module.exports = {
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
-    `gatsby-transformer-json`,
     `gatsby-plugin-anchor-links`,
     {
       resolve: `gatsby-plugin-manifest`,
@@ -89,14 +88,14 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `projects`,
-        path: `${__dirname}/static/projects/`,
+        path: `${__dirname}/src/data/projects/`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `githubRepos`,
-        path: `${__dirname}/static/githubRepos/`,
+        name: `repos`,
+        path: `${__dirname}/src/data/repos/`,
       },
     },
     {
@@ -106,5 +105,6 @@ module.exports = {
         path: `${__dirname}/static/`,
       },
     },
+    `gatsby-transformer-json`,
   ],
 }
