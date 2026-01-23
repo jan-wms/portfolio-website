@@ -45,7 +45,7 @@ query ImageQuery {
   }
 
   return (
-    <a href={projectInformation.linkSection.url} target="_blank" rel="noreferrer nofollow" title={projectInformation.title}>
+    <a href={projectInformation.url} target="_blank" rel="noreferrer nofollow" title={projectInformation.title}>
     <motion.div className={styles.projectCard}
       initial={{ scale: 0.5 }}
       whileInView={{ scale: 1 }}
@@ -64,11 +64,6 @@ query ImageQuery {
           <h3>{projectInformation.title}</h3>
           <p className={styles.description}>{projectInformation.description}</p>
         </section>
-        {projectInformation.linkSection !== null && (projectInformation.linkSection.appstoreUrl !== null || projectInformation.linkSection.playstoreUrl !== null) ?
-          <div className={styles.storeDownload}>
-            {projectInformation.linkSection.appstoreUrl !== null ? <a href={projectInformation.linkSection.appstoreUrl} target="_blank" rel="noreferrer nofollow" title='App Store'><StaticImage src='../../../static/assets/appstore.png' title='Download on the App Store' alt="Download on the App Store" height={40} /></a> : null}
-            {projectInformation.linkSection.playstoreUrl !== null ? <a href={projectInformation.linkSection.playstoreUrl} target="_blank" rel="noreferrer nofollow" title='Play Store'><StaticImage src='../../../static/assets/playstore.png' title='Get it on Google Play' alt="Get it on Google Play" height={40} /></a> : null}
-          </div> : null}
       </section>
     </motion.div></a>
   )

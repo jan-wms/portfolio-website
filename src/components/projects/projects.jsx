@@ -13,11 +13,7 @@ const Projects = () => {
           title
           description
           image
-          linkSection {
-            url
-            appstoreUrl
-            playstoreUrl
-          }
+          url          
         }
       }
     }
