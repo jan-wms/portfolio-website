@@ -1,1 +1,2 @@
-## Portfolio Website. Erstellt mit Gatsby JS.
+## Portfolio website with an overview of various projects.
+Developed with Gatsby JS.
