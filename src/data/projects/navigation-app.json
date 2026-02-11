@@ -1,7 +1,7 @@
 {
   "date": "2022-03-31T13:20:38.507Z",
-  "title": "Navi App",
-  "description": "Navigationsapp mit SwiftUI auf Basis des Dijkstra-Algorhythmus.",
+  "title": "Route Planning App",
+  "description": "Routen Planer mit SwiftUI auf Basis des Dijkstra-Algorhythmus.",
   "image": "/assets/dijkstra.png",
   "url": "https://github.com/jan-wms/Dijkstra2/"
 }

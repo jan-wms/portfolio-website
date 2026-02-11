@@ -1,9 +1,9 @@
 {
     "repos": [
         "bergdinge",
-        "ev3_robot",
-        "Dijkstra2",
-        "hausaufgaben_app_facharbeit",
+        "ev3-robot",
+        "route-planner",
+        "hausaufgaben-organizer",
         "portfolio-website"
     ]
 }
