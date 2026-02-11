@@ -1,8 +1,7 @@
 import React from 'react'
 import * as styles from './footer.module.css'
 import { VscGithub } from "@react-icons/all-files/vsc/VscGithub"
-import { BiLink } from "@react-icons/all-files/bi/BiLink"
-import { FaLinkedin } from "react-icons/fa";
+import { FaLinkedin, FaStrava } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 
@@ -25,6 +24,7 @@ const Footer = () => {
         <section className={styles.linkSection}>
           <a className={styles.link} href='https://www.github.com/jan-wms/' target="_blank" rel="noreferrer nofollow" title='Github'><VscGithub className={styles.icon} /><p>Github</p></a>
           <a className={styles.link} href='https://www.linkedin.com/in/jan-wermeckes' target="_blank" rel="noreferrer nofollow" title='LinkedIn'><FaLinkedin className={styles.icon} /><p>LinkedIn</p></a>
+          <a className={styles.link} href='https://strava.app.link/vq4XSHh2F0b' target="_blank" rel="noreferrer nofollow" title='Strava'><FaStrava className={styles.icon} /><p>Strava</p></a>
         </section>
       </section>
       <section className={styles.copyright}>
