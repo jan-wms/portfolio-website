@@ -16,7 +16,6 @@
   },
   "dependencies": {
     "@react-icons/all-files": "^4.1.0",
-    "framer-motion": "^10.2.4",
     "gatsby": "^5.7.0",
     "gatsby-plugin-anchor-links": "^1.2.1",
     "gatsby-plugin-google-fonts": "^1.0.1",
@@ -26,12 +25,10 @@
     "gatsby-plugin-sharp": "^5.7.0",
     "gatsby-plugin-sitemap": "^6.7.0",
     "gatsby-source-filesystem": "^5.7.0",
-    "gatsby-source-github-api": "^1.0.0",
     "gatsby-transformer-json": "^5.7.0",
     "gatsby-transformer-sharp": "^5.7.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-github-btn": "^1.4.0",
     "react-icons": "^4.4.0"
   }
 }

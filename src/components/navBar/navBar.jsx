@@ -1,12 +1,13 @@
 import React, { useState } from 'react'
 import * as styles from './navBar.module.css'
-import { AnchorLink } from "gatsby-plugin-anchor-links";
 import { HiMenu } from "@react-icons/all-files/hi/HiMenu"
 import { HiX } from "@react-icons/all-files/hi/HiX"
+import { VscGithub } from "@react-icons/all-files/vsc/VscGithub"
+import { FaLinkedin } from "react-icons/fa";
+import { AnchorLink } from "gatsby-plugin-anchor-links";
 
 
-
-const NavBar = ({ navBarLinks }) => {
+const NavBar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const openMenu = () => {
         setIsMenuOpen(true);
@@ -24,11 +25,10 @@ const NavBar = ({ navBarLinks }) => {
             }
 
             <ul className={`${styles.navBarList} ${isMenuOpen ? styles.navBarListActive : ''}`}>
-            {navBarLinks.map((item) => {
-                    return (
-                        <li key={item.title} className={item.isButtonStyle ? styles.buttonLi : styles.normalLi}><AnchorLink onAnchorLinkClick={closeMenu} to={item.url} title={item.title}><span>{item.title}</span></AnchorLink></li>
-                    );
-                })}
+                <li key='Link to About' className={styles.text}><AnchorLink onAnchorLinkClick={closeMenu} to='/#about' title='About'><span>About</span></AnchorLink></li>
+                <li key='Link to Projects' className={styles.text}><AnchorLink onAnchorLinkClick={closeMenu} to='/#projects' title='Projects'><span>Projects</span></AnchorLink></li>
+                <li key='Link to Github' className={styles.social}><a  onClick={closeMenu} href='https://www.github.com/jan-wms/' target="_blank" rel="noreferrer noopener" title='Github'><VscGithub /></a></li>
+                <li key='Link to LinkedIn' className={styles.social}><a onClick={closeMenu} href='https://www.linkedin.com/in/jan-wermeckes' target="_blank" rel="noreferrer noopener" title='LinkedIn'><FaLinkedin /></a></li>
             </ul>
         </nav>
     )

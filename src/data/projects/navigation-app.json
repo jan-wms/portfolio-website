@@ -1,7 +1,7 @@
 {
   "date": "2022-03-31T13:20:38.507Z",
   "title": "Route Planning App",
-  "description": "Routen Planer mit SwiftUI auf Basis des Dijkstra-Algorhythmus.",
+  "description": "Route planner using the Dijkstra algorithm, developed with Swift and SwiftUI for iOS.",
   "image": "/assets/dijkstra.png",
   "url": "https://github.com/jan-wms/Dijkstra2/"
 }
