@@ -1,7 +1,7 @@
 {
   "date": "2021-04-07T10:38:19.378Z",
-  "title": "Hausaufgaben Organizer",
-  "description": "Eine App zum einfachen Erstellen und Verwalten von Hausaufgaben mit integrierter Stundenplanerkennung.",
+  "title": "Homework Organizer",
+  "description": "A mobile App for easily creating and managing homework with integrated timetable recognition. Developed with Flutter.",
   "image": "/assets/hausaufgabenOrganizer.png",
-  "url": "http://janw.bplaced.net/"
+  "url": "http://janw.bplaced.net/hausaufgaben/"
 }

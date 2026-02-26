@@ -12,12 +12,12 @@ const Seo = ({ title, description, pathname, children }) => {
     return (
         <>
             <title>{seo.title}</title>
-            <html lang="de" />
+            <html lang="en" />
             <meta name="description" content={seo.description} />
             <meta name="image" content={seo.image} />
             <link rel="canonical" href={siteUrl} />
-            <meta name="language" content="German" />
-            <meta name="keywords" content="jan, Wermeckes, software, developer, portfolio, projects, GitHub" />
+            <meta name="language" content="English" />
+            <meta name="keywords" content="jan, Wermeckes, software, developer, portfolio, projects, germany, munich" />
 
             <meta name="twitter:card" content="summary" />
             <meta name="twitter:title" content={seo.title} />

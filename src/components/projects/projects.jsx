@@ -22,7 +22,7 @@ const Projects = () => {
 
   return (
     <section className={styles.projectSection} id='projects'>
-      <h2 className={styles.title}>Projekte</h2>
+      <h2 className={styles.title}>Projects</h2>
         <section className={styles.projectCards}>
           {
             projectData.allProjectsJson.edges.map((item, index) => {

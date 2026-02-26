@@ -1,16 +1,11 @@
-require("dotenv").config({
-  path: `.env.${process.env.NODE_ENV}`,
-})
-
 module.exports = {
   siteMetadata: {
-    title: `Jan Wermeckes • Software-Entwickler`,
+    title: `Jan Wermeckes`,
     siteUrl: `https://wermeckes.com`,
-    description: `Ich bin Jan, begeisterter Programmierer und Bergsteiger aus Deutschland. | Portfolio-Website Jan Wermeckes`,
+    description: `I'm Jan, an enthusiastic programmer and mountaineer from Germany. | Portfolio website Jan Wermeckes`,
     image: `/assets/favicon.png`,
   },
   plugins: [
-    `react-github-btn`,
     {
       resolve: `gatsby-plugin-sitemap`,
       options: {
@@ -27,53 +22,16 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Jan Wermeckes • Software-Entwickler`,
+        name: `Jan Wermeckes`,
         short_name: `Jan Wermeckes`,
-        description: `Ich bin Jan, begeisterter Programmierer und Bergsteiger aus Deutschland. | Portfolio-Website Jan Wermeckes`,
-        lang: `de`,
+        description: `I'm Jan, an enthusiastic programmer and mountaineer from Germany. | Portfolio website Jan Wermeckes`,
+        lang: `en`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#ffffff`,
         display: `standalone`,
         icon: `static/assets/favicon.png`,
       },
-    },
-    {
-      resolve: `gatsby-source-github-api`,
-      options: {
-        token: process.env.TOKEN,
-        variables: {},
-        graphQLQuery: `
-        query {
-          user(login: "jan-wms") {
-            repositories(first: 100) {
-              edges {
-                node {
-                  description
-                  forkCount
-                  isPrivate
-                  name
-                  primaryLanguage {
-                    color
-                    name
-                  }
-                  repositoryTopics(first: 10) {
-                    edges {
-                      node {
-                        topic {
-                          name
-                        }
-                      }
-                    }
-                  }
-                  stargazerCount
-                }
-              }
-            }
-          }
-        }
-        `,
-      }
     },
     {
       resolve: `gatsby-plugin-google-fonts`,
@@ -89,13 +47,6 @@ module.exports = {
       options: {
         name: `projects`,
         path: `${__dirname}/src/data/projects/`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `repos`,
-        path: `${__dirname}/src/data/repos/`,
       },
     },
     {
