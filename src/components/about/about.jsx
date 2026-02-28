@@ -4,59 +4,75 @@ import * as styles from './about.module.css'
 
 const About = () => {
 
-  const image = '../../../static/assets/mountain.jpeg';
+  const image = '../../../static/assets/mountain.jpg';
 
   const phrases = [
-    "mountaineering.",
+    "mountains.",
     "coding.",
     "running.",
     "developing.",
-    "cycling."
+    "cycling.",
+    "skiing."
   ]
 
   const extended = [...phrases, phrases[0]]
   const [index, setIndex] = useState(0);
-  const [enableTransition, setEnableTransition] = useState(false);
+  const [enableTransition, setEnableTransition] = useState(true);
   const timeoutRef = useRef(null)
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setIndex((prev) => (prev + 1) % extended.length)
-    }, 5000)
-
-    return () => clearInterval(interval);
-  }, [])
+  const MOVE = 600;
+  const PAUSE = 3000;
 
   useEffect(() => {
-    if (index == phrases.length) {
+    function scheduleNext() {
       timeoutRef.current = setTimeout(() => {
-        setEnableTransition(false)
-        setIndex(0)
-      }, 600)
-    } else {
-      setEnableTransition(true)
+        setIndex(prev => {
+          const next = prev + 1
+
+          if (next === phrases.length) {
+            setEnableTransition(true)
+
+            setTimeout(() => {
+              setEnableTransition(false)
+              setIndex(0)
+            }, MOVE)
+
+            setTimeout(scheduleNext, MOVE + PAUSE)
+
+            return next
+          }
+
+          setEnableTransition(true)
+          setTimeout(scheduleNext, MOVE + PAUSE)
+          return next
+        })
+      }, PAUSE)
     }
+
+    scheduleNext()
+
     return () => clearTimeout(timeoutRef.current)
-  }, [index, phrases.length])
+  }, [phrases.length])
+
 
   return (
     <section className={styles.about} id='about'>
       <div className={styles.left}>
         <h3>I'm a Computer Science student at the Technical University of Munich.</h3>
         <div className={styles.wrapper}>
-        <h3>I like</h3>
-        <div className={styles.dynamicWrapper}>
-          <div className={styles.dynamicInner} style={{
-            transform: `translateY(-${index * 2}rem)`,
-            transition: enableTransition ? "transform 0.6s ease-in-out" : "none"
-          }}>
-            {
-              extended.map((text, i) => (
-                <h3 key={i}>{text}</h3>
-              ))
-            }
+          <h3>I like</h3>
+          <div className={styles.dynamicWrapper}>
+            <div className={styles.dynamicInner} style={{
+              transform: `translateY(-${index * 2}rem)`,
+              transition: enableTransition ? `transform ${MOVE}ms ease-in-out` : "none"
+            }}>
+              {
+                extended.map((text, i) => (
+                  <h3 key={i}>{text}</h3>
+                ))
+              }
+            </div>
           </div>
-        </div>
         </div>
       </div>
       <div className={styles.right}>
