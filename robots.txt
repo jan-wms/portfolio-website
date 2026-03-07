@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://wermeckes.com/sitemap.xml
+Host: https://wermeckes.com

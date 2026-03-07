@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Jan Wermeckes</title>
+    <meta name="description"
+        content="I'm Jan, an enthusiastic programmer and mountaineer from Germany. I'm a Computer Science student at the Technical University of Munich." />
+    <link rel="canonical" href="https://wermeckes.com/" />
+
+    <meta name="robots" content="index, follow">
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Jan Wermeckes" />
+    <meta name="twitter:description"
+        content="I'm Jan, an enthusiastic programmer and mountaineer from Germany. I'm a Computer Science student at the Technical University of Munich." />
+    <meta name="twitter:image" content="https://wermeckes.com/assets/favicon.png" />
+
+    <meta property="og:title" content="Jan Wermeckes" />
+    <meta property="og:site_name" content="Jan Wermeckes" />
+    <meta property="og:url" content="https://wermeckes.com/" />
+    <meta property="og:description"
+        content="I'm Jan, an enthusiastic programmer and mountaineer from Germany. I'm a Computer Science student at the Technical University of Munich." />
+    <meta property="og:type" content="profile" />
+    <meta property="og:image" content="https://wermeckes.com/assets/icon.png" />
+    <meta property="og:image:width" content="512" />
+    <meta property="og:image:height" content="512" />
+    <meta property="og:image:alt" content="Portfolio of Jan Wermeckes" />
+
+    <script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "Person",
+ "name": "Jan Wermeckes",
+ "url": "https://wermeckes.com",
+ "jobTitle": "Software Developer",
+ "nationality": "German",
+ "address": {
+   "@type": "Place",
+   "addressLocality": "Munich",
+   "addressCountry": "Germany"
+ },
+ "sameAs": [
+   "https://github.com/jan-wms",
+   "https://www.linkedin.com/in/jan-wermeckes"
+ ]
+}
+</script>
+
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="/icon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/icon/favicon.svg" />
+    <link rel="shortcut icon" href="/icon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/icon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Jan Wermeckes" />
+    <link rel="manifest" href="/icon/site.webmanifest" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- mobile menu logic -->
+    <script src="menu.js" defer></script>
+</head>
+
+<body>
+    <!-- navigation -->
+    <nav id="navigation">
+        <button id="open-button" class="nav-button">
+            <svg class="nav-button-icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"
+                stroke-width="2.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+        </button>
+        <button id="close-button" class="nav-button"><svg class="nav-button-icon" xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+            </svg>
+        </button>
+
+
+
+        <ul id="nav-list">
+            <li class="nav-text">
+                <a href='#about'><span>About</span></a>
+            </li>
+            <li class="nav-text">
+                <a href='#projects'><span>Projects</span>
+                </a>
+            </li>
+            <li class="nav-social">
+                <a href='https://www.github.com/jan-wms/' target="_blank" rel="noreferrer noopener"
+                    aria-label='Follow me on Github'>
+                    <svg class="nav-social-icon" viewBox="0 0 24 25" xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor">
+                        <path
+                            d="M12 0.567749C9.62663 0.567749 7.30656 1.27154 5.33316 2.59011C3.35977 3.90869 1.8217 5.78284 0.913451 7.97555C0.00519944 10.1683 -0.232441 12.5811 0.230582 14.9088C0.693605 17.2366 1.83649 19.3748 3.51473 21.053C5.19296 22.7313 7.33115 23.8742 9.65893 24.3372C11.9867 24.8002 14.3995 24.5626 16.5922 23.6543C18.7849 22.7461 20.6591 21.208 21.9776 19.2346C23.2962 17.2612 24 14.9411 24 12.5678C24 9.38516 22.7357 6.33291 20.4853 4.08247C18.2349 1.83203 15.1826 0.567749 12 0.567749ZM15.1629 22.3512H15.0703C15.0004 22.355 14.9304 22.3445 14.8646 22.3204C14.7989 22.2962 14.7388 22.2588 14.688 22.2106C14.6411 22.161 14.6044 22.1026 14.5803 22.0388C14.5562 21.9749 14.545 21.9069 14.5474 21.8386V20.4329C14.5543 19.9655 14.5577 19.4935 14.5577 19.0169C14.5562 18.6686 14.5055 18.3223 14.4069 17.9883C14.3135 17.6511 14.1256 17.3477 13.8652 17.114C14.5623 17.0467 15.2475 16.8882 15.9034 16.6426C16.4565 16.4323 16.9568 16.1035 17.3692 15.6792C17.7759 15.2516 18.0786 14.7359 18.2537 14.1723C18.4668 13.4832 18.5681 12.7644 18.5537 12.0432C18.5574 11.5394 18.4691 11.0392 18.2932 10.5672C18.1149 10.0915 17.8452 9.6553 17.4994 9.28318C17.5737 9.09515 17.6277 8.89977 17.6606 8.70032C17.6942 8.50094 17.7108 8.29908 17.7103 8.0969C17.7106 7.8366 17.6807 7.57715 17.6212 7.32375C17.5666 7.06431 17.4927 6.80931 17.4 6.56089C17.3646 6.54686 17.3267 6.53987 17.2886 6.54032H17.1789C16.9499 6.54299 16.7228 6.58056 16.5052 6.65175C16.2649 6.72144 16.0299 6.80852 15.8023 6.91232C15.5754 7.01389 15.3544 7.12836 15.1406 7.25518C14.9263 7.38204 14.736 7.50375 14.568 7.6169C12.8858 7.14804 11.1074 7.14804 9.42515 7.6169C9.25372 7.50375 9.06687 7.38204 8.85258 7.25518C8.63597 7.12696 8.41153 7.01245 8.18058 6.91232C7.95337 6.80605 7.7177 6.71889 7.47601 6.65175C7.26242 6.58104 7.03926 6.54346 6.81429 6.54032H6.70458C6.66702 6.54 6.62976 6.54699 6.59486 6.56089C6.50045 6.80962 6.42313 7.0645 6.36344 7.32375C6.31009 7.57802 6.28309 7.8371 6.28287 8.0969C6.28296 8.29913 6.30016 8.50099 6.33429 8.70032C6.36662 8.89971 6.42007 9.0951 6.49372 9.28318C6.14842 9.65537 5.87936 10.0916 5.70172 10.5672C5.52524 11.0391 5.43635 11.5393 5.43944 12.0432C5.42538 12.7604 5.52371 13.4753 5.73086 14.162C5.91225 14.7259 6.21408 15.2436 6.61544 15.6792C7.03026 16.1005 7.52986 16.4289 8.08115 16.6426C8.73413 16.8929 9.41811 17.0532 10.1143 17.1192C9.91979 17.2951 9.76544 17.5109 9.66172 17.7518C9.56305 17.9901 9.49564 18.2401 9.46115 18.4958C9.09453 18.6717 8.69349 18.7642 8.28687 18.7666C7.90903 18.7811 7.53632 18.6755 7.22229 18.4649C6.92064 18.2418 6.66507 17.9624 6.46972 17.642C6.38262 17.5073 6.28519 17.3794 6.17829 17.2598C6.06536 17.134 5.94081 17.0192 5.80629 16.9169C5.67374 16.8178 5.52843 16.7371 5.37429 16.6769C5.22244 16.6103 5.05841 16.5758 4.89258 16.5758C4.85241 16.5768 4.81234 16.5802 4.77258 16.586C4.71822 16.5861 4.66408 16.593 4.61144 16.6066C4.56482 16.6188 4.52071 16.6391 4.48115 16.6666C4.46333 16.6765 4.44842 16.6909 4.43789 16.7083C4.42736 16.7258 4.42159 16.7457 4.42115 16.766C4.42551 16.8142 4.44036 16.8607 4.46465 16.9025C4.48893 16.9442 4.52207 16.9802 4.56172 17.0078C4.65429 17.082 4.73144 17.1392 4.79315 17.1792L4.82229 17.1998C4.95641 17.3027 5.08408 17.4137 5.20458 17.5323C5.31733 17.6303 5.41804 17.7414 5.50458 17.8632C5.5951 17.9814 5.67269 18.109 5.73601 18.2438C5.80915 18.3775 5.88629 18.5318 5.96744 18.7066C6.15489 19.1802 6.48887 19.5815 6.92058 19.8518C7.37379 20.0949 7.88243 20.216 8.39658 20.2032C8.57132 20.2032 8.74591 20.1929 8.91944 20.1723C9.09087 20.1449 9.26229 20.1158 9.43372 20.0815V21.8249C9.43682 21.8954 9.42498 21.9657 9.39898 22.0313C9.37298 22.0969 9.33341 22.1563 9.28287 22.2055C9.23208 22.2537 9.17197 22.291 9.10623 22.3152C9.0405 22.3394 8.97052 22.3499 8.90058 22.346H8.83887C6.50699 21.5927 4.52068 20.0316 3.23764 17.9437C1.95459 15.8559 1.45912 13.3786 1.84043 10.9579C2.22175 8.53721 3.4548 6.33219 5.31754 4.7399C7.18028 3.14761 9.55032 2.27269 12.0009 2.27269C14.4514 2.27269 16.8215 3.14761 18.6842 4.7399C20.5469 6.33219 21.78 8.53721 22.1613 10.9579C22.5426 13.3786 22.0471 15.8559 20.7641 17.9437C19.4811 20.0316 17.4948 21.5927 15.1629 22.346V22.3512Z" />
+                    </svg>
+                </a>
+            </li>
+            <li class="nav-social">
+                <a href='https://www.linkedin.com/in/jan-wermeckes' target="_blank" rel="noreferrer noopener"
+                    aria-label='Follow me on LinkedIn'>
+                    <svg class="nav-social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"
+                        fill="currentColor"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                        <path
+                            d="M512 96L127.9 96C110.3 96 96 110.5 96 128.3L96 511.7C96 529.5 110.3 544 127.9 544L512 544C529.6 544 544 529.5 544 511.7L544 128.3C544 110.5 529.6 96 512 96zM231.4 480L165 480L165 266.2L231.5 266.2L231.5 480L231.4 480zM198.2 160C219.5 160 236.7 177.2 236.7 198.5C236.7 219.8 219.5 237 198.2 237C176.9 237 159.7 219.8 159.7 198.5C159.7 177.2 176.9 160 198.2 160zM480.3 480L413.9 480L413.9 376C413.9 351.2 413.4 319.3 379.4 319.3C344.8 319.3 339.5 346.3 339.5 374.2L339.5 480L273.1 480L273.1 266.2L336.8 266.2L336.8 295.4L337.7 295.4C346.6 278.6 368.3 260.9 400.6 260.9C467.8 260.9 480.3 305.2 480.3 362.8L480.3 480z" />
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- header -->
+    <header>
+        <h1>Jan Wermeckes</h1>
+    </header>
+
+    <!-- about -->
+    <section id="about">
+        <div id="about-text">
+            <h3>I'm a Computer Science student at the Technical University of Munich.</h3>
+            <div id="about-wrapper">
+                <h3>I like</h3>
+                <div id="about-dynamic-wrapper">
+                    <div id="about-dynamic-inner">
+                        <h3>mountains.</h3>
+                        <h3>coding.</h3>
+                        <h3>running.</h3>
+                        <h3>developing.</h3>
+                        <h3>cycling.</h3>
+                        <h3>skiing.</h3>
+                        <h3>mountains.</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="about-image">
+            <img src="assets/mountain.jpg" alt="Mountain" />
+        </div>
+    </section>
+
+    <!-- projects -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <section id="project-cards-section">
+            <!-- portfolio website -->
+            <a class="project-card" href="https://wermeckes.com/" target="_blank" rel="noreferrer noopener"
+                aria-label="Portfolio website">
+                <div class="project-card-image">
+                    <img src="assets/portfolio-website.jpg" alt="Portfolio website" />
+                </div>
+                <section class="project-card-text">
+                    <h3>Portfolio website</h3>
+                    <p>This portfolio website.</p>
+                </section>
+            </a>
+            <!-- route planner -->
+            <a class="project-card" href="https://github.com/jan-wms/" target="_blank" rel="noreferrer noopener"
+                aria-label="Route Planning App">
+                <div class="project-card-image">
+                    <img src="assets/dijkstra.png" alt="Route Planning App" />
+                </div>
+                <section class="project-card-text">
+                    <h3>Route Planning App</h3>
+                    <p>Route planner using the Dijkstra algorithm, developed with Swift and SwiftUI for iOS.</p>
+                </section>
+            </a>
+            <!-- homework organizer -->
+            <a class="project-card" href="http://janw.bplaced.net/hausaufgaben/" target="_blank"
+                rel="noreferrer noopener" aria-label="Homework Organizer">
+                <div class="project-card-image">
+                    <img src="assets/hausaufgabenOrganizer.png" alt="Homework Organizer" />
+                </div>
+                <section class="project-card-text">
+                    <h3>Homework Organizer</h3>
+                    <p>A mobile App for easily creating and managing homework with integrated timetable recognition.
+                        Developed with Flutter.</p>
+                </section>
+            </a>
+            <!-- Jan's website -->
+            <a class="project-card" href="http://janw.bplaced.net/" target="_blank" rel="noreferrer noopener"
+                aria-label="Jan's website">
+                <div class="project-card-image">
+                    <img src="assets/auto-website.png" alt="Jan's website" />
+                </div>
+                <section class="project-card-text">
+                    <h3>Jan's website</h3>
+                    <p>A website for querying different car models from a MySQL database. A school project.</p>
+                </section>
+            </a>
+        </section>
+    </section>
+
+    <!-- footer -->
+    <footer id="footer">
+        <section id="footer-social">
+            <!-- github -->
+            <a class="footer-social-link" href='https://www.github.com/jan-wms/' target="_blank"
+                rel="noreferrer noopener">
+                <svg class="footer-social-icon" viewBox="0 0 24 25" xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor">
+                    <path
+                        d="M21.0346 5.82524C21.9445 6.91709 22.3994 8.19091 22.3994 9.64671C22.3994 14.924 19.3969 16.4707 16.5763 16.9257C16.9402 17.5626 17.0312 18.2905 17.0312 19.0184V22.7489C17.0312 23.2038 16.7582 23.4768 16.3943 23.4768C16.0303 23.4768 15.6664 23.2038 15.6664 22.7489V19.0184C15.7574 18.1995 15.4844 17.4716 14.9385 16.9257L15.3934 15.7428C18.214 15.3789 21.1256 14.469 21.1256 9.55572C21.1256 8.37289 20.6707 7.28104 19.8518 6.37117L19.6698 5.64327C20.0338 4.7334 20.0338 3.73254 19.7608 2.91365C19.3059 3.00464 18.396 3.18661 16.8492 4.27846L16.3033 4.36945C14.1196 3.82352 11.9359 3.82352 9.75222 4.36945L9.2063 4.27846C7.56853 3.2776 6.65866 3.00464 6.20372 3.00464C5.93076 3.91451 5.93076 4.91537 6.29471 5.73426L6.11274 6.46215C5.20286 7.37203 4.74793 8.55486 4.74793 9.64671C4.74793 14.469 7.47754 15.4699 10.4801 15.8338L10.8441 17.0167C10.2981 17.5626 10.0252 18.2905 10.1162 19.0184V19.9283V20.0192V22.8399C10.1162 23.2038 9.84321 23.5677 9.38828 23.5677C9.02433 23.5677 8.66038 23.2948 8.66038 22.8399V20.7471C5.6578 21.3841 4.47497 19.8373 3.5651 18.6544C3.11016 18.1085 2.74621 17.6536 2.29127 17.5626C2.20029 17.4716 1.92733 17.1077 2.01831 16.7437C2.1093 16.3798 2.47325 16.1068 2.8372 16.2888C3.74707 16.4707 4.29299 17.1986 4.83892 17.8356C5.6578 18.9274 6.47669 19.9283 8.93334 19.3823V19.0184C8.84235 18.2905 9.02433 17.5626 9.38828 16.9257C6.65866 16.3798 3.47411 14.833 3.47411 9.64671C3.47411 8.19091 3.92904 6.91709 4.83892 5.82524C4.56595 4.55142 4.65694 3.18661 5.11188 2.09477L5.56681 1.73082C5.74879 1.63983 7.02261 1.36687 9.66124 3.00464C11.8449 2.45872 14.1196 2.45872 16.3033 3.00464C18.8509 1.27588 20.2158 1.54884 20.3977 1.63983L20.8527 2.00378C21.3076 3.2776 21.3986 4.55142 21.0346 5.82524Z" />
+                </svg>
+                <p>@jan-wms</p>
+            </a>
+            <!-- linkedin -->
+            <a class="footer-social-link" href='https://www.linkedin.com/in/jan-wermeckes' target="_blank"
+                rel="noreferrer noopener">
+                <svg class="footer-social-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                    fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                        d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24Zm0,192H40V40H216V216ZM96,112v64a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0Zm88,28v36a8,8,0,0,1-16,0V140a20,20,0,0,0-40,0v36a8,8,0,0,1-16,0V112a8,8,0,0,1,15.79-1.78A36,36,0,0,1,184,140ZM100,84A12,12,0,1,1,88,72,12,12,0,0,1,100,84Z">
+                    </path>
+                </svg>
+                <p>Jan Wermeckes</p>
+            </a>
+            <!-- mail -->
+            <a class="footer-social-link" href='mailto:jan@wermeckes.com'>
+                <svg class="footer-social-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    fill="currentColor" viewBox="0 0 24 24">
+                    <path
+                        d="M1.75 3h20.5c.966 0 1.75.784 1.75 1.75v14a1.75 1.75 0 0 1-1.75 1.75H1.75A1.75 1.75 0 0 1 0 18.75v-14C0 3.784.784 3 1.75 3ZM1.5 7.412V18.75c0 .138.112.25.25.25h20.5a.25.25 0 0 0 .25-.25V7.412l-9.52 6.433c-.592.4-1.368.4-1.96 0Zm0-2.662v.852l10.36 7a.25.25 0 0 0 .28 0l10.36-7V4.75a.25.25 0 0 0-.25-.25H1.75a.25.25 0 0 0-.25.25Z" />
+                </svg>
+                <p>jan@wermeckes.com</p>
+            </a>
+        </section>
+        <section id="footer-copyright">
+            <p>©2026 Jan Wermeckes</p>
+        </section>
+    </footer>
+</body>
+
+</html>
