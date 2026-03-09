@@ -231,6 +231,7 @@ h1 {
     width: 100%;
     margin: 0;
     aspect-ratio: 1;
+    height: auto;
 }
 
 #about-text h3 {
@@ -250,22 +251,20 @@ h1 {
 
 #about-dynamic-wrapper {
     overflow: hidden;
-    height: 2.2rem;
+    height: 2.3rem;
 }
 
 #about-dynamic-inner {
     display: flex;
     flex-direction: column;
-    animation: rotate 16s infinite;
+    animation: rotate 20s infinite;
 }
 
 #about-dynamic-inner h3 {
     color: rgb(54, 82, 118);
-    display: flex;
-    align-items: center;
     font-weight: 600;
     font-size: 2.2rem;
-    line-height: 2.2rem;
+    line-height: 2.3rem;
 }
 
 @keyframes rotate {
@@ -278,51 +277,51 @@ h1 {
     }
 
     16% {
-        transform: translateY(-2.2rem);
+        transform: translateY(-2.3rem);
     }
 
     28% {
-        transform: translateY(-2.2rem);
+        transform: translateY(-2.3rem);
     }
 
     32% {
-        transform: translateY(-4.4rem);
+        transform: translateY(-4.6rem);
     }
 
     44% {
-        transform: translateY(-4.4rem);
+        transform: translateY(-4.6rem);
     }
 
     48% {
-        transform: translateY(-6.6rem);
+        transform: translateY(-6.9rem);
     }
 
     60% {
-        transform: translateY(-6.6rem);
+        transform: translateY(-6.9rem);
     }
 
     64% {
-        transform: translateY(-8.8rem);
+        transform: translateY(-9.2rem);
     }
 
     76% {
-        transform: translateY(-8.8rem);
+        transform: translateY(-9.2rem);
     }
 
     80% {
-        transform: translateY(-11.0rem);
+        transform: translateY(-11.5rem);
     }
 
     92% {
-        transform: translateY(-11.0rem);
+        transform: translateY(-11.5rem);
     }
 
     96% {
-        transform: translateY(-13.2rem);
+        transform: translateY(-13.8rem);
     }
 
     100% {
-        transform: translateY(-13.2rem);
+        transform: translateY(-13.8rem);
     }
 
 }
@@ -475,5 +474,57 @@ h1 {
     #footer-social {
         flex-direction: row;
         gap: 100px;
+    }
+}
+
+/* not found page */
+.not-found-wrapper {
+    width: max(90%, 270px);
+    height: max(90vh, 270px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: max(5vh, 15px) max(5%, 15px);
+}
+
+.not-found-content {
+    display: grid;
+    grid-template-areas: 'h1' 'h2' 'link';
+    row-gap: 10px;
+    justify-items: center;
+}
+
+.not-found-content h1 {
+    grid-area: h1;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    align-self: center;
+    width: min-content;
+    background-color: var(--text-color);
+}
+
+.not-found-content h2 {
+    grid-area: h2;
+    text-align: center;
+    padding: 10px;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.not-found-link {
+    grid-area: link;
+    color: rgb(189, 189, 189);
+    text-decoration: underline;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 40px;
+}
+
+@media screen and (min-width: 550px) {
+    .not-found-content {
+        grid-template-areas: 'h1 h2' 'link link';
     }
 }

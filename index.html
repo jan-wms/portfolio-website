@@ -8,12 +8,12 @@
 
     <!-- Google Fonts -->
     <link rel="preload" href="/fonts/nunito.woff2" as="font" type="font/woff2" crossorigin>
-    
+
     <link rel="stylesheet" href="style.css">
 
     <title>Jan Wermeckes</title>
     <meta name="description"
-        content="I'm Jan, an enthusiastic programmer and mountaineer from Germany. I'm a Computer Science student at the Technical University of Munich." />
+        content="I'm Jan, a Computer Science student at the Technical University of Munich and an enthusiastic programmer and mountaineer from Germany." />
     <link rel="canonical" href="https://wermeckes.com/" />
 
     <meta name="robots" content="index, follow">
@@ -21,14 +21,14 @@
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="Jan Wermeckes" />
     <meta name="twitter:description"
-        content="I'm Jan, an enthusiastic programmer and mountaineer from Germany. I'm a Computer Science student at the Technical University of Munich." />
+        content="I'm Jan, a Computer Science student at the Technical University of Munich and an enthusiastic programmer and mountaineer from Germany." />
     <meta name="twitter:image" content="https://wermeckes.com/assets/favicon.png" />
 
     <meta property="og:title" content="Jan Wermeckes" />
     <meta property="og:site_name" content="Jan Wermeckes" />
     <meta property="og:url" content="https://wermeckes.com/" />
     <meta property="og:description"
-        content="I'm Jan, an enthusiastic programmer and mountaineer from Germany. I'm a Computer Science student at the Technical University of Munich." />
+        content="I'm Jan, a Computer Science student at the Technical University of Munich and an enthusiastic programmer and mountaineer from Germany." />
     <meta property="og:type" content="profile" />
     <meta property="og:image" content="https://wermeckes.com/assets/icon.png" />
     <meta property="og:image:width" content="512" />
@@ -140,7 +140,14 @@
             </div>
         </div>
         <div id="about-image">
-            <img src="assets/mountain.jpg" alt="Mountain" />
+            <img src="assets//mountain/mountain-1365.webp" srcset="
+            assets/mountain/mountain-400.webp 400w,
+            assets/mountain/mountain-788.webp 788w,
+            assets/mountain/mountain-1056.webp 1056w,
+            assets/mountain/mountain-1365.webp 1365w,
+            assets/mountain/mountain-1652.webp 1652w,
+            assets/mountain/mountain-2040.webp 2040w,
+            " sizes="(max-width: 870px) 70vw, 35vw" height="1365" width="1365" loading="lazy" alt="Mountain" />
         </div>
     </section>
 
@@ -149,21 +156,22 @@
         <h2>Projects</h2>
         <section id="project-cards-section">
             <!-- portfolio website -->
-            <a class="project-card" href="https://wermeckes.com/" target="_blank" rel="noreferrer noopener"
+            <a class="project-card" href="https://bergdinge.de/" target="_blank" rel="noreferrer noopener"
                 aria-label="Portfolio website">
                 <div class="project-card-image">
-                    <img src="assets/portfolio-website.jpg" alt="Portfolio website" />
+                    <img width="1000" height="680" src="assets/bergdinge.webp" alt="Portfolio website">
                 </div>
                 <section class="project-card-text">
-                    <h3>Portfolio website</h3>
-                    <p>This portfolio website.</p>
+                    <h3>Bergdinge</h3>
+                    <p>Bergdinge helps outdoor enthusiasts manage their equipment, view detailed weight information, and get packing tips. Built with Flutter, it uses Firebase for authentication and cloud synchronization.
+                    </p>
                 </section>
             </a>
             <!-- route planner -->
             <a class="project-card" href="https://github.com/jan-wms/" target="_blank" rel="noreferrer noopener"
                 aria-label="Route Planning App">
                 <div class="project-card-image">
-                    <img src="assets/dijkstra.png" alt="Route Planning App" />
+                    <img width="1000" height="680" src="assets/route-planner.webp" alt="Route Planning App">
                 </div>
                 <section class="project-card-text">
                     <h3>Route Planning App</h3>
@@ -174,7 +182,7 @@
             <a class="project-card" href="http://janw.bplaced.net/hausaufgaben/" target="_blank"
                 rel="noreferrer noopener" aria-label="Homework Organizer">
                 <div class="project-card-image">
-                    <img src="assets/hausaufgabenOrganizer.png" alt="Homework Organizer" />
+                    <img width="1000" height="680" src="assets/hausaufgabenOrganizer.webp" alt="Homework Organizer">
                 </div>
                 <section class="project-card-text">
                     <h3>Homework Organizer</h3>
@@ -186,7 +194,7 @@
             <a class="project-card" href="http://janw.bplaced.net/" target="_blank" rel="noreferrer noopener"
                 aria-label="Jan's website">
                 <div class="project-card-image">
-                    <img src="assets/auto-website.png" alt="Jan's website" />
+                    <img width="1000" height="680" src="assets/jans-website.webp" alt="Jan's website">
                 </div>
                 <section class="project-card-text">
                     <h3>Jan's website</h3>
